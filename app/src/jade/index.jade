@@ -1,0 +1,27 @@
+extends _template
+
+block head
+	link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
+
+block body
+	section.hide-on-med-and-down
+		svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.top(points="0 0, 100 0, 100 10, 0 75")
+		svg.text(viewbox="0 0 1000 1000", preserveAspectRatio="none")
+			defs
+				// path#textPath(d="M -50 250 L 600 1050")
+				path#textPath(d="M 0 745 L 1000 95")
+			text(x="0", y="0", text-anchor="middle")
+				textPath(xlink:href="#textPath", startOffset="65%") Yet another portfolio page
+		svg.bottom(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
+		a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+		h1.d-header Druggist
+		a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#")
+			i.material-icons arrow_downward 
+
+	section.hide-on-large-only
+
+block script
+	script(src="components/jquery/dist/jquery.min.js")
+	script(src="components/materialize/dist/js/materialize.min.js")

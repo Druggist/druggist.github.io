@@ -13,7 +13,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   </head>
   <body>
-    <section class="hide-on-med-and-down">
+    <div class="navbar-fixed hide-on-large-only">
+      <nav>
+        <div class="nav-wrapper"><a href="index.php">
+            <!-- img.logo.responsive-img(src="static/img/logo.png")--></a><a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="mobile-nav" class="side-nav grey darken-3">
+            <li><a href="#about_me" class="waves-effect waves-dark">About me</a></li>
+            <li><a href="#websites" class="waves-effect waves-dark">Websites</a></li>
+            <li><a href="#games" class="waves-effect waves-dark">Games</a></li>
+            <li><a href="#apps" class="waves-effect waves-dark">Apps & more</a></li>
+            <li><a href="#contact" class="waves-effect waves-dark">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <section id="main_desktop" class="hide-on-med-and-down">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top">
         <polygon points="0 0, 100 0, 100 10, 0 75" class="top"></polygon>
       </svg>
@@ -29,10 +43,14 @@
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom">
         <polygon points="0 20, 0 100, 65 100, 65 100" class="bottom"></polygon>
       </svg><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a>
-      <h1 class="d-header">Druggist</h1><a href="#" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
+      <h1 class="d-header">Druggist</h1><a href="#about_me" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
     </section>
-    <section class="hide-on-large-only"></section>
+    <section id="main_mobile" class="hide-on-large-only center">
+      <h1 class="d-header center">Druggist</h1>
+      <h2 class="center">Yet another portfolio page</h2><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a><a href="#about_me" class="waves-effect waves-light btn-floating btn-large more grey darken-3"><i class="material-icons">arrow_downward </i></a>
+    </section>
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/materialize/dist/js/materialize.min.js"></script>
+    <script src="static/js/main.min.js"></script>
   </body>
 </html>

@@ -4,7 +4,10 @@ block head
 	link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
 
 block body
-	section.hide-on-med-and-down
+
+	include _navbar.jade 
+
+	section#main_desktop.hide-on-med-and-down
 		svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.top(points="0 0, 100 0, 100 10, 0 75")
 		svg.text(viewbox="0 0 1000 1000", preserveAspectRatio="none")
@@ -17,11 +20,17 @@ block body
 			polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
 		a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
 		h1.d-header Druggist
-		a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#")
+		a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
 			i.material-icons arrow_downward 
 
-	section.hide-on-large-only
+	section.hide-on-large-only.center#main_mobile
+		h1.d-header.center Druggist
+		h2.center Yet another portfolio page
+		a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+		a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me")
+			i.material-icons arrow_downward 
 
 block script
 	script(src="components/jquery/dist/jquery.min.js")
 	script(src="components/materialize/dist/js/materialize.min.js")
+	script(src="static/js/main.min.js")

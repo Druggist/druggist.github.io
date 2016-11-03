@@ -6,76 +6,125 @@ body
 	padding: 0
 	background-color: color("grey", "darken-4")
 
+section
+	height: 100%
+
 svg
 	height: 100%
 	width: 100%
 	position: absolute
 	z-index: 1
 
-svg.top
-	-webkit-filter: drop-shadow(0px 2px 5px #000)
-    filter: drop-shadow(0px 2px 5px #000)
-	polygon
-		fill: color("grey", "base")
+#main_desktop
 
-svg.bottom
-	-webkit-filter: drop-shadow(0px -4px 5px #000)
-    filter: drop-shadow(0px -4px 5px #000)
+	svg.top
+		-webkit-filter: drop-shadow(0px 2px 5px #000)
+	    filter: drop-shadow(0px 2px 5px #000)
+		polygon
+			fill: color("grey", "base")
 
-	polygon
-		fill: color("grey", "darken-3")
+	svg.bottom
+		-webkit-filter: drop-shadow(0px -4px 5px #000)
+	    filter: drop-shadow(0px -4px 5px #000)
 
-svg.text
-	text
-		font-size: 3em
-		text-transform: uppercase
-		font-family: Roboto
-		font-weight: 200
-		fill: color("grey", "darken-3")
-		text-decoration: none
+		polygon
+			fill: color("grey", "darken-3")
 
-a.sources
-	position: absolute
-	bottom: 40px 
-	right: 50px
-	z-index: 2
+	svg.text
+		text
+			font-size: 3em
+			text-transform: uppercase
+			font-family: Roboto
+			font-weight: 200
+			fill: color("grey", "darken-3")
+			text-decoration: none
 
-h1.d-header
-	bottom: 50px
-	right: 40px
-	position: absolute
-	color: $secondary-color
-	font-weight: 900
-	font-size: 12em
-	z-index: 0
-
-a.more
-	position: absolute
-	bottom: 50px
-	left: 50px
-	z-index: 2
-
-a.btn-huge
-	width: 160px
-	height: 160px
-	
-	i
-		line-height: 155px
-		font-size: 9em
-		color: color("grey", "darken-3")
-		transition: .3s ease-out
-
-a.btn-huge:hover
-	@extend .z-depth-5
-
-	i
-		color: color("grey", "base")
-
-@media screen and (max-width: 1369px)
 	a.sources
-		bottom: 140px 
-		right: 30px
+		position: absolute
+		bottom: 40px 
+		right: 50px
+		z-index: 2
 
 	h1.d-header
-		bottom: 150px
-		right: 20px
+		bottom: 50px
+		right: 40px
+		position: absolute
+		color: $secondary-color
+		font-weight: 900
+		font-size: 12em
+		z-index: 0
+
+	a.more
+		position: absolute
+		bottom: 50px
+		left: 50px
+		z-index: 2
+
+	a.btn-huge
+		width: 160px
+		height: 160px
+		
+		i
+			line-height: 155px
+			font-size: 9em
+			color: color("grey", "darken-3")
+			transition: .3s ease-out
+
+	a.btn-huge:hover
+		@extend .z-depth-5
+
+		i
+			color: color("grey", "base")
+
+	@media screen and (max-width: 1369px)
+		a.sources
+			bottom: 140px 
+			right: 30px
+
+		h1.d-header
+			bottom: 150px
+			right: 20px
+
+#mobile-nav 
+	z-index: 1
+
+	a 
+		color: $secondary-color
+
+#sidenav-overlay
+	z-index: 899!important
+
+#main_mobile
+	margin-top: -64px
+	
+	h1.d-header
+		margin-top: 0
+		padding-top: 114px
+		padding-bottom: 10px
+		color: $secondary-color
+		font-size: 5.2em
+		font-weight: 900
+
+	h2
+		color: color("grey", "base")
+		margin: 10px 10px 
+		font-weight: 200
+
+	a.sources
+		margin-top: 50px
+
+	a.more
+		position: absolute
+		display: block
+		left: calc(50% - 28px)
+		right: calc(50% - 28px)
+		bottom: 20px
+
+		i
+			color: color("grey", "base")
+
+	a.more:hover
+		@extend .z-depth-5
+
+		i
+			color: #fff

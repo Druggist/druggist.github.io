@@ -141,7 +141,7 @@ gulp.task("build:serve", function () {
 //Watch Task
 //////////////////////////////////////////
 gulp.task("watch", function () {
-	gulp.watch("app/static/js/*.js", ["watchJs"]);
+	gulp.watch(['app/static/js/*.js', '!app/static/js/*.min.js'], ["watchJs"]);
 	gulp.watch("app/src/sass/*.sass", ["compileSass"]);
 	gulp.watch(["app/static/css/*.css", "!app/static/css/*.min.css"], ["minifyCss"]);
 	gulp.watch("app/src/jade/*.jade", ["compileJade"]);

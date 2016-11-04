@@ -15,6 +15,7 @@ $(function() {
 	//	afterResize:function() {},
 	//	afterRender:function() {}
 	});
+	appendEmail();
 });
 
 $(document).ready(function(){
@@ -26,3 +27,10 @@ $('a[href="#about_me"]').click(function(e){
 	e.preventDefault();
 	$.scrollify.move("#about_me");
 });
+
+
+function appendEmail(){
+	var user = 'm.najdora',
+    	domain = 'gmail.com';
+    $('.email').append(user + '@' + domain);
+}

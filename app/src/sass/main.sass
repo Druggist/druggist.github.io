@@ -291,12 +291,25 @@ svg.bottom
 		color: color("blue-grey", "base")
 		font-size: 6em
 
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
-
-	.card
+	a
+		position: relative
+		margin: 0 50px
+		display: block
+		color: color("blue-grey", "lighten-1")
+		font-size: 3em
+		transition: .3s ease-out
 		z-index: 2
+
+		i
+			display: block
+			font-size: 6em
+
+	a:hover
+		color: color("blue-grey", "lighten-3")
+
+	.center-row
+		height: calc(100% - 300px)
+
 	@media screen and (max-width: 992px)
 		h2
 			font-size: 3.75em

@@ -1992,7 +1992,7 @@ a {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .btn, .btn-large, .btn-floating, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .btn, .btn-large, .btn-floating, .side-nav {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -2007,7 +2007,7 @@ a {
 .z-depth-4 {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
-.z-depth-5, #main_desktop a.btn-huge:hover, #main_mobile a.more:hover {
+.z-depth-5, #main .hide-on-med-and-down a.btn-huge:hover, #main .hide-on-large-only.center a.more:hover {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
 .hoverable {
@@ -3267,6 +3267,128 @@ small {
     .flow-text {
       font-size: 1.2rem; } }
 
+.card-panel {
+  transition: box-shadow .25s;
+  padding: 20px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff; }
+
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow .25s;
+  border-radius: 2px; }
+  .card .card-title {
+    font-size: 24px;
+    font-weight: 300; }
+    .card .card-title.activator {
+      cursor: pointer; }
+  .card.small, .card.medium, .card.large {
+    position: relative; }
+    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+      max-height: 60%;
+      overflow: hidden; }
+    .card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
+      max-height: 40%; }
+    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
+      max-height: 100%;
+      overflow: hidden; }
+    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+  .card.small {
+    height: 300px; }
+  .card.medium {
+    height: 400px; }
+  .card.large {
+    height: 500px; }
+  .card.horizontal {
+    display: -ms-flexbox;
+    display: flex; }
+    .card.horizontal.small .card-image, .card.horizontal.medium .card-image, .card.horizontal.large .card-image {
+      height: 100%;
+      max-height: none;
+      overflow: visible; }
+      .card.horizontal.small .card-image img, .card.horizontal.medium .card-image img, .card.horizontal.large .card-image img {
+        height: 100%; }
+    .card.horizontal .card-image {
+      max-width: 50%; }
+      .card.horizontal .card-image img {
+        border-radius: 2px 0 0 2px;
+        max-width: 100%;
+        width: auto; }
+    .card.horizontal .card-stacked {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex: 1;
+          flex: 1;
+      position: relative; }
+      .card.horizontal .card-stacked .card-content {
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .card.sticky-action .card-action {
+    z-index: 2; }
+  .card.sticky-action .card-reveal {
+    z-index: 1;
+    padding-bottom: 64px; }
+  .card .card-image {
+    position: relative; }
+    .card .card-image img {
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; }
+    .card .card-image .card-title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 20px; }
+  .card .card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px; }
+    .card .card-content p {
+      margin: 0;
+      color: inherit; }
+    .card .card-content .card-title {
+      line-height: 48px; }
+  .card .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 20px; }
+    .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+      color: #ffab40;
+      margin-right: 20px;
+      transition: color .3s ease;
+      text-transform: uppercase; }
+      .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+        color: #ffd8a6; }
+  .card .card-reveal {
+    padding: 20px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none; }
+    .card .card-reveal .card-title {
+      cursor: pointer;
+      display: block; }
+
 .btn, .btn-large,
 .btn-flat {
   border: none;
@@ -3719,8 +3841,12 @@ body {
   padding: 0;
   background-color: #212121; }
 
-section {
-  height: 100%; }
+.section {
+  height: 100%;
+  padding: 0; }
+  .section h2 {
+    font-weight: 900;
+    text-transform: uppercase; }
 
 svg {
   height: 100%;
@@ -3728,19 +3854,21 @@ svg {
   position: absolute;
   z-index: 1; }
 
-#main_desktop svg.top {
+svg.top {
   -webkit-filter: drop-shadow(0px 2px 5px #000);
-    -webkit-filter-filter: drop-shadow(0px 2px 5px #000); }
-  #main_desktop svg.top polygon {
-    fill: #9e9e9e; }
+  filter: drop-shadow(0px 2px 5px #000); }
 
-#main_desktop svg.bottom {
+svg.bottom {
   -webkit-filter: drop-shadow(0px -4px 5px #000);
-    -webkit-filter-filter: drop-shadow(0px -4px 5px #000); }
-  #main_desktop svg.bottom polygon {
-    fill: #424242; }
+  filter: drop-shadow(0px -4px 5px #000); }
 
-#main_desktop svg.text text {
+#main .hide-on-med-and-down svg.top polygon {
+  fill: #9e9e9e; }
+
+#main .hide-on-med-and-down svg.bottom polygon {
+  fill: #424242; }
+
+#main .hide-on-med-and-down svg.text text {
   font-size: 3em;
   text-transform: uppercase;
   font-family: Roboto;
@@ -3748,13 +3876,13 @@ svg {
   fill: #424242;
   text-decoration: none; }
 
-#main_desktop a.sources {
+#main .hide-on-med-and-down a.sources {
   position: absolute;
   bottom: 40px;
   right: 50px;
   z-index: 2; }
 
-#main_desktop h1.d-header {
+#main .hide-on-med-and-down h1.d-header {
   bottom: 50px;
   right: 40px;
   position: absolute;
@@ -3763,29 +3891,29 @@ svg {
   font-size: 12em;
   z-index: 0; }
 
-#main_desktop a.more {
+#main .hide-on-med-and-down a.more {
   position: absolute;
   bottom: 50px;
   left: 50px;
   z-index: 2; }
 
-#main_desktop a.btn-huge {
+#main .hide-on-med-and-down a.btn-huge {
   width: 160px;
   height: 160px; }
-  #main_desktop a.btn-huge i {
+  #main .hide-on-med-and-down a.btn-huge i {
     line-height: 155px;
     font-size: 9em;
     color: #424242;
     transition: .3s ease-out; }
 
-#main_desktop a.btn-huge:hover i {
+#main .hide-on-med-and-down a.btn-huge:hover i {
   color: #9e9e9e; }
 
 @media screen and (max-width: 1369px) {
-  #main_desktop a.sources {
+  #main .hide-on-med-and-down a.sources {
     bottom: 140px;
     right: 30px; }
-  #main_desktop h1.d-header {
+  #main .hide-on-med-and-down h1.d-header {
     bottom: 150px;
     right: 20px; } }
 
@@ -3797,28 +3925,174 @@ svg {
 #sidenav-overlay {
   z-index: 899 !important; }
 
-#main_mobile {
+#main .hide-on-large-only.center {
   margin-top: -64px; }
-  #main_mobile h1.d-header {
+  #main .hide-on-large-only.center h1.d-header {
     margin-top: 0;
     padding-top: 114px;
     padding-bottom: 10px;
     color: #2196F3;
     font-size: 5.2em;
     font-weight: 900; }
-  #main_mobile h2 {
+  #main .hide-on-large-only.center h2.desc {
     color: #9e9e9e;
     margin: 10px 10px;
-    font-weight: 200; }
-  #main_mobile a.sources {
+    font-weight: 200;
+    padding-top: 0;
+    font-size: 2.75em; }
+  #main .hide-on-large-only.center a.sources {
     margin-top: 50px; }
-  #main_mobile a.more {
+  #main .hide-on-large-only.center a.more {
     position: absolute;
     display: block;
     left: calc(50% - 28px);
     right: calc(50% - 28px);
     bottom: 20px; }
-    #main_mobile a.more i {
+    #main .hide-on-large-only.center a.more i {
       color: #9e9e9e; }
-  #main_mobile a.more:hover i {
+  #main .hide-on-large-only.center a.more:hover i {
     color: #fff; }
+
+#about_me svg.top polygon {
+  fill: #1565C0; }
+
+#about_me svg.bottom polygon {
+  fill: #2196F3; }
+
+#about_me h2 {
+  padding-top: 20px;
+  color: #2196F3;
+  font-size: 6em; }
+
+#about_me p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#about_me .center-row {
+  height: calc(100% - 300px); }
+
+@media screen and (max-width: 992px) {
+  #about_me h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }
+
+#websites svg.top polygon {
+  fill: #2E7D32; }
+
+#websites svg.bottom polygon {
+  fill: #4CAF50; }
+
+#websites h2 {
+  padding-top: 20px;
+  color: #4CAF50;
+  font-size: 6em; }
+
+#websites p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#websites .card {
+  z-index: 2; }
+
+@media screen and (max-width: 992px) {
+  #websites h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }
+
+#games svg.top polygon {
+  fill: #C62828; }
+
+#games svg.bottom polygon {
+  fill: #E53935; }
+
+#games h2 {
+  padding-top: 20px;
+  color: #F44336;
+  font-size: 6em; }
+
+#games p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#games .card {
+  z-index: 2; }
+
+@media screen and (max-width: 992px) {
+  #games h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }
+
+#apps svg.top polygon {
+  fill: #6a1b9a; }
+
+#apps svg.bottom polygon {
+  fill: #9c27b0; }
+
+#apps h2 {
+  padding-top: 20px;
+  color: #9c27b0;
+  font-size: 6em; }
+
+#apps p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#apps .card {
+  z-index: 2; }
+
+@media screen and (max-width: 992px) {
+  #apps h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }
+
+#support_me svg.top polygon {
+  fill: #ff8f00; }
+
+#support_me svg.bottom polygon {
+  fill: #ffc107; }
+
+#support_me h2 {
+  padding-top: 20px;
+  color: #ffc107;
+  font-size: 6em; }
+
+#support_me p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#support_me .card {
+  z-index: 2; }
+
+@media screen and (max-width: 992px) {
+  #support_me h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }
+
+#contact svg.top polygon {
+  fill: #455a64; }
+
+#contact svg.bottom polygon {
+  fill: #607d8b; }
+
+#contact h2 {
+  padding-top: 20px;
+  color: #607d8b;
+  font-size: 6em; }
+
+#contact p {
+  color: #bdbdbd;
+  text-align: justify; }
+
+#contact .card {
+  z-index: 2; }
+
+@media screen and (max-width: 992px) {
+  #contact h2 {
+    font-size: 3.75em;
+    text-align: right;
+    padding-right: 20px; } }

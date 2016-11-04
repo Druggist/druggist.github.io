@@ -6,8 +6,13 @@ body
 	padding: 0
 	background-color: color("grey", "darken-4")
 
-section
+.section
 	height: 100%
+	padding: 0
+
+	h2
+		font-weight: 900
+		text-transform: uppercase
 
 svg
 	height: 100%
@@ -15,75 +20,78 @@ svg
 	position: absolute
 	z-index: 1
 
-#main_desktop
+svg.top
+	-webkit-filter: drop-shadow(0px 2px 5px #000)
+	filter: drop-shadow(0px 2px 5px #000)
 
-	svg.top
-		-webkit-filter: drop-shadow(0px 2px 5px #000)
-	    filter: drop-shadow(0px 2px 5px #000)
-		polygon
-			fill: color("grey", "base")
+svg.bottom
+	-webkit-filter: drop-shadow(0px -4px 5px #000)
+	filter: drop-shadow(0px -4px 5px #000)
 
-	svg.bottom
-		-webkit-filter: drop-shadow(0px -4px 5px #000)
-	    filter: drop-shadow(0px -4px 5px #000)
+#main
+	.hide-on-med-and-down
+		svg.top
+			polygon
+				fill: color("grey", "base")
 
-		polygon
-			fill: color("grey", "darken-3")
+		svg.bottom
+			polygon
+				fill: color("grey", "darken-3")
 
-	svg.text
-		text
-			font-size: 3em
-			text-transform: uppercase
-			font-family: Roboto
-			font-weight: 200
-			fill: color("grey", "darken-3")
-			text-decoration: none
+		svg.text
+			text
+				font-size: 3em
+				text-transform: uppercase
+				font-family: Roboto
+				font-weight: 200
+				fill: color("grey", "darken-3")
+				text-decoration: none
 
-	a.sources
-		position: absolute
-		bottom: 40px 
-		right: 50px
-		z-index: 2
-
-	h1.d-header
-		bottom: 50px
-		right: 40px
-		position: absolute
-		color: $secondary-color
-		font-weight: 900
-		font-size: 12em
-		z-index: 0
-
-	a.more
-		position: absolute
-		bottom: 50px
-		left: 50px
-		z-index: 2
-
-	a.btn-huge
-		width: 160px
-		height: 160px
-		
-		i
-			line-height: 155px
-			font-size: 9em
-			color: color("grey", "darken-3")
-			transition: .3s ease-out
-
-	a.btn-huge:hover
-		@extend .z-depth-5
-
-		i
-			color: color("grey", "base")
-
-	@media screen and (max-width: 1369px)
 		a.sources
-			bottom: 140px 
-			right: 30px
+			position: absolute
+			bottom: 40px 
+			right: 50px
+			z-index: 2
 
 		h1.d-header
-			bottom: 150px
-			right: 20px
+			bottom: 50px
+			right: 40px
+			position: absolute
+			color: $secondary-color
+			font-weight: 900
+			font-size: 12em
+			z-index: 0
+
+		a.more
+			position: absolute
+			bottom: 50px
+			left: 50px
+			z-index: 2
+
+		a.btn-huge
+			width: 160px
+			height: 160px
+			
+			i
+				line-height: 155px
+				font-size: 9em
+				color: color("grey", "darken-3")
+				transition: .3s ease-out
+
+		a.btn-huge:hover
+			@extend .z-depth-5
+
+			i
+				color: color("grey", "base")
+
+		@media screen and (max-width: 1369px)
+			a.sources
+				bottom: 140px 
+				right: 30px
+
+			h1.d-header
+				bottom: 150px
+				right: 20px
 
 #mobile-nav 
 	z-index: 1
@@ -94,37 +102,203 @@ svg
 #sidenav-overlay
 	z-index: 899!important
 
-#main_mobile
-	margin-top: -64px
-	
-	h1.d-header
-		margin-top: 0
-		padding-top: 114px
-		padding-bottom: 10px
-		color: $secondary-color
-		font-size: 5.2em
-		font-weight: 900
+#main
+	.hide-on-large-only.center
+		margin-top: -64px
+		
+		h1.d-header
+			margin-top: 0
+			padding-top: 114px
+			padding-bottom: 10px
+			color: $secondary-color
+			font-size: 5.2em
+			font-weight: 900
+
+		h2.desc
+			color: color("grey", "base")
+			margin: 10px 10px 
+			font-weight: 200
+			padding-top: 0
+			font-size: 2.75em
+
+		a.sources
+			margin-top: 50px
+
+		a.more
+			position: absolute
+			display: block
+			left: calc(50% - 28px)
+			right: calc(50% - 28px)
+			bottom: 20px
+
+			i
+				color: color("grey", "base")
+
+		a.more:hover
+			@extend .z-depth-5
+
+			i
+				color: #fff
+
+#about_me
+
+	svg.top
+		polygon
+			fill: color("blue", "darken-3")
+
+	svg.bottom
+		polygon
+			fill: color("blue", "base")
 
 	h2
-		color: color("grey", "base")
-		margin: 10px 10px 
-		font-weight: 200
+		padding-top: 20px
+		color: color("blue", "base")
+		font-size: 6em
 
-	a.sources
-		margin-top: 50px
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
 
-	a.more
-		position: absolute
-		display: block
-		left: calc(50% - 28px)
-		right: calc(50% - 28px)
-		bottom: 20px
+	.center-row
+		height: calc(100% - 300px)
 
-		i
-			color: color("grey", "base")
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px
 
-	a.more:hover
-		@extend .z-depth-5
+#websites
 
-		i
-			color: #fff
+	svg.top
+		polygon
+			fill: color("green", "darken-3")
+
+	svg.bottom
+		polygon
+			fill: color("green", "base")
+
+	h2
+		padding-top: 20px
+		color: color("green", "base")
+		font-size: 6em
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
+
+	.card
+		z-index: 2
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px
+
+#games
+
+	svg.top
+		polygon
+			fill: color("red", "darken-3")
+
+	svg.bottom
+		polygon
+			fill: color("red", "darken-1")
+
+	h2
+		padding-top: 20px
+		color: color("red", "base")
+		font-size: 6em
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
+
+	.card
+		z-index: 2
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px
+
+#apps
+
+	svg.top
+		polygon
+			fill: color("purple", "darken-3")
+
+	svg.bottom
+		polygon
+			fill: color("purple", "base")
+
+	h2
+		padding-top: 20px
+		color: color("purple", "base")
+		font-size: 6em
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
+
+	.card
+		z-index: 2
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px
+
+#support_me
+
+	svg.top
+		polygon
+			fill: color("amber", "darken-3")
+
+	svg.bottom
+		polygon
+			fill: color("amber", "base")
+
+	h2
+		padding-top: 20px
+		color: color("amber", "base")
+		font-size: 6em
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
+
+	.card
+		z-index: 2
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px
+
+#contact
+
+	svg.top
+		polygon
+			fill: color("blue-grey", "darken-2")
+
+	svg.bottom
+		polygon
+			fill: color("blue-grey", "base")
+
+	h2
+		padding-top: 20px
+		color: color("blue-grey", "base")
+		font-size: 6em
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
+
+	.card
+		z-index: 2
+	@media screen and (max-width: 992px)
+		h2
+			font-size: 3.75em
+			text-align: right
+			padding-right: 20px

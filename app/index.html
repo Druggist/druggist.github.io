@@ -19,38 +19,155 @@
             <!-- img.logo.responsive-img(src="static/img/logo.png")--></a><a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="mobile-nav" class="side-nav grey darken-3">
             <li><a href="#about_me" class="waves-effect waves-dark">About me</a></li>
+            <li class="divider grey darken-4"></li>
             <li><a href="#websites" class="waves-effect waves-dark">Websites</a></li>
             <li><a href="#games" class="waves-effect waves-dark">Games</a></li>
             <li><a href="#apps" class="waves-effect waves-dark">Apps & more</a></li>
+            <li class="divider grey darken-4"></li>
+            <li><a href="#support_me" class="waves-effect waves-dark">Support me</a></li>
             <li><a href="#contact" class="waves-effect waves-dark">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <section id="main_desktop" class="hide-on-med-and-down">
-      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top">
-        <polygon points="0 0, 100 0, 100 10, 0 75" class="top"></polygon>
+    <div id="main" data-section-name="main" class="section">
+      <div class="hide-on-med-and-down">
+        <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top">
+          <polygon points="0 0, 100 0, 100 10, 0 75"></polygon>
+        </svg>
+        <svg viewbox="0 0 1000 1000" preserveAspectRatio="none" class="text">
+          <defs>
+            <!-- path#textPath(d="M -50 250 L 600 1050")-->
+            <path id="textPath" d="M 0 745 L 1000 95"></path>
+          </defs>
+          <text x="0" y="0" text-anchor="middle">
+            <textPath xlink:href="#textPath" startOffset="65%">Yet another portfolio page</textPath>
+          </text>
+        </svg>
+        <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom">
+          <polygon points="0 20, 0 100, 65 100, 65 100" class="bottom"></polygon>
+        </svg><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a>
+        <h1 class="d-header">Druggist</h1><a href="#about_me" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
+      </div>
+      <div class="hide-on-large-only center">
+        <h1 class="d-header center">Druggist</h1>
+        <h2 class="desc center">Yet another portfolio page</h2><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a><a href="#about_me" class="waves-effect waves-light btn-floating btn-large more grey darken-3"><i class="material-icons">arrow_downward </i></a>
+      </div>
+    </div>
+    <div id="about_me" data-section-name="about_me" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 35 0, 0 35"></polygon>
       </svg>
-      <svg viewbox="0 0 1000 1000" preserveAspectRatio="none" class="text">
-        <defs>
-          <!-- path#textPath(d="M -50 250 L 600 1050")-->
-          <path id="textPath" d="M 0 745 L 1000 95"></path>
-        </defs>
-        <text x="0" y="0" text-anchor="middle">
-          <textPath xlink:href="#textPath" startOffset="65%">Yet another portfolio page</textPath>
-        </text>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 65, 100 100, 75 100" class="bottom"></polygon>
       </svg>
-      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom">
-        <polygon points="0 20, 0 100, 65 100, 65 100" class="bottom"></polygon>
-      </svg><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a>
-      <h1 class="d-header">Druggist</h1><a href="#about_me" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
-    </section>
-    <section id="main_mobile" class="hide-on-large-only center">
-      <h1 class="d-header center">Druggist</h1>
-      <h2 class="center">Yet another portfolio page</h2><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a><a href="#about_me" class="waves-effect waves-light btn-floating btn-large more grey darken-3"><i class="material-icons">arrow_downward </i></a>
-    </section>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">About me</h2>
+        </div>
+      </div>
+      <div class="row valign-wrapper center-row">
+        <div class="col s10 l8 offset-l2 offset-s1 valign">
+          <p class="flow-text">Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.</p>
+        </div>
+      </div>
+    </div>
+    <div id="websites" data-section-name="websites" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 25 0, 0 40"></polygon>
+      </svg>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 80, 100 100, 35 100" class="bottom"></polygon>
+      </svg>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">Websites</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l5 offset-l2">
+          <div class="card grey darken-3">
+            <div class="card-image waves-effect waves-block waves-light"><img src="http://druggist.github.io/img/qrme.png" class="activator"/></div>
+            <div class="card-content"><span class="card-title activator grey-text">qr.me<i class="material-icons right">more_vert</i></span>
+              <p> <a href="https://druggist.github.io/qr.me/">www.qr.me</a></p>
+            </div>
+            <div class="card-reveal grey darken-3"><span class="card-title activator grey-text text-darken-4">dsdgsfgs<i class="material-icons right">close</i></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l5">
+          <div class="card grey darken-3">
+            <div class="card-image waves-effect waves-block waves-light"><img src="http://druggist.github.io/img/mtdsystem.png" class="activator"/></div>
+            <div class="card-content"><span class="card-title activator grey-text">dsdgsfgs<i class="material-icons right">more_vert</i></span>
+              <p> <a href="#">THIS</a></p>
+            </div>
+            <div class="card-reveal grey darken-3"><span class="card-title activator grey-text text-darken-4">dsdgsfgs<i class="material-icons right">close</i></span>
+              <p>qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="games" data-section-name="games" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 25 0, 0 40"></polygon>
+      </svg>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 80, 100 100, 35 100" class="bottom"></polygon>
+      </svg>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">Games</h2>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+    <div id="apps" data-section-name="apps" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 25 0, 0 40"></polygon>
+      </svg>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 80, 100 100, 35 100" class="bottom"></polygon>
+      </svg>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">Apps & more</h2>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+    <div id="support_me" data-section-name="support_me" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 25 0, 0 90"></polygon>
+      </svg>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 15, 100 100, 70 100" class="bottom"></polygon>
+      </svg>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">Buy me a beer</h2>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
+    <div id="contact" data-section-name="contact" class="section">
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
+        <polygon points="0 0, 25 0, 0 40"></polygon>
+      </svg>
+      <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
+        <polygon points="100 80, 100 100, 35 100" class="bottom"></polygon>
+      </svg>
+      <div class="row">
+        <div class="col s11 l12 offset-s1">
+          <h2 class="center">Contact</h2>
+        </div>
+      </div>
+      <div class="row"></div>
+    </div>
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/materialize/dist/js/materialize.min.js"></script>
+    <script src="components/Scrollify/jquery.scrollify.min.js"></script>
     <script src="static/js/main.min.js"></script>
   </body>
 </html>

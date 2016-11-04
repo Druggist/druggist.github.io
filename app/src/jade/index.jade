@@ -7,30 +7,123 @@ block body
 
 	include _navbar.jade 
 
-	section#main_desktop.hide-on-med-and-down
-		svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.top(points="0 0, 100 0, 100 10, 0 75")
-		svg.text(viewbox="0 0 1000 1000", preserveAspectRatio="none")
-			defs
-				// path#textPath(d="M -50 250 L 600 1050")
-				path#textPath(d="M 0 745 L 1000 95")
-			text(x="0", y="0", text-anchor="middle")
-				textPath(xlink:href="#textPath", startOffset="65%") Yet another portfolio page
-		svg.bottom(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
-		a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
-		h1.d-header Druggist
-		a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
-			i.material-icons arrow_downward 
+	.section#main(data-section-name="main")
+		.hide-on-med-and-down
+			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
+				polygon(points="0 0, 100 0, 100 10, 0 75")
+			svg.text(viewbox="0 0 1000 1000", preserveAspectRatio="none")
+				defs
+					// path#textPath(d="M -50 250 L 600 1050")
+					path#textPath(d="M 0 745 L 1000 95")
+				text(x="0", y="0", text-anchor="middle")
+					textPath(xlink:href="#textPath", startOffset="65%") Yet another portfolio page
+			svg.bottom(viewbox="0 0 100 100", preserveAspectRatio="none")
+				polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
+			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+			h1.d-header Druggist
+			a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
+				i.material-icons arrow_downward 
+		.hide-on-large-only.center
+			h1.d-header.center Druggist
+			h2.desc.center Yet another portfolio page
+			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+			a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me")
+				i.material-icons arrow_downward 
 
-	section.hide-on-large-only.center#main_mobile
-		h1.d-header.center Druggist
-		h2.center Yet another portfolio page
-		a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
-		a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me")
-			i.material-icons arrow_downward 
+	.section#about_me(data-section-name="about_me")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 35 0, 0 35")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 65, 100 100, 75 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center About me
+		.row.valign-wrapper.center-row
+			.col.s10.l8.offset-l2.offset-s1.valign
+				p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
+
+	.section#websites(data-section-name="websites")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 25 0, 0 40")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 80, 100 100, 35 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Websites
+		.row
+			.col.s12.l5.offset-l2
+				.card.grey.darken-3
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src="http://druggist.github.io/img/qrme.png")
+					.card-content
+						span.card-title.activator.grey-text
+							| qr.me
+							i.material-icons.right more_vert
+						p 
+							a(href="https://druggist.github.io/qr.me/") www.qr.me
+					.card-reveal.grey.darken-3
+						span.card-title.activator.grey-text.text-darken-4
+							| dsdgsfgs
+							i.material-icons.right close
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			.col.s12.l5
+				.card.grey.darken-3
+					.card-image.waves-effect.waves-block.waves-light
+						img.activator(src="http://druggist.github.io/img/mtdsystem.png")
+					.card-content
+						span.card-title.activator.grey-text
+							| dsdgsfgs
+							i.material-icons.right more_vert
+						p 
+							a(href="#") THIS
+					.card-reveal.grey.darken-3
+						span.card-title.activator.grey-text.text-darken-4
+							| dsdgsfgs
+							i.material-icons.right close
+						p qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.
+
+	.section#games(data-section-name="games")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 25 0, 0 40")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 80, 100 100, 35 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Games
+		.row
+
+	.section#apps(data-section-name="apps")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 25 0, 0 40")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 80, 100 100, 35 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Apps & more
+		.row
+
+	.section#support_me(data-section-name="support_me")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 25 0, 0 90")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 15, 100 100, 70 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Buy me a beer
+		.row
+
+	.section#contact(data-section-name="contact")
+		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 25 0, 0 40")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 80, 100 100, 35 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Contact
+		.row
 
 block script
 	script(src="components/jquery/dist/jquery.min.js")
 	script(src="components/materialize/dist/js/materialize.min.js")
+	script(src="components/Scrollify/jquery.scrollify.min.js")
 	script(src="static/js/main.min.js")

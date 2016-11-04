@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "materialize": "^0.97.7",
-    "jquery": "~2.2.4"
+    "jquery": "~2.2.4",
+    "Scrollify": "^1.0.5"
   }
 }

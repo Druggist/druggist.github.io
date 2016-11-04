@@ -6364,6 +6364,14 @@ svg.bottom {
 #support_me svg.bottom polygon {
   fill: #ffc107; }
 
+#support_me svg.text text {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-weight: 200;
+  fill: #212121;
+  text-decoration: none; }
+
 #support_me h2 {
   padding-top: 20px;
   color: #ffc107;

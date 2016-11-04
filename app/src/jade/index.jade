@@ -7,7 +7,7 @@ block body
 
 	include _navbar.jade 
 
-	.section#main(data-section-name="main")
+	.section#main_section(data-section-name="main")
 		.hide-on-med-and-down
 			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon(points="0 0, 100 0, 100 10, 0 75")
@@ -30,7 +30,7 @@ block body
 			a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me")
 				i.material-icons arrow_downward 
 
-	.section#about_me(data-section-name="about_me")
+	.section#about_me_section(data-section-name="about_me")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 35 0, 0 35")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -42,7 +42,7 @@ block body
 			.col.s10.l8.offset-l2.offset-s1.valign
 				p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
 
-	.section#websites(data-section-name="websites")
+	.section#websites_section(data-section-name="websites")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -82,7 +82,7 @@ block body
 							i.material-icons.right close
 						p qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.
 
-	.section#games(data-section-name="games")
+	.section#games_section(data-section-name="games")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -92,7 +92,7 @@ block body
 				h2.center Games
 		.row
 
-	.section#apps(data-section-name="apps")
+	.section#apps_section(data-section-name="apps")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -102,22 +102,22 @@ block body
 				h2.center Apps & more
 		.row
 
-	.section#support_me(data-section-name="support_me")
+	.section#support_me_section(data-section-name="support_me")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 25 0, 0 90")
-		svg.text.hide-on-small-only(viewbox="0 0 1000 1000", preserveAspectRatio="none")
-			defs
-				path#textPath2(d="M 0 895 L 250 -5")
-			text(x="0", y="0", text-anchor="middle")
-				textPath(xlink:href="#textPath2", startOffset="50%") Like my work?
+			polygon(points="100 0, 75 0, 100 90")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 15, 100 100, 70 100")
+		svg.text.hide-on-small-only(viewbox="0 0 1000 1000", preserveAspectRatio="none")
+			defs
+				path#textPath2(d="M 737 1000 L 1037 150")
+			text(x="0", y="0", text-anchor="middle")
+				textPath(xlink:href="#textPath2", startOffset="40%") Like my work?
 		.row
-			.col.s11.l12.offset-s1
-				h2.center Buy me a beer
+			.col.s11.l10.offset-s1.offset-l1
+				h2.left Buy me a beer
 		.row
 
-	.section#contact(data-section-name="contact")
+	.section#contact_section(data-section-name="contact")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")

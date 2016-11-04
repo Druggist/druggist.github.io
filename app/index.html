@@ -30,7 +30,20 @@
         </div>
       </nav>
     </div>
-    <div id="main" data-section-name="main" class="section">
+    <div class="vertical-bullet-menu hide-on-med-and-down close">
+      <ul>
+        <li><a id="previous" href="#"> <i class="material-icons">keyboard_arrow_up</i></a></li>
+        <li><a href="#main"> <i aria-hidden="true" class="fa fa-bullseye"></i><span>Home</span></a></li>
+        <li><a href="#about_me"> <i aria-hidden="true" class="fa fa-bullseye"></i><span>About&nbsp;me</span></a></li>
+        <li><a href="#websites"><i aria-hidden="true" class="fa fa-bullseye"></i><span>Websites</span></a></li>
+        <li><a href="#games"><i aria-hidden="true" class="fa fa-bullseye"></i><span>Games</span></a></li>
+        <li><a href="#apps"><i aria-hidden="true" class="fa fa-bullseye"></i><span>Apps&nbsp;&&nbsp;more</span></a></li>
+        <li><a href="#support_me"><i aria-hidden="true" class="fa fa-bullseye"></i><span>Support&nbsp;me</span></a></li>
+        <li><a href="#contact"> <i aria-hidden="true" class="fa fa-bullseye"></i><span>Contact</span></a></li>
+        <li><a id="next" href="#" class="disabled"> <i class="material-icons">keyboard_arrow_down</i></a></li>
+      </ul>
+    </div>
+    <div id="main_section" data-section-name="main" class="section">
       <div class="hide-on-med-and-down">
         <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top">
           <polygon points="0 0, 100 0, 100 10, 0 75"></polygon>
@@ -54,7 +67,7 @@
         <h2 class="desc center">Yet another portfolio page</h2><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a><a href="#about_me" class="waves-effect waves-light btn-floating btn-large more grey darken-3"><i class="material-icons">arrow_downward </i></a>
       </div>
     </div>
-    <div id="about_me" data-section-name="about_me" class="section">
+    <div id="about_me_section" data-section-name="about_me" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
         <polygon points="0 0, 35 0, 0 35"></polygon>
       </svg>
@@ -72,7 +85,7 @@
         </div>
       </div>
     </div>
-    <div id="websites" data-section-name="websites" class="section">
+    <div id="websites_section" data-section-name="websites" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
         <polygon points="0 0, 25 0, 0 40"></polygon>
       </svg>
@@ -109,7 +122,7 @@
         </div>
       </div>
     </div>
-    <div id="games" data-section-name="games" class="section">
+    <div id="games_section" data-section-name="games" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
         <polygon points="0 0, 25 0, 0 40"></polygon>
       </svg>
@@ -123,7 +136,7 @@
       </div>
       <div class="row"></div>
     </div>
-    <div id="apps" data-section-name="apps" class="section">
+    <div id="apps_section" data-section-name="apps" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
         <polygon points="0 0, 25 0, 0 40"></polygon>
       </svg>
@@ -137,29 +150,29 @@
       </div>
       <div class="row"></div>
     </div>
-    <div id="support_me" data-section-name="support_me" class="section">
+    <div id="support_me_section" data-section-name="support_me" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
-        <polygon points="0 0, 25 0, 0 90"></polygon>
-      </svg>
-      <svg viewbox="0 0 1000 1000" preserveAspectRatio="none" class="text hide-on-small-only">
-        <defs>
-          <path id="textPath2" d="M 0 895 L 250 -5"></path>
-        </defs>
-        <text x="0" y="0" text-anchor="middle">
-          <textPath xlink:href="#textPath2" startOffset="50%">Like my work?</textPath>
-        </text>
+        <polygon points="100 0, 75 0, 100 90"></polygon>
       </svg>
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom hide-on-med-and-down">
         <polygon points="100 15, 100 100, 70 100" class="bottom"></polygon>
       </svg>
+      <svg viewbox="0 0 1000 1000" preserveAspectRatio="none" class="text hide-on-small-only">
+        <defs>
+          <path id="textPath2" d="M 737 1000 L 1037 150"></path>
+        </defs>
+        <text x="0" y="0" text-anchor="middle">
+          <textPath xlink:href="#textPath2" startOffset="40%">Like my work?</textPath>
+        </text>
+      </svg>
       <div class="row">
-        <div class="col s11 l12 offset-s1">
-          <h2 class="center">Buy me a beer</h2>
+        <div class="col s11 l10 offset-s1 offset-l1">
+          <h2 class="left">Buy me a beer</h2>
         </div>
       </div>
       <div class="row"></div>
     </div>
-    <div id="contact" data-section-name="contact" class="section">
+    <div id="contact_section" data-section-name="contact" class="section">
       <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="top hide-on-small-only">
         <polygon points="0 0, 25 0, 0 40"></polygon>
       </svg>

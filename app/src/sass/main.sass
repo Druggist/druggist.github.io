@@ -28,7 +28,7 @@ svg.bottom
 	-webkit-filter: drop-shadow(0px -4px 5px #000)
 	filter: drop-shadow(0px -4px 5px #000)
 
-#main
+#main_section
 	.hide-on-med-and-down
 		svg.top
 			polygon
@@ -99,10 +99,99 @@ svg.bottom
 	a 
 		color: $secondary-color
 
+.vertical-bullet-menu
+	bottom: 0
+	margin-left: 50px
+	position: fixed
+	transition: .3s ease-out
+	z-index: 2
+
+	a
+		margin: 15px 0
+		display: block
+		line-height: 30px
+		height: 30px
+
+		i,
+		span
+			font-size: 1.75em
+			color: color("grey", "base")
+			transition: .3s ease-out
+
+		span
+			font-size: 1.25em
+			margin-left: 10px
+			line-height: normal
+			display: inline-block
+			padding-top: 3px
+			vertical-align: top
+			width: 0
+			overflow: hidden
+			transition: .5s ease-in-out
+
+	a:hover
+		i,
+		span
+			color: color("grey", "lighten-2")
+
+		span
+			width: 200px
+
+	a.expanded
+		span
+			width: 200px
+
+	a.active
+		i,
+		span
+			color: color("blue", "base")
+
+	a.disabled,
+	a.disabled:hover,
+	a.disabled:focus,
+	a.disabled:active
+		pointer-events: none
+   		cursor: default
+
+		i,
+		span
+			color: color("grey", "darken-3")
+
+	a[href="#websites"].active
+		i,
+		span
+			color: color("green", "base")
+
+	a[href="#games"].active
+		i,
+		span
+			color: color("red", "base")
+
+	a[href="#apps"].active
+		i,
+		span
+			color: color("purple", "base")
+
+	a[href="#support_me"].active
+		i,
+		span
+			color: color("amber", "base")
+
+	a[href="#contact"].active
+		i,
+		span
+			color: color("blue-grey", "base")
+
+.vertical-bullet-menu.close
+	-ms-transform: translate(-200%, 0)
+	-webkit-transform: translate(-200%, 0)
+	transform: translate(-200%, 0)
+	opacity: 0
+ 
 #sidenav-overlay
 	z-index: 899!important
 
-#main
+#main_section
 	.hide-on-large-only.center
 		margin-top: -64px
 		
@@ -140,7 +229,7 @@ svg.bottom
 			i
 				color: #fff
 
-#about_me
+#about_me_section
 
 	svg.top
 		polygon
@@ -168,7 +257,7 @@ svg.bottom
 			text-align: right
 			padding-right: 20px
 
-#websites
+#websites_section
 
 	svg.top
 		polygon
@@ -195,7 +284,7 @@ svg.bottom
 			text-align: right
 			padding-right: 20px
 
-#games
+#games_section
 
 	svg.top
 		polygon
@@ -222,7 +311,7 @@ svg.bottom
 			text-align: right
 			padding-right: 20px
 
-#apps
+#apps_section
 
 	svg.top
 		polygon
@@ -249,7 +338,7 @@ svg.bottom
 			text-align: right
 			padding-right: 20px
 
-#support_me
+#support_me_section
 
 	svg.top
 		polygon
@@ -285,7 +374,7 @@ svg.bottom
 			text-align: right
 			padding-right: 20px
 
-#contact
+#contact_section
 
 	svg.top
 		polygon

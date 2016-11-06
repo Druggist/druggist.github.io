@@ -1,10 +1,14 @@
-.navbar-fixed.hide-on-large-only
-	nav
-		.nav-wrapper
-			a(href="index.php")
-				// img.logo.responsive-img(src="static/img/logo.png")
+.hide-on-large-only.nav-padding
+	#nav-wrapper
+		.nav-trigger
+			svg(viewbox="0 0 100 100", preserveAspectRatio="none")
+				polygon(points="0 0, 100 0, 0 100")
 			a.button-collapse(href="#", data-activates="mobile-nav")
 				i.material-icons menu
+
+.navbar-fixed.hide-on-large-only
+	nav
+		.nav-wrapper 
 			ul.side-nav.grey.darken-3#mobile-nav
 				li
 					a.waves-effect.waves-dark(href="#about_me") About me

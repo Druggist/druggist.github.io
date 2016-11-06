@@ -19,6 +19,7 @@ $(function() {
 		},
 		afterResize:function() {},
 		afterRender:function() {
+			$.scrollify.update();
 			$currSection = $.scrollify.current();
 			$href = $currSection[0].id.replace('_section','');
 			menuClasses($href);
@@ -102,6 +103,9 @@ function menuClasses($href){
 		}
 	}
 
-	$("a").removeClass("active expanded")
+	$(".active").removeClass("active")
+	$(".expanded").removeClass("expanded")
 	$('a[href="#'+$href+'"]').addClass("active expanded");
+	$(".nav-trigger").attr('class', 'nav-trigger');
+	$(".nav-trigger").addClass($href);
 }

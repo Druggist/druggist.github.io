@@ -31,7 +31,7 @@ block body
 				i.material-icons arrow_downward 
 
 	.section#about_me_section(data-section-name="about_me")
-		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 35 0, 0 35")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 65, 100 100, 75 100")
@@ -43,7 +43,7 @@ block body
 				p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
 
 	.section#websites_section(data-section-name="websites")
-		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 75, 100 100, 35 100")
@@ -66,7 +66,7 @@ block body
 				.row#game_tiles
 
 	.section#apps_section(data-section-name="apps")
-		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 50")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 65, 100 100, 20 100")
@@ -76,38 +76,46 @@ block body
 		.row.last
 			.container.container-left
 				.row#app_tiles
+				.row
+					.col.s10.offset-s1.m6.offset-m3.l4.offset-l4.center
+						a.waves-effect.btn.purple(href="https://github.com/Druggist/minor-uni-projects/tree/master") Minor uni projects
 
 	.section#support_me_section(data-section-name="support_me")
-		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="100 0, 75 0, 100 90")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 15, 100 100, 70 100")
-		svg.text.hide-on-small-only(viewbox="0 0 1000 1000", preserveAspectRatio="none")
+		svg.text.hide-on-med-and-down(viewbox="0 0 1000 1000", preserveAspectRatio="none")
 			defs
 				path#textPath2(d="M 737 1000 L 1037 150")
 			text(x="0", y="0", text-anchor="middle")
 				textPath(xlink:href="#textPath2", startOffset="40%") Like my work?
 		.row
 			.col.s11.l10.offset-s1.offset-l1
-				h2.left Buy me a beer
+				h2.left-align Buy me a beer
 		.row.last
 
 	.section#contact_section(data-section-name="contact")
-		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 25 0, 0 40")
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 50 0, 0 80")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 80, 100 100, 35 100")
+			polygon.bottom(points="0 100, 0 10, 35 100")
 		.row
-			.col.s11.l12.offset-s1
-				h2.center Contact
+			.col.s10.l11.offset-s1
+				h2.right Contact
 		.row.last
-			//.col.s11.l5.offset-s1.offset-l2.center.valign
-				a(href="https://twitter.com/sir_druggist", target="_blank")
+			.col.s12.l5.offset-l6
+				a.contact.waves-effect(href="https://twitter.com/sir_druggist", target="_blank")
 					i.fa.fa-twitter(aria-hidden="true")
-					|@sir_druggist
-			//.col.s11.l5.offset-s1.center.valign
-				a.email(href="mailto:m.najdora@gmail.com")
+					span @sir_druggist
+						svg.bottom.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+							polygon.bottom(points="100 0, 100 100, 25 100")
+			.col.s12.l5.offset-l6
+				a.contact.email.waves-effect(href="mailto:m.najdora@gmail.com")
 					i.fa.fa-envelope-o(aria-hidden="true")
+					span
+						svg.bottom.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
+							polygon.bottom(points="100 0, 100 100, 25 100")
 
 	.modal#info_modal
 		.close-wrapper

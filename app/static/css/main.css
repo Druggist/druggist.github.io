@@ -1999,16 +1999,16 @@ a {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2, a.tile img, .modal#info_modal .modal-content.main img {
+.z-depth-2, #contact_section a.contact i, a.tile img, .modal#info_modal .modal-content.main img {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-3, a.tile {
+.z-depth-3, #contact_section a.contact, a.tile {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-4, .modal, a.tile:hover img, .modal#info_modal .modal-content {
+.z-depth-4, .modal, #contact_section a.contact:hover i, a.tile:hover img, .modal#info_modal .modal-content {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
-.z-depth-5, #main_section .hide-on-med-and-down a.btn-huge:hover, #main_section .hide-on-large-only.center a.more:hover, a.tile:hover {
+.z-depth-5, #main_section .hide-on-med-and-down a.btn-huge:hover, #main_section .hide-on-large-only.center a.more:hover, #contact_section a.contact:hover, a.tile:hover {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
 .hoverable {
@@ -6367,6 +6367,7 @@ svg {
     font-weight: 900;
     text-transform: uppercase;
     padding-top: 20px;
+    margin-bottom: 40px;
     font-size: 6em; }
     @media screen and (max-width: 992px) {
       .section h2 {
@@ -6450,6 +6451,10 @@ svg {
     font-weight: 200;
     padding-top: 0;
     font-size: 2.75em; }
+    @media screen and (max-width: 992px) {
+      #main_section .hide-on-large-only.center h2.desc {
+        text-align: center;
+        padding-right: 0; } }
   #main_section .hide-on-large-only.center a.sources {
     margin-top: 50px; }
   #main_section .hide-on-large-only.center a.more {
@@ -6546,13 +6551,62 @@ svg {
   z-index: 2; }
 
 #contact_section svg.top polygon {
-  fill: #455a64; }
+  fill: #607d8b; }
 
 #contact_section svg.bottom polygon {
-  fill: #607d8b; }
+  fill: #263238; }
 
 #contact_section h2 {
   color: #607d8b; }
+
+#contact_section a.contact {
+  display: block;
+  margin-bottom: 20px;
+  height: 20vh;
+  background-color: #424242;
+  transition: .3s ease-out;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+  transition: .3s ease-out; }
+  #contact_section a.contact svg {
+    height: 20vh;
+    width: 20vh;
+    right: 0; }
+    #contact_section a.contact svg polygon {
+      fill: #607d8b;
+      transition: .3s ease-out; }
+  #contact_section a.contact i {
+    color: #424242;
+    height: 20vh;
+    width: 20%;
+    text-align: center;
+    line-height: 20vh;
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #78909c;
+    font-size: 3em;
+    transition: .3s ease-out; }
+  #contact_section a.contact span {
+    color: #bdbdbd;
+    vertical-align: top;
+    font-size: 1.5em;
+    height: 20vh;
+    line-height: 20vh;
+    width: 80%;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+    transition: .3s ease-out; }
+
+#contact_section a.contact:hover i {
+  background-color: #9e9e9e; }
+
+#contact_section a.contact:hover span {
+  color: #e0e0e0; }
+
+#contact_section a.contact:hover svg polygon {
+  fill: #9e9e9e; }
 
 .row.last {
   margin-bottom: 0; }

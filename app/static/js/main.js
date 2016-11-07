@@ -113,7 +113,7 @@ $('body').on('click', '.modal-trigger', function() {
 function appendEmail(){
 	var user = 'm.najdora',
     	domain = 'gmail.com';
-    $('.email').append(user + '@' + domain);
+    $('.email > span').append(user + '@' + domain);
 }
 
 function menuClasses($href){

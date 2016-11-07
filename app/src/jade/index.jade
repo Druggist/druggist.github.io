@@ -46,91 +46,36 @@ block body
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 80, 100 100, 35 100")
+			polygon.bottom(points="100 75, 100 100, 35 100")
 		.row
 			.col.s11.l12.offset-s1
 				h2.center Websites
 		.row.last
-			.col.s12.l5.offset-l2
-				.card.grey.darken-3
-					.card-image.waves-effect.waves-block.waves-light
-						img.activator(src="http://druggist.github.io/img/qrme.png")
-					.card-content
-						span.card-title.activator.grey-text
-							| qr.me
-							i.material-icons.right more_vert
-						p 
-							a(href="https://druggist.github.io/qr.me/") www.qr.me
-					.card-reveal.grey.darken-3
-						span.card-title.activator.grey-text.text-darken-4
-							| dsdgsfgs
-							i.material-icons.right close
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			.col.s12.l5
-				.card.grey.darken-3
-					.card-image.waves-effect.waves-block.waves-light
-						img.activator(src="http://druggist.github.io/img/mtdsystem.png")
-					.card-content
-						span.card-title.activator.grey-text
-							| dsdgsfgs
-							i.material-icons.right more_vert
-						p 
-							a(href="#") THIS
-					.card-reveal.grey.darken-3
-						span.card-title.activator.grey-text.text-darken-4
-							| dsdgsfgs
-							i.material-icons.right close
-						p qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.
-			.col.s12.l5
-				.card.grey.darken-3
-					.card-image.waves-effect.waves-block.waves-light
-						img.activator(src="http://druggist.github.io/img/mtdsystem.png")
-					.card-content
-						span.card-title.activator.grey-text
-							| dsdgsfgs
-							i.material-icons.right more_vert
-						p 
-							a(href="#") THIS
-					.card-reveal.grey.darken-3
-						span.card-title.activator.grey-text.text-darken-4
-							| dsdgsfgs
-							i.material-icons.right close
-						p qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.
-			.col.s12.l5
-				.card.grey.darken-3
-					.card-image.waves-effect.waves-block.waves-light
-						img.activator(src="http://druggist.github.io/img/mtdsystem.png")
-					.card-content
-						span.card-title.activator.grey-text
-							| dsdgsfgs
-							i.material-icons.right more_vert
-						p 
-							a(href="#") THIS
-					.card-reveal.grey.darken-3
-						span.card-title.activator.grey-text.text-darken-4
-							| dsdgsfgs
-							i.material-icons.right close
-						p qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.
-
+			.container.container-left
+				.row#website_tiles
 	.section#games_section(data-section-name="games")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 25 0, 0 40")
+			polygon(points="0 0, 15 0, 0 55")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 80, 100 100, 35 100")
+			polygon.bottom(points="100 60, 100 100, 70 100")
 		.row
 			.col.s11.l12.offset-s1
 				h2.center Games
 		.row.last
+			.container.container-left
+				.row#game_tiles
 
 	.section#apps_section(data-section-name="apps")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 25 0, 0 40")
+			polygon(points="0 0, 25 0, 0 50")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 80, 100 100, 35 100")
+			polygon.bottom(points="100 65, 100 100, 20 100")
 		.row
 			.col.s11.l12.offset-s1
 				h2.center Apps & more
 		.row.last
+			.container.container-left
+				.row#app_tiles
 
 	.section#support_me_section(data-section-name="support_me")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -163,6 +108,24 @@ block body
 			//.col.s11.l5.offset-s1.center.valign
 				a.email(href="mailto:m.najdora@gmail.com")
 					i.fa.fa-envelope-o(aria-hidden="true")
+
+	.modal#info_modal
+		.close-wrapper
+			a.close(href="#")
+				i.material-icons close
+			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
+				polygon(points="100 100, 0 0, 100 0")
+		.row.last
+			.col.s12.m8.offset-m2.l6.offset-l3
+				.modal-content.main.center
+			.col.s12.m8.l9
+				.modal-content.description.valign-wrapper
+					p.valign.flow-text 
+			.col.s12.m4.l3
+				.modal-content.software.center.valign-wrapper
+					div
+						h5 Software used in this project:
+						ul.software-list
 
 block script
 	script(src="components/jquery/dist/jquery.min.js")

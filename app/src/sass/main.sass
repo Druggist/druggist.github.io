@@ -38,32 +38,32 @@ body
 		i 
 			font-size: 1.25em
  
-.nav-trigger.about_me
+.about_me
 	svg
 		polygon
 			fill: color("blue", "darken-3")
 
-.nav-trigger.websites
+.websites
 	svg
 		polygon
 			fill: color("green", "darken-3")
 
-.nav-trigger.games
+.games
 	svg
 		polygon
 			fill: color("red", "darken-3")
 
-.nav-trigger.apps
+.apps
 	svg
 		polygon
 			fill: color("purple", "darken-3")
 
-.nav-trigger.support_me
+.support_me
 	svg
 		polygon
 			fill: color("amber", "darken-3")
 
-.nav-trigger.contact
+.contact
 	svg
 		polygon
 			fill: color("blue-grey", "darken-2")
@@ -134,7 +134,7 @@ body
 	a.disabled:focus,
 	a.disabled:active
 		pointer-events: none
-   		cursor: default
+		cursor: default
 
 		i,
 		span
@@ -330,7 +330,7 @@ svg
 		height: calc(100vh - 300px)
 
 #websites_section
-	padding-bottom: 25vh
+	//padding-bottom: 25vh
 	margin-bottom: 25vh
 
 	svg.top
@@ -352,6 +352,7 @@ svg
 		z-index: 2
 
 #games_section
+	margin-bottom: 25vh
 
 	svg.top
 		polygon
@@ -359,7 +360,7 @@ svg
 
 	svg.bottom
 		polygon
-			fill: color("red", "darken-1")
+			fill: color("red", "base")
 
 	h2
 		color: color("red", "base")
@@ -372,6 +373,7 @@ svg
 		z-index: 2
 
 #apps_section
+	margin-bottom: 25vh
 
 	svg.top
 		polygon
@@ -435,3 +437,138 @@ svg
 
 .row.last
 	margin-bottom: 0
+
+a.tile
+	margin-bottom: 20px
+	background-color: color("grey", "darken-3")
+	transition: .3s ease-out
+	border-radius: 3px
+	@extend .z-depth-3
+
+	img
+		@extend .z-depth-2
+		-webkit-filter: saturate(0.15)
+		filter: saturate(0.15)
+		transition: .3s -webkit-filter ease-out
+		transition: .3s ease-out
+
+	svg
+		z-index: -1
+
+		polygon
+			transition: .3s ease-out
+
+	svg.bottom
+		-webkit-filter: drop-shadow(0px -4px 5px color("grey", "darken-4"))
+		filter: drop-shadow(0px -5px 5px color("grey", "darken-4"))
+
+	span
+		color: color("grey", "lighten-2")
+		margin-left: 10px
+		display: block
+		padding: 5px
+		font-size: 18px
+		font-weight: 600
+		letter-spacing: 1.5px
+
+a.tile:hover
+	@extend .z-depth-5
+
+	img
+		@extend .z-depth-4
+		-webkit-filter: saturate(1)
+		filter: saturate(1)
+
+	svg
+		polygon
+			fill: color("grey", "base")!important
+
+.container-left
+	@media only screen and (min-width: 993px)
+		width: 80%
+		margin-right: 50px
+
+	@media only screen and (min-width: 601px)
+		margin-right: 50px
+
+.modal#info_modal
+	max-height: 100%
+	width: 100%
+	background-color: transparent
+	box-shadow: none
+
+	.close-wrapper
+		position: fixed
+		height: 82px
+		width: 82px
+		right: 0 
+		top: 0
+
+		a
+			color: color("grey", "lighten-2")
+			position: absolute
+			right: 5px
+			top: 5px
+			z-index: 1024
+
+			i 
+				font-size: 2.5em
+		
+		svg
+			z-index: 1023
+
+	.modal-content
+		background-color: color("grey", "darken-3")
+		@extend .z-depth-4
+		padding: 10px 20px
+		margin: 10px
+		color: color("grey", "lighten-1")
+
+	.modal-content.main
+		padding-top: 5px
+		padding-bottom: 5px
+		max-height: 55vh
+
+		img
+			max-height: 40vh
+			@extend .z-depth-2
+
+		h4
+			margin-top: 5px 
+			margin-bottom: 10px
+			font-size: 26px
+			font-weight: 600
+			letter-spacing: 1.5px
+
+	.modal-content.description,
+	.modal-content.software
+		text-align: justify
+		overflow: auto
+		height: calc(45vh - 40px)
+		max-height: calc(45vh - 40px)
+		box-sizing: border-box
+
+	.modal-content.software
+		h5
+			font-size: 1.25em
+			font-weight: 55500
+		ul
+			li 
+				margin: 10px
+				text-transform: uppercase
+
+			li::before
+				content: "■ "
+				font-size: 1.5em
+				
+		ul.websites
+			li::before
+				color: color("green", "base")
+				
+		ul.games
+			li::before
+				color: color("red", "base")
+				
+		ul.apps
+			li::before
+				color: color("purple", "base")

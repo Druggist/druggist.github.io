@@ -1,3 +1,4 @@
+var tiles;
 $(function() {
 	$.scrollify({
 		section : ".section",
@@ -25,11 +26,20 @@ $(function() {
 			menuClasses($href);
 		}
 	});
+	loadData();
 	appendEmail();
 });
 
 $(document).ready(function(){
 	$(".button-collapse").sideNav();
+	$('.modal').modal({
+		starting_top: '0',
+      	ending_top: '0',
+      	opacity: .9,
+      	complete: function() {
+      		$.scrollify.enable();
+      	}
+	});
 }); 
 
 $('a[href="#main"]').click(function(e){
@@ -77,6 +87,29 @@ $('#previous').click(function(e){
 	$.scrollify.previous();
 });
 
+$('.close').click(function(e){
+	e.preventDefault();
+	$('#info_modal').modal('close');
+})
+
+$('.modal').click(function() {
+	$('#info_modal').modal('close');
+});
+
+$('.modal-content').click(function(event){
+    event.stopPropagation();
+});
+
+$('body').on('click', '.modal-trigger', function() {
+	$.scrollify.disable();
+	var data = $(this).attr("data-id").split("_");
+	$(".close-wrapper").attr('class', 'close-wrapper');
+	$(".close-wrapper").addClass(data[0]);
+	$(".software-list").attr('class', 'software-list');
+	$(".software-list").addClass(data[0]);
+	printModal(data);
+});
+
 function appendEmail(){
 	var user = 'm.najdora',
     	domain = 'gmail.com';
@@ -108,4 +141,70 @@ function menuClasses($href){
 	$('a[href="#'+$href+'"]').addClass("active expanded");
 	$(".nav-trigger").attr('class', 'nav-trigger');
 	$(".nav-trigger").addClass($href);
+}
+
+function loadData(){
+	tiles = $.getJSON("static/data/tiles.json")
+		.done(function(json) {
+    		printWebsites(json["websites"]);
+    		printGames(json["games"]);
+    		printApps(json["apps"]);
+  		})
+	  	.fail(function( jqxhr, textStatus, error ) {
+		    var err = textStatus + ", " + error;
+		    console.log( "Request Failed: " + err );
+		});
+}
+
+function printWebsites(tiles){
+	$.each(tiles, function(index, website){
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="websites_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+website["img"]+'" class="responsive-img"><span>'+website["title"]+'</span></a></div>';
+		$("#website_tiles").append(tile);
+	});
+}
+
+function printGames(tiles){
+	$.each(tiles, function(index, game){
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="games_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+game["img"]+'" class="responsive-img"><span>'+game["shortTitle"]+'</span></a></div>';
+		$("#game_tiles").append(tile);
+	});
+}
+
+function printApps(tiles){
+	$.each(tiles, function(index, app){
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="apps_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+app["img"]+'" class="responsive-img"><span>'+app["title"]+'</span></a></div>';
+		$("#app_tiles").append(tile);
+	});
+}
+
+function printModal(data){
+	var tile = tiles["responseJSON"][data[0]][data[1]];
+	var text = '<img src="'+tile["img"]+'" class="responsive-img"><h4>'+tile["title"]+'</h4><div class="links row"> ';
+		switch(data[0]){
+			case "websites":
+				if(tile["www"] != "") 
+					text += '<div class="col s5 offset-s1 left-align"><a href="'+tile["www"]+'" class="waves-effect btn green">www</a></div>';
+			break;
+			case "games":
+				var size = "5";
+				if(tile["game"] != "") 
+					text += '<div class="col s5 offset-s1 left-align"><a href="'+tile["game"]+'" class="waves-effect btn red">game</a></div>';
+				else size = "11";
+				if(tile["src"] != "") 
+					text += '<div class="col s'+size+' right-align"><a href="'+tile["src"]+'" class="waves-effect btn red">source</a></div>';
+			break;
+			case "apps":
+				if(tile["src"] != "") 
+					text += '<div class="col s11 right-align"><a href="'+tile["src"]+'" class="waves-effect btn purple">source</a></div>';
+			break;
+		}
+		text += '</div>';
+	$(".modal-content.main").empty();
+	$(".modal-content.main").append(text);
+	$(".modal-content.description > p").empty();
+	$(".modal-content.description > p").append(tile["desc"]);
+	$(".software-list").empty();
+	$.each(tile["software"], function(index, software){
+		$(".software-list").append('<li>'+software["name"]+'</li>');
+	});
 }

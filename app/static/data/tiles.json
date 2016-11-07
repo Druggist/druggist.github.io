@@ -1,0 +1,160 @@
+{
+	"websites":[
+	{
+		"title":"qr.me", 
+		"img":"static/img/qrme.png", 
+		"desc":"qr.me is a minimalistic, easy to use and simply beautiful qr code generator with various features.", 
+		"www":"https://druggist.github.io/qr.me/",
+		"software":[
+			{"name":"html5 + jade"},
+			{"name":"css3 + sass"},
+			{"name":"js + jquery"},
+			{"name":"polymer"}
+		]
+	},
+	{
+		"title":"ROD 1000", 
+		"img":"static/img/rod1000.png", 
+		"desc":"Websites made for family gardens in Poznan. Main features are: news feed, gallery and noticeboard.", 
+		"www":"http://rod1000.pl/rod1000/",
+		"software":[
+			{"name":"html5 + jade"},
+			{"name":"css3 + sass"},
+			{"name":"js + jquery"},
+			{"name":"polymer"},
+			{"name":"php"},
+			{"name":"mysql"}
+		]
+	},
+	{
+		"title":"Prefdom", 
+		"img":"static/img/prefdom.png", 
+		"desc":"Website made for company that designs and builds green, enviromental friendly houses.", 
+		"www":"http://prefdom.com/",
+		"software":[
+			{"name":"html5"},
+			{"name":"css3 + sass"},
+			{"name":"js + jquery"},
+			{"name":"php"}
+		]
+	},
+	{
+		"title":"MTD System", 
+		"img":"static/img/mtdsystem.png", 
+		"desc":"Website made for company that sells doors, windows and accessories for them.", 
+		"www":"http://mtdsystem.pl/mtdsystem.pl/mtdsystem",
+		"software":[
+			{"name":"html5"},
+			{"name":"css3"},
+			{"name":"js + jquery"}
+		]
+	}
+	],
+	"games":[
+	{
+		"title":"Hit the Trump", 
+		"shortTitle":"Hit the Trump", 
+		"img":"static/img/hitthetrump.png", 
+		"desc":"Can you beat the almighty Donald Trump? Find out now! It's totally free! Game made just to annoy my english teacher from USA. He didn't like it at all but my classmates enjoyed it!", 
+		"src":"https://github.com/Druggist/hit-the-trump",
+		"game":"static/data/hit_the_trump_win32.zip",
+		"download":true,
+		"software":[
+			{"name":"unreal engine 4"},
+			{"name":"blender"}
+		]
+	},
+	{
+		"title":"Super epic buggy gggrasshopper", 
+		"shortTitle":"SEBGGG", 
+		"img":"static/img/sebggg.png", 
+		"desc":"A platform game made for 0h tram game jam 2014. Inspired by bugs, color of the tram and nature... but mostly bugs.", 
+		"src":"https://github.com/Druggist/super-epic-buggy-gggrasshopper",
+		"game":"http://druggist.github.io/super-epic-buggy-gggrasshopper/",
+		"download":false,
+		"software":[
+			{"name":"html5"},
+			{"name":"css3 + sass"},
+			{"name":"js + jquery + threejs"},
+			{"name":"webaudio"}
+		]
+	},
+	{
+		"title":"#WOUO", 
+		"shortTitle":"#WOUO", 
+		"img":"static/img/wouo.png", 
+		"desc":"A puzzle game made for Global Game Jam 2015 Theme of that GJ was\"What do we do know?\", so we made confusing puzzle game :D", 
+		"src":"https://github.com/Druggist/wouo",
+		"game":"http://druggist.github.io/wouo/",
+		"download":false,
+		"software":[
+			{"name":"unity"},
+			{"name":"fruity loops"},
+			{"name":"blender"}
+		]
+	},
+	{
+		"title":"Real Minesweeper", 
+		"shortTitle":"Real Minesweeper", 
+		"img":"static/img/realminesweeper.png", 
+		"desc":"An upgraded version of the old school minesweeper. Sound base bombs finding, more levels and map editor.", 
+		"src":"https://github.com/Druggist/real-minesweeper",
+		"game":"",
+		"download":false,
+		"software":[
+			{"name":"c++"},
+			{"name":"allegro 5"},
+			{"name":"lmms"}
+		]
+	},
+	{
+		"title":"Millionaire", 
+		"shortTitle":"Millionaire", 
+		"img":"static/img/millionaire.png", 
+		"desc":"Game made for P-Jam 2016. Theme of this game jam was: \"It was just a dream\". So we made a game about millionaire that kills corporats with coins and builds up the city infrastructure.", 
+		"src":"https://github.com/Druggist/millionaire",
+		"game":"http://druggist.github.io/millionaire/",
+		"download":false,
+		"software":[
+			{"name":"phaserjs"},
+			{"name":"html5"},
+			{"name":"css3"}
+		]
+	}
+	],
+	"apps":[
+	{
+		"title":"Receipt Master", 
+		"img":"static/img/receiptmaster.png", 
+		"desc":"App for gathering, managing and keeping up to date receipts.", 
+		"src":"https://github.com/Druggist/receipt_master",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"sqlite"}
+		]
+	},
+	{
+		"title":"Timetable generator", 
+		"img":"static/img/timetable.png", 
+		"desc":"Simple app converting xml file with timetable data to pure html timetable.", 
+		"src":"https://github.com/Druggist/timetable_zsl",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"sqlite"},
+			{"name":"html5"},
+			{"name":"css3"},
+			{"name":"bootstrap"}
+		]
+	},
+	{
+		"title":"SortApp", 
+		"img":"static/img/sortapp.png", 
+		"desc":"Simple app measuring differences in various sort methods for varioius sequences and visualising it on a chart.", 
+		"src":"https://github.com/Druggist/SortApp",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"qcustomplot"}
+		]
+	}
+	]
+}

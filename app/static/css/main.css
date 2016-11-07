@@ -1999,16 +1999,16 @@ a {
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2 {
+.z-depth-2, a.tile img, .modal#info_modal .modal-content.main img {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-3 {
+.z-depth-3, a.tile {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-4 {
+.z-depth-4, .modal, a.tile:hover img, .modal#info_modal .modal-content {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
-.z-depth-5, #main_section .hide-on-med-and-down a.btn-huge:hover, #main_section .hide-on-large-only.center a.more:hover {
+.z-depth-5, #main_section .hide-on-med-and-down a.btn-huge:hover, #main_section .hide-on-large-only.center a.more:hover, a.tile:hover {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
 .hoverable {
@@ -3692,6 +3692,74 @@ button.btn-floating {
 /* Firefox Bug: link not triggered */
 .waves-effect .waves-ripple {
   z-index: -1; }
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 0;
+  max-height: 70%;
+  width: 55%;
+  margin: auto;
+  overflow-y: auto;
+  border-radius: 2px;
+  will-change: top, opacity; }
+  @media only screen and (max-width: 992px) {
+    .modal {
+      width: 80%; } }
+  .modal h1, .modal h2, .modal h3, .modal h4 {
+    margin-top: 0; }
+  .modal .modal-content {
+    padding: 24px; }
+  .modal .modal-close {
+    cursor: pointer; }
+  .modal .modal-footer {
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 4px 6px;
+    height: 56px;
+    width: 100%; }
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
+      float: right;
+      margin: 6px 0; }
+
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  display: none;
+  will-change: opacity; }
+
+.modal.modal-fixed-footer {
+  padding: 0;
+  height: 70%; }
+  .modal.modal-fixed-footer .modal-content {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto; }
+  .modal.modal-fixed-footer .modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0; }
+
+.modal.bottom-sheet {
+  top: auto;
+  bottom: -100%;
+  margin: 0;
+  width: 100%;
+  max-height: 45%;
+  border-radius: 0;
+  will-change: bottom, opacity; }
 
 .side-nav {
   position: fixed;
@@ -6177,22 +6245,22 @@ body {
     .nav-trigger a i {
       font-size: 1.25em; }
 
-.nav-trigger.about_me svg polygon {
+.about_me svg polygon {
   fill: #1565C0; }
 
-.nav-trigger.websites svg polygon {
+.websites svg polygon {
   fill: #2E7D32; }
 
-.nav-trigger.games svg polygon {
+.games svg polygon {
   fill: #C62828; }
 
-.nav-trigger.apps svg polygon {
+.apps svg polygon {
   fill: #6a1b9a; }
 
-.nav-trigger.support_me svg polygon {
+.support_me svg polygon {
   fill: #ff8f00; }
 
-.nav-trigger.contact svg polygon {
+.contact svg polygon {
   fill: #455a64; }
 
 #nav-wrapper {
@@ -6249,7 +6317,7 @@ body {
   .vertical-bullet-menu a.disabled:focus,
   .vertical-bullet-menu a.disabled:active {
     pointer-events: none;
-      pointer-events-cursor: default; }
+    cursor: default; }
     .vertical-bullet-menu a.disabled i,
     .vertical-bullet-menu a.disabled span,
     .vertical-bullet-menu a.disabled:hover i,
@@ -6412,7 +6480,6 @@ svg {
   height: calc(100vh - 300px); }
 
 #websites_section {
-  padding-bottom: 25vh;
   margin-bottom: 25vh; }
   #websites_section svg.top polygon {
     fill: #2E7D32; }
@@ -6426,37 +6493,33 @@ svg {
   #websites_section .card {
     z-index: 2; }
 
-#games_section svg.top polygon {
-  fill: #C62828; }
+#games_section {
+  margin-bottom: 25vh; }
+  #games_section svg.top polygon {
+    fill: #C62828; }
+  #games_section svg.bottom polygon {
+    fill: #F44336; }
+  #games_section h2 {
+    color: #F44336; }
+  #games_section p {
+    color: #bdbdbd;
+    text-align: justify; }
+  #games_section .card {
+    z-index: 2; }
 
-#games_section svg.bottom polygon {
-  fill: #E53935; }
-
-#games_section h2 {
-  color: #F44336; }
-
-#games_section p {
-  color: #bdbdbd;
-  text-align: justify; }
-
-#games_section .card {
-  z-index: 2; }
-
-#apps_section svg.top polygon {
-  fill: #6a1b9a; }
-
-#apps_section svg.bottom polygon {
-  fill: #9c27b0; }
-
-#apps_section h2 {
-  color: #9c27b0; }
-
-#apps_section p {
-  color: #bdbdbd;
-  text-align: justify; }
-
-#apps_section .card {
-  z-index: 2; }
+#apps_section {
+  margin-bottom: 25vh; }
+  #apps_section svg.top polygon {
+    fill: #6a1b9a; }
+  #apps_section svg.bottom polygon {
+    fill: #9c27b0; }
+  #apps_section h2 {
+    color: #9c27b0; }
+  #apps_section p {
+    color: #bdbdbd;
+    text-align: justify; }
+  #apps_section .card {
+    z-index: 2; }
 
 #support_me_section svg.top polygon {
   fill: #ff8f00; }
@@ -6493,3 +6556,106 @@ svg {
 
 .row.last {
   margin-bottom: 0; }
+
+a.tile {
+  margin-bottom: 20px;
+  background-color: #424242;
+  transition: .3s ease-out;
+  border-radius: 3px; }
+  a.tile img {
+    -webkit-filter: saturate(0.15);
+    filter: saturate(0.15);
+    transition: .3s -webkit-filter ease-out;
+    transition: .3s ease-out; }
+  a.tile svg {
+    z-index: -1; }
+    a.tile svg polygon {
+      transition: .3s ease-out; }
+  a.tile svg.bottom {
+    -webkit-filter: drop-shadow(0px -4px 5px #212121);
+    filter: drop-shadow(0px -5px 5px #212121); }
+  a.tile span {
+    color: #e0e0e0;
+    margin-left: 10px;
+    display: block;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px; }
+
+a.tile:hover img {
+  -webkit-filter: saturate(1);
+  filter: saturate(1); }
+
+a.tile:hover svg polygon {
+  fill: #9e9e9e !important; }
+
+@media only screen and (min-width: 993px) {
+  .container-left {
+    width: 80%;
+    margin-right: 50px; } }
+
+@media only screen and (min-width: 601px) {
+  .container-left {
+    margin-right: 50px; } }
+
+.modal#info_modal {
+  max-height: 100%;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none; }
+  .modal#info_modal .close-wrapper {
+    position: fixed;
+    height: 82px;
+    width: 82px;
+    right: 0;
+    top: 0; }
+    .modal#info_modal .close-wrapper a {
+      color: #e0e0e0;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      z-index: 1024; }
+      .modal#info_modal .close-wrapper a i {
+        font-size: 2.5em; }
+    .modal#info_modal .close-wrapper svg {
+      z-index: 1023; }
+  .modal#info_modal .modal-content {
+    background-color: #424242;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #bdbdbd; }
+  .modal#info_modal .modal-content.main {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-height: 55vh; }
+    .modal#info_modal .modal-content.main img {
+      max-height: 40vh; }
+    .modal#info_modal .modal-content.main h4 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 1.5px; }
+  .modal#info_modal .modal-content.description,
+  .modal#info_modal .modal-content.software {
+    text-align: justify;
+    overflow: auto;
+    height: calc(45vh - 40px);
+    max-height: calc(45vh - 40px);
+    box-sizing: border-box; }
+  .modal#info_modal .modal-content.software h5 {
+    font-size: 1.25em;
+    font-weight: 55500; }
+  .modal#info_modal .modal-content.software ul li {
+    margin: 10px;
+    text-transform: uppercase; }
+  .modal#info_modal .modal-content.software ul li::before {
+    content: "■ ";
+    font-size: 1.5em; }
+  .modal#info_modal .modal-content.software ul.websites li::before {
+    color: #4CAF50; }
+  .modal#info_modal .modal-content.software ul.games li::before {
+    color: #F44336; }
+  .modal#info_modal .modal-content.software ul.apps li::before {
+    color: #9c27b0; }

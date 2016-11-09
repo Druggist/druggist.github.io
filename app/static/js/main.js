@@ -158,49 +158,52 @@ function loadData(){
 
 function printWebsites(tiles){
 	$.each(tiles, function(index, website){
-		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="websites_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+website["img"]+'" class="responsive-img"><span>'+website["title"]+'</span></a></div>';
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="websites_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><div class="center img-wrapper"><img src="'+website["img"]+'" class="responsive-img"></div><span>'+website["title"]+'</span></a></div>';
 		$("#website_tiles").append(tile);
 	});
 }
 
 function printGames(tiles){
 	$.each(tiles, function(index, game){
-		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="games_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+game["img"]+'" class="responsive-img"><span>'+game["shortTitle"]+'</span></a></div>';
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="games_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><div class="center img-wrapper"><img src="'+game["img"]+'" class="responsive-img"></div><span>'+game["shortTitle"]+'</span></a></div>';
 		$("#game_tiles").append(tile);
 	});
 }
 
 function printApps(tiles){
 	$.each(tiles, function(index, app){
-		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="apps_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><img src="'+app["img"]+'" class="responsive-img"><span>'+app["title"]+'</span></a></div>';
+		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="apps_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><div class="center img-wrapper"><img src="'+app["img"]+'" class="responsive-img"></div><span>'+app["title"]+'</span></a></div>';
 		$("#app_tiles").append(tile);
 	});
 }
 
 function printModal(data){
 	var tile = tiles["responseJSON"][data[0]][data[1]];
+	var links = "";
 	var text = '<img src="'+tile["img"]+'" class="responsive-img"><h4>'+tile["title"]+'</h4><div class="links row"> ';
 		switch(data[0]){
 			case "websites":
 				if(tile["www"] != "") 
-					text += '<div class="col s5 offset-s1 left-align"><a href="'+tile["www"]+'" class="waves-effect btn green">www</a></div>';
+					links += '<div class="col s12 center"><a href="'+tile["www"]+'" class="waves-effect btn green">www</a></div>';
 			break;
 			case "games":
-				var size = "5";
+				var size = "6";
+				if(tile["game"] == "" || tile["src"] == "") size = "12"; 
 				if(tile["game"] != "") 
-					text += '<div class="col s5 offset-s1 left-align"><a href="'+tile["game"]+'" class="waves-effect btn red">game</a></div>';
-				else size = "11";
+					links += '<div class="col s'+size+' left-align"><a href="'+tile["game"]+'" class="waves-effect btn red">game</a></div>';
 				if(tile["src"] != "") 
-					text += '<div class="col s'+size+' right-align"><a href="'+tile["src"]+'" class="waves-effect btn red">source</a></div>';
+					links += '<div class="col s'+size+' right-align"><a href="'+tile["src"]+'" class="waves-effect btn red">source</a></div>';
 			break;
 			case "apps":
 				if(tile["src"] != "") 
-					text += '<div class="col s11 right-align"><a href="'+tile["src"]+'" class="waves-effect btn purple">source</a></div>';
+					links += '<div class="col s12 center"><a href="'+tile["src"]+'" class="waves-effect btn purple">source</a></div>';
 			break;
 		}
 		text += '</div>';
 	$(".modal-content.main").empty();
 	$(".modal-content.main").append(text);
+	$(".modal-content.links > .row").empty();
+	$(".modal-content.links > .row").append(links);
 	$(".modal-content.description > p").empty();
 	$(".modal-content.description > p").append(tile["desc"]);
 	$(".software-list").empty();

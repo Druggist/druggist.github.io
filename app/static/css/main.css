@@ -1993,19 +1993,19 @@ a {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .card-panel, .card, .btn, .btn-large, .btn-floating, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .btn, .btn-large, .btn-floating, .side-nav, a.tile img {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2); }
 
-.z-depth-2, #contact_section a.contact i, a.tile img, .modal#info_modal .modal-content.main img {
+.z-depth-2, #contact_section a.contact i, a.tile .img-wrapper, a.tile:hover img, .modal#info_modal .modal-content.main img {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
 
 .z-depth-3, #contact_section a.contact, a.tile {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
 
-.z-depth-4, .modal, #contact_section a.contact:hover i, a.tile:hover img, .modal#info_modal .modal-content {
+.z-depth-4, .modal, #contact_section a.contact:hover i, a.tile:hover img-wrapper, .modal#info_modal .modal-content {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
 .z-depth-5, #main_section .hide-on-med-and-down a.btn-huge:hover, #main_section .hide-on-large-only.center a.more:hover, #contact_section a.contact:hover, a.tile:hover {
@@ -3776,7 +3776,8 @@ button.btn-floating {
   z-index: 999;
   overflow-y: auto;
   will-change: transform;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   transform: translateX(-105%); }
   .side-nav.right-aligned {
     right: 0;
@@ -4031,8 +4032,7 @@ button.btn-floating {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -6374,11 +6374,13 @@ svg {
         font-size: 3.75em;
         text-align: right;
         padding-right: 20px; } }
+    @media screen and (max-height: 800px) {
+      .section h2 {
+        margin-bottom: 20px;
+        margin-top: 0; } }
   .section svg.top {
-    -webkit-filter: drop-shadow(0px 2px 5px #000);
     filter: drop-shadow(0px 2px 5px #000); }
   .section svg.bottom {
-    -webkit-filter: drop-shadow(0px -4px 5px #000);
     filter: drop-shadow(0px -4px 5px #000); }
 
 #main_section .hide-on-med-and-down svg.top polygon {
@@ -6495,8 +6497,6 @@ svg {
   #websites_section p {
     color: #bdbdbd;
     text-align: justify; }
-  #websites_section .card {
-    z-index: 2; }
 
 #games_section {
   margin-bottom: 25vh; }
@@ -6523,8 +6523,6 @@ svg {
   #apps_section p {
     color: #bdbdbd;
     text-align: justify; }
-  #apps_section .card {
-    z-index: 2; }
 
 #support_me_section svg.top polygon {
   fill: #ff8f00; }
@@ -6546,9 +6544,6 @@ svg {
 #support_me_section p {
   color: #bdbdbd;
   text-align: justify; }
-
-#support_me_section .card {
-  z-index: 2; }
 
 #contact_section svg.top polygon {
   fill: #607d8b; }
@@ -6616,17 +6611,29 @@ a.tile {
   background-color: #424242;
   transition: .3s ease-out;
   border-radius: 3px; }
-  a.tile img {
-    -webkit-filter: saturate(0.15);
-    filter: saturate(0.15);
-    transition: .3s -webkit-filter ease-out;
+  a.tile .img-wrapper {
+    line-height: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #616161;
+    padding: 0;
+    margin: 0;
     transition: .3s ease-out; }
+  a.tile img {
+    filter: saturate(0.15);
+    padding: 0;
+    margin: 0;
+    transition: .3s -webkit-filter ease-out;
+    transition: .3s ease-out;
+    z-index: 2; }
+    @media screen and (max-height: 800px) {
+      a.tile img {
+        max-width: 75%; } }
   a.tile svg {
     z-index: -1; }
     a.tile svg polygon {
       transition: .3s ease-out; }
   a.tile svg.bottom {
-    -webkit-filter: drop-shadow(0px -4px 5px #212121);
     filter: drop-shadow(0px -5px 5px #212121); }
   a.tile span {
     color: #e0e0e0;
@@ -6638,7 +6645,6 @@ a.tile {
     letter-spacing: 1.5px; }
 
 a.tile:hover img {
-  -webkit-filter: saturate(1);
   filter: saturate(1); }
 
 a.tile:hover svg polygon {
@@ -6684,10 +6690,10 @@ a.tile:hover svg polygon {
     padding-bottom: 5px;
     max-height: 55vh; }
     .modal#info_modal .modal-content.main img {
-      max-height: 40vh; }
+      max-height: 45vh; }
     .modal#info_modal .modal-content.main h4 {
-      margin-top: 5px;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-bottom: 0;
       font-size: 26px;
       font-weight: 600;
       letter-spacing: 1.5px; }
@@ -6698,18 +6704,26 @@ a.tile:hover svg polygon {
     height: calc(45vh - 40px);
     max-height: calc(45vh - 40px);
     box-sizing: border-box; }
-  .modal#info_modal .modal-content.software h5 {
-    font-size: 1.25em;
-    font-weight: 55500; }
-  .modal#info_modal .modal-content.software ul li {
-    margin: 10px;
-    text-transform: uppercase; }
-  .modal#info_modal .modal-content.software ul li::before {
-    content: "■ ";
-    font-size: 1.5em; }
-  .modal#info_modal .modal-content.software ul.websites li::before {
-    color: #4CAF50; }
-  .modal#info_modal .modal-content.software ul.games li::before {
-    color: #F44336; }
-  .modal#info_modal .modal-content.software ul.apps li::before {
-    color: #9c27b0; }
+  .modal#info_modal .modal-content.software {
+    margin-top: 10px;
+    height: calc(100vh - 20px);
+    max-height: calc(100vh - 20px); }
+    .modal#info_modal .modal-content.software h5 {
+      font-size: 1.25em;
+      font-weight: 55500; }
+    .modal#info_modal .modal-content.software ul li {
+      margin: 10px;
+      text-transform: uppercase; }
+    .modal#info_modal .modal-content.software ul li::before {
+      content: "■ ";
+      font-size: 1.5em; }
+    .modal#info_modal .modal-content.software ul.websites li::before {
+      color: #4CAF50; }
+    .modal#info_modal .modal-content.software ul.games li::before {
+      color: #F44336; }
+    .modal#info_modal .modal-content.software ul.apps li::before {
+      color: #9c27b0; }
+  .modal#info_modal .modal-content.links {
+    height: 56px; }
+    .modal#info_modal .modal-content.links .col {
+      padding: 0; }

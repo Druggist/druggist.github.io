@@ -55,7 +55,7 @@ block body
 				.row#website_tiles
 	.section#games_section(data-section-name="games")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 15 0, 0 55")
+			polygon(points="0 0, 15 0, 0 52")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 60, 100 100, 70 100")
 		.row
@@ -67,7 +67,7 @@ block body
 
 	.section#apps_section(data-section-name="apps")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 25 0, 0 50")
+			polygon(points="0 0, 25 0, 0 47")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon.bottom(points="100 65, 100 100, 20 100")
 		.row
@@ -124,11 +124,16 @@ block body
 			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon(points="100 100, 0 0, 100 0")
 		.row.last
-			.col.s12.m8.offset-m2.l6.offset-l3
-				.modal-content.main.center
-			.col.s12.m8.l9
-				.modal-content.description.valign-wrapper
-					p.valign.flow-text 
+			.col.s12.l9
+				.row
+					.col.s12.l4
+						.modal-content.links
+							.row
+					.col.s12.l8
+						.modal-content.main.center
+					.col.s12
+						.modal-content.description.valign-wrapper
+							p.valign.flow-text 
 			.col.s12.m4.l3
 				.modal-content.software.center.valign-wrapper
 					div

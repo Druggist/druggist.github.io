@@ -94,6 +94,12 @@ block body
 			.col.s11.l10.offset-s1.offset-l1
 				h2.left-align Buy me a beer
 		.row.last
+			.col.s12.l8.offset-l2
+				.beer
+					a.waves-effect.waves-light(href="#")
+						img#foam(src="static/img/beer_foam.svg")
+						img#glass(src="static/img/beer_glass.svg")
+						img#filling(src="static/img/beer_filling.svg")
 
 	.section#contact_section(data-section-name="contact")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -125,7 +131,7 @@ block body
 				polygon(points="100 100, 0 0, 100 0")
 		.row.last
 			.col.s12.l9
-				.row
+				.row.last
 					.col.s12.l4
 						.modal-content.links
 							.row
@@ -134,13 +140,15 @@ block body
 					.col.s12
 						.modal-content.description.valign-wrapper
 							p.valign.flow-text 
-			.col.s12.m4.l3
+			.col.s12.l3
 				.modal-content.software.center.valign-wrapper
 					div
 						h5 Software used in this project:
 						ul.software-list
+	#outdated
 
 block script
+	script(src="components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js")
 	script(src="components/jquery/dist/jquery.min.js")
 	script(src="components/materialize/dist/js/materialize.min.js")
 	script(src="components/Scrollify/jquery.scrollify.min.js")

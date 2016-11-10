@@ -184,19 +184,24 @@ function printModal(data){
 		switch(data[0]){
 			case "websites":
 				if(tile["www"] != "") 
-					links += '<div class="col s12 center"><a href="'+tile["www"]+'" class="waves-effect btn green">www</a></div>';
+
+					links += '<div class="col s12 center"><a target="_blank" href="'+tile["www"]+'" class="waves-effect btn green">www</a></div>';
 			break;
 			case "games":
 				var size = "6";
 				if(tile["game"] == "" || tile["src"] == "") size = "12"; 
-				if(tile["game"] != "") 
-					links += '<div class="col s'+size+' left-align"><a href="'+tile["game"]+'" class="waves-effect btn red">game</a></div>';
-				if(tile["src"] != "") 
-					links += '<div class="col s'+size+' right-align"><a href="'+tile["src"]+'" class="waves-effect btn red">source</a></div>';
+				if(tile["game"] != "") {
+					var align = (size == "12")?("center"):("left-align");
+					links += '<div class="col s'+size+' '+align+'"><a target="_blank" href="'+tile["game"]+'" class="waves-effect btn red">game</a></div>';
+				}
+				if(tile["src"] != "") {
+					var align = (size == "12")?("center"):("right-align");
+					links += '<div class="col s'+size+' '+align+'"><a target="_blank" href="'+tile["src"]+'" class="waves-effect btn red">source</a></div>';
+				}
 			break;
 			case "apps":
 				if(tile["src"] != "") 
-					links += '<div class="col s12 center"><a href="'+tile["src"]+'" class="waves-effect btn purple">source</a></div>';
+					links += '<div class="col s12 center"><a target="_blank" href="'+tile["src"]+'" class="waves-effect btn purple">source</a></div>';
 			break;
 		}
 		text += '</div>';

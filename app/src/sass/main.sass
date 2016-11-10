@@ -421,6 +421,48 @@ svg
 		color: color("grey", "lighten-1")
 		text-align: justify
 
+	.beer 
+		position: relative
+		max-height: 75vh
+		height: 75vh
+		z-index: 2
+
+		a
+			display: block
+			width: auto
+			height: 75vh
+			
+			img 
+				left: 0
+				position: absolute
+				max-height: 75vh
+				height: 75vh
+				z-index: 2
+				bottom: 0
+				width: 100%
+
+			#glass,
+			#foam
+				-webkit-filter: drop-shadow(0px 2px 5px #000)
+				filter: drop-shadow(0px 2px 5px #000)
+
+			#filling
+				opacity: 0
+				z-index: 1
+				transition: .5s ease-in-out
+
+			#foam
+				opacity: 0
+				z-index: 3
+				transition: .5s .3s ease-in-out
+
+		a:hover
+			#filling
+				opacity: 1
+
+			#foam
+				opacity: 1
+
 #contact_section
 
 	svg.top
@@ -599,13 +641,16 @@ a.tile:hover
 		background-color: color("grey", "darken-3")
 		@extend .z-depth-4
 		padding: 10px 20px
-		margin: 10px
+		margin: 10px 0
 		color: color("grey", "lighten-1")
 
 	.modal-content.main
 		padding-top: 5px
 		padding-bottom: 5px
 		max-height: 55vh
+
+		@media screen and (min-width: 993px)
+			margin-top: 20px
 
 		img
 			max-height: 45vh
@@ -622,18 +667,22 @@ a.tile:hover
 	.modal-content.software
 		text-align: justify
 		overflow: auto
-		height: calc(45vh - 40px)
-		max-height: calc(45vh - 40px)
+		height: calc(45vh - 60px)
+		max-height: calc(45vh - 60px)
 		box-sizing: border-box
 
 	.modal-content.software
-		margin-top: 10px
-		height: calc(100vh - 20px)
-		max-height: calc(100vh - 20px)
+		height: calc(72.5vh - 30px)
+		max-height: calc(72.5vh - 20px)
+		margin-right: 10px
+
+		@media screen and (min-width: 993px)
+			margin-top: calc(27.5vh + 10px)
+			margin-left: -10px
 
 		h5
 			font-size: 1.25em
-			font-weight: 55500
+			font-weight: 500
 		ul
 			li 
 				margin: 10px
@@ -657,6 +706,9 @@ a.tile:hover
 
 	.modal-content.links
 		height: 56px
+		
+		@media screen and (min-width: 993px)
+			margin-top: calc(55vh - 36px)
 
 		.col 
 			padding: 0

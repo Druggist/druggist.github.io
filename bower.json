@@ -19,6 +19,7 @@
     "materialize": "^0.97.7",
     "jquery": "~2.2.4",
     "Scrollify": "^1.0.5",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^4.7.0",
+    "outdated-browser": "^1.1.3"
   }
 }

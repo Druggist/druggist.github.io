@@ -110,6 +110,23 @@ $('body').on('click', '.modal-trigger', function() {
 	printModal(data);
 });
 
+$('.beer > a').mouseenter(function(){
+	$beer = $(this);
+	$beer.children('#filling').addClass('active');
+	$beer.addClass('active');
+	setTimeout(function(){
+		$beer.children('#foam').addClass('active');
+	}, 450);
+});
+
+$('.beer > a').mouseleave(function(){
+	$beer.removeClass('active');
+	setTimeout(function(){
+		$beer.children('#foam').removeClass('active');
+		$beer.children('#filling').removeClass('active');
+	}, 450);
+});
+
 function appendEmail(){
 	var user = 'm.najdora',
     	domain = 'gmail.com';

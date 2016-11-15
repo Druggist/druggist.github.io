@@ -6638,7 +6638,7 @@ svg {
     #support_me_section .beer a #foam {
       opacity: 0;
       z-index: 3;
-      transition: .5s ease-out; }
+      transition: .3s ease-out; }
     #support_me_section .beer a #filling.active {
       height: 70vh; }
     #support_me_section .beer a #foam.active {

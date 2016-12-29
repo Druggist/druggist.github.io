@@ -421,27 +421,95 @@ svg
 		color: color("grey", "lighten-1")
 		text-align: justify
 
-	.beer 
+	.beer-arrows
+		position: relative
+		height: 75vh
+		max-height: 75vh
+		text-align: left
+		
+		.arrows
+			position: absolute
+			height: 70vh
+			bottom: 0
+			margin-right: -115px
+
+			.arrow 
+				height: 35vh
+				margin-bottom: 50px
+
+				.arrow-img
+					position: relative
+					width: 100%
+			
+					img
+						width: 75%
+
+			#arrow2-wrapper
+				transform: rotate(15deg)
+			
+				#arrow2
+					margin-left: 35px
+					padding-right: 35px
+
+			#arrow1-wrapper
+				transform: rotate(-10deg)
+			
+				#arrow1
+					margin-left: 35px
+					margin-top: -50px
+
+		span
+			font-size: 18px
+
+		span.upper 
+			padding-top: 50px
+			color: color("amber", "base")
+
+		span.lower
+			color: color("amber", "darken-3")
+
+	.beer
 		position: relative
 		max-height: 75vh
 		height: 75vh
 		z-index: 2
 
+		a:hover
+			@media only screen and (max-width: 992px)
+				background-color: color("grey", "darken-3")
+		
 		a
 			display: block
 			width: auto
 			height: 75vh
 			transition: 1s cubic-bezier(0.75, 0.25, 0.15, 1)
+			@media only screen and (max-width: 992px)
+				margin-left: 30px
+				margin-right: 30px
 			
+			span.donate
+				font-size: 16px
+				bottom: 25px
+				text-align: center
+				left: 0
+				right: 0
+				color: color("amber", "darken-3")
+				position: absolute
+				font-weight: 600
+
 			img, 
 			#filling
 				left: 0
 				position: absolute
-				max-height: 70vh
-				height: 70vh
+				max-height: 60vh
+				height: 60vh
 				z-index: 2
-				bottom: 20px
+				bottom: 50px
 				width: 100%
+				@media only screen and (min-width: 993px)
+					max-height: 70vh
+					height: 70vh
+					bottom: 25px
 
 			#glass,
 			#foam
@@ -450,24 +518,30 @@ svg
 
 			#filling
 				bottom: 0
-				height: 0
+
 				overflow: hidden
 				z-index: 1
 				transition: 1s cubic-bezier(0.75, 0.25, 0.15, 1)
+				@media only screen and (min-width: 993px)
+					height: 0
 
 			#foam
-				opacity: 0
 				z-index: 3
 				transition: .3s ease-out
+				@media only screen and (min-width: 993px)
+					opacity: 0
 
 			#filling.active
-				height: 70vh
+				height: 60vh
+				@media only screen and (min-width: 993px)
+					height: 70vh
 
 			#foam.active
 				opacity: 1
 
 		a.active
-			transform: rotate(-10deg)
+			@media only screen and (min-width: 993px)
+				transform: rotate(-10deg)
 
 #contact_section
 

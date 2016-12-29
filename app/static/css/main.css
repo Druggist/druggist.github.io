@@ -6275,6 +6275,285 @@ button.btn-floating {
   overflow: visible;
   clip: auto; }
 
+.shake-slow1, .shake-slow2, .shake-slow3 {
+  display: inline-block;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-slow1:hover,
+.shake-trigger:hover .shake-slow1, .shake-slow2:hover,
+.shake-trigger:hover .shake-slow2, .shake-slow3:hover,
+.shake-trigger:hover .shake-slow3 {
+  animation-play-state: running; }
+
+@keyframes shake-slow1 {
+  2% {
+    transform: translate(2px, 9px) rotate(0.5deg); }
+  4% {
+    transform: translate(-4px, -1px) rotate(-0.5deg); }
+  6% {
+    transform: translate(10px, -5px) rotate(-2.5deg); }
+  8% {
+    transform: translate(-9px, -7px) rotate(2.5deg); }
+  10% {
+    transform: translate(4px, -7px) rotate(-0.5deg); }
+  12% {
+    transform: translate(-6px, 9px) rotate(3.5deg); }
+  14% {
+    transform: translate(10px, 0px) rotate(-0.5deg); }
+  16% {
+    transform: translate(2px, 8px) rotate(3.5deg); }
+  18% {
+    transform: translate(-2px, 7px) rotate(3.5deg); }
+  20% {
+    transform: translate(7px, -3px) rotate(-1.5deg); }
+  22% {
+    transform: translate(-3px, 1px) rotate(-2.5deg); }
+  24% {
+    transform: translate(5px, 0px) rotate(-1.5deg); }
+  26% {
+    transform: translate(0px, -4px) rotate(3.5deg); }
+  28% {
+    transform: translate(-2px, 6px) rotate(0.5deg); }
+  30% {
+    transform: translate(-9px, -2px) rotate(0.5deg); }
+  32% {
+    transform: translate(10px, 1px) rotate(-2.5deg); }
+  34% {
+    transform: translate(8px, -4px) rotate(-1.5deg); }
+  36% {
+    transform: translate(-2px, 9px) rotate(0.5deg); }
+  38% {
+    transform: translate(-8px, 10px) rotate(3.5deg); }
+  40% {
+    transform: translate(-2px, 9px) rotate(-2.5deg); }
+  42% {
+    transform: translate(5px, -6px) rotate(0.5deg); }
+  44% {
+    transform: translate(-2px, -4px) rotate(1.5deg); }
+  46% {
+    transform: translate(-5px, -4px) rotate(-2.5deg); }
+  48% {
+    transform: translate(0px, 8px) rotate(2.5deg); }
+  50% {
+    transform: translate(-1px, 7px) rotate(-0.5deg); }
+  52% {
+    transform: translate(-9px, -1px) rotate(1.5deg); }
+  54% {
+    transform: translate(4px, -5px) rotate(2.5deg); }
+  56% {
+    transform: translate(-7px, 4px) rotate(3.5deg); }
+  58% {
+    transform: translate(-9px, -1px) rotate(2.5deg); }
+  60% {
+    transform: translate(4px, 9px) rotate(0.5deg); }
+  62% {
+    transform: translate(-7px, 5px) rotate(2.5deg); }
+  64% {
+    transform: translate(0px, 9px) rotate(-2.5deg); }
+  66% {
+    transform: translate(-9px, 3px) rotate(-2.5deg); }
+  68% {
+    transform: translate(8px, 4px) rotate(1.5deg); }
+  70% {
+    transform: translate(-9px, -5px) rotate(3.5deg); }
+  72% {
+    transform: translate(-3px, -4px) rotate(-2.5deg); }
+  74% {
+    transform: translate(5px, 6px) rotate(-2.5deg); }
+  0%, 75%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-slow1:hover,
+.shake-trigger:hover .shake-slow1, .shake-slow1.shake-freeze, .shake-slow1.shake-constant {
+  animation-name: shake-slow1;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
+@keyframes shake-slow2 {
+  2% {
+    transform: translate(-12px, 13px) rotate(4deg); }
+  4% {
+    transform: translate(14px, 14px) rotate(3deg); }
+  6% {
+    transform: translate(8px, -16px) rotate(-2deg); }
+  8% {
+    transform: translate(4px, 4px) rotate(0deg); }
+  10% {
+    transform: translate(20px, -13px) rotate(-4deg); }
+  12% {
+    transform: translate(14px, -4px) rotate(-4deg); }
+  14% {
+    transform: translate(-13px, -12px) rotate(-3deg); }
+  16% {
+    transform: translate(-5px, 2px) rotate(5deg); }
+  18% {
+    transform: translate(0px, 15px) rotate(-3deg); }
+  20% {
+    transform: translate(12px, -2px) rotate(2deg); }
+  22% {
+    transform: translate(-19px, -5px) rotate(1deg); }
+  24% {
+    transform: translate(0px, 1px) rotate(-4deg); }
+  26% {
+    transform: translate(-15px, -18px) rotate(3deg); }
+  28% {
+    transform: translate(-13px, 20px) rotate(-1deg); }
+  30% {
+    transform: translate(-12px, -2px) rotate(4deg); }
+  32% {
+    transform: translate(-16px, 4px) rotate(3deg); }
+  34% {
+    transform: translate(17px, -10px) rotate(-3deg); }
+  36% {
+    transform: translate(10px, -2px) rotate(-3deg); }
+  38% {
+    transform: translate(15px, -19px) rotate(-4deg); }
+  40% {
+    transform: translate(-6px, 13px) rotate(3deg); }
+  42% {
+    transform: translate(-16px, -5px) rotate(0deg); }
+  44% {
+    transform: translate(4px, 13px) rotate(2deg); }
+  46% {
+    transform: translate(2px, -3px) rotate(4deg); }
+  48% {
+    transform: translate(14px, 3px) rotate(0deg); }
+  50% {
+    transform: translate(5px, -19px) rotate(2deg); }
+  52% {
+    transform: translate(-10px, 7px) rotate(-1deg); }
+  54% {
+    transform: translate(-1px, -1px) rotate(3deg); }
+  56% {
+    transform: translate(-4px, 16px) rotate(0deg); }
+  58% {
+    transform: translate(4px, 2px) rotate(4deg); }
+  0%, 60%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-slow2:hover,
+.shake-trigger:hover .shake-slow2, .shake-slow2.shake-freeze, .shake-slow2.shake-constant {
+  animation-name: shake-slow2;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
+@keyframes shake-slow3 {
+  2% {
+    transform: translate(4.5px, -2.5px) rotate(0.5deg); }
+  4% {
+    transform: translate(5.5px, 6.5px) rotate(-0.5deg); }
+  6% {
+    transform: translate(5.5px, 1.5px) rotate(-1.5deg); }
+  8% {
+    transform: translate(5.5px, 3.5px) rotate(0.5deg); }
+  10% {
+    transform: translate(3.5px, -2.5px) rotate(0.5deg); }
+  12% {
+    transform: translate(-5.5px, -0.5px) rotate(0.5deg); }
+  14% {
+    transform: translate(2.5px, -1.5px) rotate(-0.5deg); }
+  16% {
+    transform: translate(-4.5px, -2.5px) rotate(1.5deg); }
+  18% {
+    transform: translate(-5.5px, 4.5px) rotate(-0.5deg); }
+  20% {
+    transform: translate(-5.5px, -3.5px) rotate(0.5deg); }
+  22% {
+    transform: translate(4.5px, 3.5px) rotate(2.5deg); }
+  24% {
+    transform: translate(4.5px, 1.5px) rotate(1.5deg); }
+  26% {
+    transform: translate(1.5px, 3.5px) rotate(0.5deg); }
+  28% {
+    transform: translate(-4.5px, 6.5px) rotate(-1.5deg); }
+  30% {
+    transform: translate(5.5px, 2.5px) rotate(-1.5deg); }
+  32% {
+    transform: translate(5.5px, -2.5px) rotate(2.5deg); }
+  34% {
+    transform: translate(0.5px, -4.5px) rotate(-1.5deg); }
+  36% {
+    transform: translate(-0.5px, 6.5px) rotate(0.5deg); }
+  38% {
+    transform: translate(-5.5px, -5.5px) rotate(1.5deg); }
+  40% {
+    transform: translate(4.5px, -4.5px) rotate(-0.5deg); }
+  42% {
+    transform: translate(-6.5px, -6.5px) rotate(1.5deg); }
+  44% {
+    transform: translate(7.5px, 6.5px) rotate(0.5deg); }
+  46% {
+    transform: translate(-6.5px, 3.5px) rotate(-1.5deg); }
+  48% {
+    transform: translate(3.5px, -1.5px) rotate(2.5deg); }
+  50% {
+    transform: translate(-5.5px, 6.5px) rotate(2.5deg); }
+  52% {
+    transform: translate(7.5px, -4.5px) rotate(2.5deg); }
+  54% {
+    transform: translate(0.5px, -6.5px) rotate(-0.5deg); }
+  56% {
+    transform: translate(1.5px, 7.5px) rotate(2.5deg); }
+  58% {
+    transform: translate(7.5px, -2.5px) rotate(1.5deg); }
+  60% {
+    transform: translate(-2.5px, -0.5px) rotate(0.5deg); }
+  62% {
+    transform: translate(5.5px, -3.5px) rotate(2.5deg); }
+  64% {
+    transform: translate(-1.5px, -6.5px) rotate(2.5deg); }
+  66% {
+    transform: translate(3.5px, -5.5px) rotate(1.5deg); }
+  68% {
+    transform: translate(-0.5px, 2.5px) rotate(-1.5deg); }
+  70% {
+    transform: translate(4.5px, 7.5px) rotate(0.5deg); }
+  72% {
+    transform: translate(-3.5px, 0.5px) rotate(-1.5deg); }
+  74% {
+    transform: translate(4.5px, 2.5px) rotate(-1.5deg); }
+  76% {
+    transform: translate(6.5px, 0.5px) rotate(-0.5deg); }
+  78% {
+    transform: translate(7.5px, 5.5px) rotate(-1.5deg); }
+  80% {
+    transform: translate(4.5px, -1.5px) rotate(-1.5deg); }
+  82% {
+    transform: translate(-6.5px, -5.5px) rotate(0.5deg); }
+  84% {
+    transform: translate(-2.5px, 1.5px) rotate(2.5deg); }
+  86% {
+    transform: translate(5.5px, -3.5px) rotate(-0.5deg); }
+  88% {
+    transform: translate(-1.5px, -1.5px) rotate(2.5deg); }
+  90% {
+    transform: translate(3.5px, -3.5px) rotate(-1.5deg); }
+  92% {
+    transform: translate(-2.5px, -0.5px) rotate(1.5deg); }
+  94% {
+    transform: translate(5.5px, -0.5px) rotate(-1.5deg); }
+  96% {
+    transform: translate(6.5px, -2.5px) rotate(0.5deg); }
+  98% {
+    transform: translate(1.5px, -6.5px) rotate(1.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-slow3:hover,
+.shake-trigger:hover .shake-slow3, .shake-slow3.shake-freeze, .shake-slow3.shake-constant {
+  animation-name: shake-slow3;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
 body {
   margin: 0;
   padding: 0;
@@ -6607,44 +6886,110 @@ svg {
   color: #bdbdbd;
   text-align: justify; }
 
+#support_me_section .beer-arrows {
+  position: relative;
+  height: 75vh;
+  max-height: 75vh;
+  text-align: left; }
+  #support_me_section .beer-arrows .arrows {
+    position: absolute;
+    height: 70vh;
+    bottom: 0;
+    margin-right: -115px; }
+    #support_me_section .beer-arrows .arrows .arrow {
+      height: 35vh;
+      margin-bottom: 50px; }
+      #support_me_section .beer-arrows .arrows .arrow .arrow-img {
+        position: relative;
+        width: 100%; }
+        #support_me_section .beer-arrows .arrows .arrow .arrow-img img {
+          width: 75%; }
+    #support_me_section .beer-arrows .arrows #arrow2-wrapper {
+      transform: rotate(15deg); }
+      #support_me_section .beer-arrows .arrows #arrow2-wrapper #arrow2 {
+        margin-left: 35px;
+        padding-right: 35px; }
+    #support_me_section .beer-arrows .arrows #arrow1-wrapper {
+      transform: rotate(-10deg); }
+      #support_me_section .beer-arrows .arrows #arrow1-wrapper #arrow1 {
+        margin-left: 35px;
+        margin-top: -50px; }
+  #support_me_section .beer-arrows span {
+    font-size: 18px; }
+  #support_me_section .beer-arrows span.upper {
+    padding-top: 50px;
+    color: #ffc107; }
+  #support_me_section .beer-arrows span.lower {
+    color: #ff8f00; }
+
 #support_me_section .beer {
   position: relative;
   max-height: 75vh;
   height: 75vh;
   z-index: 2; }
+  @media only screen and (max-width: 992px) {
+    #support_me_section .beer a:hover {
+      background-color: #424242; } }
   #support_me_section .beer a {
     display: block;
     width: auto;
     height: 75vh;
     transition: 1s cubic-bezier(0.75, 0.25, 0.15, 1); }
+    @media only screen and (max-width: 992px) {
+      #support_me_section .beer a {
+        margin-left: 30px;
+        margin-right: 30px; } }
+    #support_me_section .beer a span.donate {
+      font-size: 16px;
+      bottom: 25px;
+      text-align: center;
+      left: 0;
+      right: 0;
+      color: #ff8f00;
+      position: absolute;
+      font-weight: 600; }
     #support_me_section .beer a img,
     #support_me_section .beer a #filling {
       left: 0;
       position: absolute;
-      max-height: 70vh;
-      height: 70vh;
+      max-height: 60vh;
+      height: 60vh;
       z-index: 2;
-      bottom: 20px;
+      bottom: 50px;
       width: 100%; }
+      @media only screen and (min-width: 993px) {
+        #support_me_section .beer a img,
+        #support_me_section .beer a #filling {
+          max-height: 70vh;
+          height: 70vh;
+          bottom: 25px; } }
     #support_me_section .beer a #glass,
     #support_me_section .beer a #foam {
       filter: drop-shadow(0px 2px 5px #000); }
     #support_me_section .beer a #filling {
       bottom: 0;
-      height: 0;
       overflow: hidden;
       z-index: 1;
       transition: 1s cubic-bezier(0.75, 0.25, 0.15, 1); }
+      @media only screen and (min-width: 993px) {
+        #support_me_section .beer a #filling {
+          height: 0; } }
     #support_me_section .beer a #foam {
-      opacity: 0;
       z-index: 3;
       transition: .3s ease-out; }
+      @media only screen and (min-width: 993px) {
+        #support_me_section .beer a #foam {
+          opacity: 0; } }
     #support_me_section .beer a #filling.active {
-      height: 70vh; }
+      height: 60vh; }
+      @media only screen and (min-width: 993px) {
+        #support_me_section .beer a #filling.active {
+          height: 70vh; } }
     #support_me_section .beer a #foam.active {
       opacity: 1; }
-  #support_me_section .beer a.active {
-    transform: rotate(-10deg); }
+  @media only screen and (min-width: 993px) {
+    #support_me_section .beer a.active {
+      transform: rotate(-10deg); } }
 
 #contact_section svg.top polygon {
   fill: #607d8b; }

@@ -20,7 +20,7 @@ block body
 			svg.bottom(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
 			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
-			h1.d-header Druggist
+			h1.d-header.shake-slow3.shake-constant Druggist
 			a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
 				i.material-icons arrow_downward 
 		.hide-on-large-only.center
@@ -94,13 +94,28 @@ block body
 			.col.s11.l10.offset-s1.offset-l1
 				h2.left-align Buy me a beer
 		.row.last
-			.col.s12.l8.offset-l2
+			.col.s12.l3.offset-l2.beer-arrows.hide-on-med-and-down
+				.arrows
+					.row
+						.col.s12
+							.arrow#arrow2-wrapper.shake-slow1.shake-constant
+								span.upper Click here
+								.arrow-img
+									img#arrow2(src="static/img/arrow2.svg")
+					.row
+						.col.s12
+							.arrow#arrow1-wrapper.shake-slow2.shake-constant
+								span.lower Donate
+								.arrow-img
+									img#arrow1(src="static/img/arrow1.svg")
+			.col.s12.l4
 				.beer
 					a(href="https://www.paypal.me/SirDruggist")
 						img#foam(src="static/img/beer_foam.svg")
 						img#glass(src="static/img/beer_glass.svg")
 						#filling
 							img(src="static/img/beer_filling.svg")
+						span.donate.hide-on-large-only Donate
 
 	.section#contact_section(data-section-name="contact")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -150,6 +165,7 @@ block body
 
 block script
 	script(src="components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js")
+	script(src="static/js/outdated.min.js")
 	script(src="components/jquery/dist/jquery.min.js")
 	script(src="components/materialize/dist/js/materialize.min.js")
 	script(src="components/Scrollify/jquery.scrollify.min.js")

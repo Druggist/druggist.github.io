@@ -55,3 +55,7 @@ $fa-font-path: "../../components/components-font-awesome/fonts"
 
 @import "../../components/components-font-awesome/scss/font-awesome" 
 
+@import "../../components/csshake/scss/tools" 
+.shake-slow1	{ @include do-shake('shake-slow1', 20, 20, 7, 8s, $chunk: 75%) }
+.shake-slow2	{ @include do-shake('shake-slow2', 40, 40, 10, 12s, $chunk: 60%) }
+.shake-slow3	{ @include do-shake('shake-slow3', 15, 15, 5, 20s, .02, $opacity: false) }

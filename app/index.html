@@ -68,7 +68,7 @@
         <svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom">
           <polygon points="0 20, 0 100, 65 100, 65 100" class="bottom"></polygon>
         </svg><a href="https://github.com/druggist" class="waves-effect waves-light btn sources">Github sources</a>
-        <h1 class="d-header">Druggist</h1><a href="#about_me" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
+        <h1 class="d-header shake-slow3 shake-constant">Druggist</h1><a href="#about_me" class="waves-effect waves-light btn-floating btn-huge more grey darken-4"><i class="material-icons">arrow_downward </i></a>
       </div>
       <div class="hide-on-large-only center">
         <h1 class="d-header center">Druggist</h1>
@@ -171,9 +171,27 @@
         </div>
       </div>
       <div class="row last">
-        <div class="col s12 l8 offset-l2">
+        <div class="col s12 l3 offset-l2 beer-arrows hide-on-med-and-down">
+          <div class="arrows">
+            <div class="row">
+              <div class="col s12">
+                <div id="arrow2-wrapper" class="arrow shake-slow1 shake-constant"><span class="upper">Click here</span>
+                  <div class="arrow-img"><img id="arrow2" src="static/img/arrow2.svg"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <div id="arrow1-wrapper" class="arrow shake-slow2 shake-constant"><span class="lower">Donate</span>
+                  <div class="arrow-img"><img id="arrow1" src="static/img/arrow1.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l4">
           <div class="beer"><a href="https://www.paypal.me/SirDruggist"><img id="foam" src="static/img/beer_foam.svg"><img id="glass" src="static/img/beer_glass.svg">
-              <div id="filling"><img src="static/img/beer_filling.svg"></div></a></div>
+              <div id="filling"><img src="static/img/beer_filling.svg"></div><span class="donate hide-on-large-only">Donate</span></a></div>
         </div>
       </div>
     </div>
@@ -236,6 +254,7 @@
     </div>
     <div id="outdated"></div>
     <script src="components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js"></script>
+    <script src="static/js/outdated.min.js"></script>
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/materialize/dist/js/materialize.min.js"></script>
     <script src="components/Scrollify/jquery.scrollify.min.js"></script>

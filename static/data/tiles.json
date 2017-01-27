@@ -155,6 +155,15 @@
 			{"name":"c++ qt"},
 			{"name":"qcustomplot"}
 		]
+	},
+	{
+		"title":"Genetic algorithm", 
+		"img":"static/img/geneticalg.png", 
+		"desc":"Algorithm that arranges tasks with restrictions onto two separate machines.", 
+		"src":"https://github.com/Druggist/genetic-algorithm",
+		"software":[
+			{"name":"c++11"}
+		]
 	}
 	]
 }

@@ -192,6 +192,8 @@ function printApps(tiles){
 		var tile = '<div class="col s12 m6 l4"><a href="#info_modal" data-id="apps_'+index+'" class="modal-trigger waves-effect waves-light tile"><svg viewbox="0 0 100 100" preserveAspectRatio="none" class="bottom"><polygon points="100 100, 80 100, 100 60"></polygon></svg><div class="center img-wrapper"><img src="'+app["img"]+'" class="responsive-img"></div><span>'+app["title"]+'</span></a></div>';
 		$("#app_tiles").append(tile);
 	});
+	var tile = '<div class="col s12 m6 l4 center"><a href="https://github.com/Druggist/minor-uni-projects/tree/master" class="waves-effect btn purple">Minor uni projects</a></div>';
+	$("#app_tiles").append(tile);
 }
 
 function printModal(data){

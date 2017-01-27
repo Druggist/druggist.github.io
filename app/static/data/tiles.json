@@ -16,7 +16,7 @@
 		"title":"ROD 1000", 
 		"img":"static/img/rod1000.png", 
 		"desc":"Websites made for family gardens in Poznan. Main features are: news feed, gallery and noticeboard.", 
-		"www":"http://rod1000.pl/rod1000/",
+		"www":"http://rod1000.pl/",
 		"software":[
 			{"name":"html5 + jade"},
 			{"name":"css3 + sass"},
@@ -154,6 +154,15 @@
 		"software":[
 			{"name":"c++ qt"},
 			{"name":"qcustomplot"}
+		]
+	},
+	{
+		"title":"Genetic algorithm", 
+		"img":"static/img/geneticalg.png", 
+		"desc":"Algorithm that arranges tasks with restrictions onto two separate machines.", 
+		"src":"https://github.com/Druggist/genetic-algorithm",
+		"software":[
+			{"name":"c++11"}
 		]
 	}
 	]

@@ -7,7 +7,7 @@ block body
 
 	include _navbar.jade 
 
-	.section#main_section(data-section-name="main")
+	.section.scrollspy#main_section(data-section-name="main")
 		.hide-on-med-and-down
 			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon(points="0 0, 100 0, 100 10, 0 75")
@@ -30,7 +30,7 @@ block body
 			a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me")
 				i.material-icons arrow_downward 
 
-	.section#about_me_section(data-section-name="about_me")
+	.section.scrollspy#about_me_section(data-section-name="about_me")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 35 0, 0 35")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -42,7 +42,7 @@ block body
 			.col.s10.l8.offset-l2.offset-s1.valign
 				p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
 
-	.section#websites_section(data-section-name="websites")
+	.section.scrollspy#websites_section(data-section-name="websites")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 40")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -53,7 +53,7 @@ block body
 		.row.last
 			.container.container-left
 				.row#website_tiles
-	.section#games_section(data-section-name="games")
+	.section.scrollspy#games_section(data-section-name="games")
 		svg.top.hide-on-small-only(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 15 0, 0 52")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -65,7 +65,7 @@ block body
 			.container.container-left
 				.row#game_tiles
 
-	.section#apps_section(data-section-name="apps")
+	.section.scrollspy#apps_section(data-section-name="apps")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 47")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -77,7 +77,7 @@ block body
 			.container.container-left
 				.row#app_tiles
 
-	.section#support_me_section(data-section-name="support_me")
+	.section.scrollspy#support_me_section(data-section-name="support_me")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="100 0, 75 0, 100 90")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -114,7 +114,7 @@ block body
 							img(src="static/img/beer_filling.svg")
 						span.donate.hide-on-large-only Donate
 
-	.section#contact_section(data-section-name="contact")
+	.section.scrollspy#contact_section(data-section-name="contact")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 50 0, 0 80")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")

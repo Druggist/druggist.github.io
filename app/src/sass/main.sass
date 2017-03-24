@@ -77,10 +77,32 @@ body
 	z-index: 8
 
 #mobile-nav 
-	z-index: 1
+	z-index: 999
 
 	a 
-		color: $secondary-color
+		color: color("grey", "base")
+
+	a:hover
+		color: color("grey", "lighten-2")
+
+	a.active 
+		color: color("blue", "base")
+
+	a[href="#websites_section"].active
+		color: color("green", "base")
+
+	a[href="#games_section"].active
+		color: color("red", "base")
+
+	a[href="#apps_section"].active
+		color: color("purple", "base")
+
+	a[href="#support_me_section"].active
+		color: color("amber", "base")
+
+	a[href="#contact_section"].active
+		color: color("blue-grey", "base")
+
 
 .vertical-bullet-menu
 	bottom: 0
@@ -213,6 +235,8 @@ svg
 		filter: drop-shadow(0px -4px 5px #000)
 
 #main_section
+	margin-bottom: 25vh
+	
 	.hide-on-med-and-down
 		svg.top
 			polygon
@@ -319,6 +343,7 @@ svg
 				color: #fff
 
 #about_me_section
+	margin-bottom: 25vh
 
 	svg.top
 		polygon
@@ -396,7 +421,8 @@ svg
 		text-align: justify
 
 #support_me_section
-
+	margin-bottom: 25vh
+	
 	svg.top
 		polygon
 			fill: color("amber", "darken-3")
@@ -544,7 +570,7 @@ svg
 				transform: rotate(-10deg)
 
 #contact_section
-
+	
 	svg.top
 		polygon
 			fill: color("blue-grey", "base")

@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 	autoprefixer = require("gulp-autoprefixer"),
 	sass = require("gulp-sass"),
 	cleancss = require("gulp-clean-css");
-	imageop = require('gulp-image-optimization'),
+	imageop = require('gulp-image'),
 	jade = require('gulp-jade'),
 	del = require("del"),
 	browserSync = require('browser-sync').create();
@@ -71,12 +71,18 @@ gulp.task("minifyCss", function() {
 // Image Optization Task
 //////////////////////////////////////////
 gulp.task('opImages', function () {
-	gulp.src(['app/static/img/*.png', 'app/static/img/*.jpg', 'app/static/img/*.gif', 'app/static/img/*.jpeg'])
+	gulp.src(['app/static/img/**/*'])
 		.pipe(plumber())
 		.pipe(imageop({
-			optimizationLevel: 5,
-			progressive: true,
-			interlaced: true
+			pngquant: true,
+			optipng: true,
+			zopflipng: true,
+			jpegRecompress: true,
+			jpegoptim: true,
+			mozjpeg: true,
+			gifsicle: true,
+			svgo: true,
+			concurrent: 10
 		}))
 		.pipe(gulp.dest('app/static/img'));
 });

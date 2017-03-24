@@ -11,6 +11,7 @@ var gulp = require("gulp"),
 	sass = require("gulp-sass"),
 	cleancss = require("gulp-clean-css");
 	imageop = require('gulp-image'),
+	imageResize = require('gulp-image-resize'),
 	jade = require('gulp-jade'),
 	del = require("del"),
 	browserSync = require('browser-sync').create();
@@ -42,7 +43,7 @@ gulp.task("minifyJs", function () {
 
 gulp.task("watchJs", ["minifyJs"], function(done) {
 	browserSync.reload();
-    done();
+	done();
 });
 
 //////////////////////////////////////////
@@ -83,6 +84,12 @@ gulp.task('opImages', function () {
 			gifsicle: true,
 			svgo: true,
 			concurrent: 10
+		}))
+		.pipe(imageResize({
+			width : 800,
+			height : 600,
+			flatten: true,
+			imageMagick: true
 		}))
 		.pipe(gulp.dest('app/static/img'));
 });
@@ -133,14 +140,14 @@ gulp.task("build", ["build:copy", "build:remove"]);
 //////////////////////////////////////////
 gulp.task("browser-sync", function () {
 	browserSync.init({
-        server: "./app/"
-    });
+		server: "./app/"
+	});
 });
 
 gulp.task("build:serve", function () {
 	browserSync.init({
-        server: "./build/"
-    });
+		server: "./build/"
+	});
 });
 
 //////////////////////////////////////////

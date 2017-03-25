@@ -5,6 +5,8 @@ body
 	margin: 0
 	padding: 0
 	height: 100%
+	max-width: 100%
+	overflow-x: hidden
 	background-color: color("grey", "darken-4")
 
 .navbar-fixed
@@ -21,8 +23,8 @@ body
 		height: 64px
 
 .nav-trigger
-	height: 112px
-	width: 112px
+	height: 90px
+	width: 90px
 
 	svg
 		polygon
@@ -30,7 +32,7 @@ body
 			fill: color("blue", "base")
 
 	a
-		font-size: 3em
+		font-size: 2.75em
 		color: color("grey", "lighten-2")
 		position: relative
 		z-index: 2
@@ -70,8 +72,8 @@ body
 
 #nav-wrapper
 	position: fixed
-	height: 112px
-	width: 112px
+	height: 90px 
+	width: 90px
 	left: 0 
 	top: 0
 	z-index: 8
@@ -326,12 +328,12 @@ svg
 		a.sources
 			margin-top: 50px
 
-		a.more
+		a.more 
 			position: absolute
-			display: block
+			display: block 
 			left: calc(50% - 28px)
 			right: calc(50% - 28px)
-			bottom: 20px
+			bottom: 70px
 
 			i
 				color: color("grey", "base")

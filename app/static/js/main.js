@@ -74,6 +74,7 @@ $('a[href^="#"]').click(function(e){
 
 $('a[href$="_section"]').click(function(e){
 	if(isMobile){
+		$('.button-collapse').sideNav('hide');
 		$href = $(this).attr('href');
 		$href = $href.replace('#','');
 		$href = $href.replace('_section','');

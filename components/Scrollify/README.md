@@ -1,22 +1,24 @@
-# [jQuery Scrollify](http://projects.lukehaas.me/scrollify)
+# [jQuery Scrollify](https://projects.lukehaas.me/scrollify)
 
 A jQuery plugin that assists scrolling and snaps to sections. Touch optimised.
 
 ## Demo
 
-[http://projects.lukehaas.me/scrollify](http://projects.lukehaas.me/scrollify).
+[http://projects.lukehaas.me/scrollify](https://projects.lukehaas.me/scrollify).
 
 ##More examples
 
-[Scroll animations](http://projects.lukehaas.me/scrollify/examples/apple)
+[Scroll animations](https://projects.lukehaas.me/scrollify/examples/apple)
 
-[Layered scrolling](http://projects.lukehaas.me/scrollify/examples/layered-scrolling)
+[Layered scrolling](https://projects.lukehaas.me/scrollify/examples/layered-scrolling)
 
-[Pagination](http://projects.lukehaas.me/scrollify/examples/pagination)
+[Pagination](https://projects.lukehaas.me/scrollify/examples/pagination)
 
-[Full page video](http://projects.lukehaas.me/scrollify/examples/full-page-video)
+[Full page video](https://projects.lukehaas.me/scrollify/examples/full-page-video)
 
-[Header and footer](http://projects.lukehaas.me/scrollify/examples/header-footer)
+[Header and footer](https://projects.lukehaas.me/scrollify/examples/header-footer)
+
+[Dynamic content](https://projects.lukehaas.me/scrollify/examples/dynamic-content)
 
 ## Basic setup
 
@@ -197,10 +199,6 @@ Yes. Scrollify works well on mobile but if you need to disable it you can use th
 - Why am I not able to scroll to the bottom of a section?
 
 You must ensure that there is no collapsed content within your sections. This often happens when you have floated content within a container that isn't cleared. All content must be properly contained in order for an accurate section height to be calculated.
-
-- How can I stop Scrollify adding fragment identifiers (hash values) to the URL?
-
-This behaviour is controlled by `sectionName`, setting `sectionName` to false will disable it.
 
 - Why are section heights increasing on resize?
 

@@ -1,6 +1,6 @@
 /*!
  * jQuery Scrollify
- * Version 1.0.9
+ * Version 1.0.14
  *
  * Requires:
  * - jQuery 1.7 or higher
@@ -27,9 +27,7 @@
 
 
 
- If section being scrolled to is an interstitialSection and the last section on page
-
- then value to scroll to is current position plus height of interstitialSection
+if touchScroll is false - update index
 
  */
 (function (global,factory) {
@@ -238,7 +236,6 @@
 						return false;
 					}
 					scrollable = false;
-
 					//instant,callbacks
 					manualScroll.calculateNearest(false,true);
 				}, 200);
@@ -258,14 +255,13 @@
 						closest = i;
 					}
 				}
-				if(atBottom() || atTop()) {
+				if((atBottom() && closest>index) || atTop()) {
 					index = closest;
 					//index, instant, callbacks, toTop
 					animateScroll(closest,instant,callbacks,false);
 				}
 			},
 			wheelHandler:function(e) {
-
 				if(disabled===true) {
 					return true;
 				} else if(settings.standardScrollElements) {
@@ -304,9 +300,8 @@
 				if(locked) {
 					return false;
 				}
-
 				if(delta<0) {
-					if(index<heights.length-1) {
+					if(index<heights.length-1) {						
 						if(atBottom()) {
 							if(isAccelerating(scrollSamples)) {
 								e.preventDefault();
@@ -343,7 +338,7 @@
 				if(locked===true) {
 					return false;
 				}
-				if(e.keyCode==38) {
+				if(e.keyCode==38 || e.keyCode==33) {
 					if(index>0) {
 						if(atTop()) {
 							e.preventDefault();
@@ -352,7 +347,7 @@
 							animateScroll(index,false,true,false);
 						}
 					}
-				} else if(e.keyCode==40 || e.keyCode==32) {
+				} else if(e.keyCode==40 || e.keyCode==34) {
 					if(index<heights.length-1) {
 						if(atBottom()) {
 							e.preventDefault();
@@ -464,7 +459,8 @@
 				}
 			},
 			down: function() {
-				if(index<=heights.length-1) {
+
+				if(index<heights.length-1) {
 
 					if(atBottom() && index<heights.length-1) {
 
@@ -478,7 +474,7 @@
 							interstitialIndex += 1;
 
 						} else {
-							interstitialScroll(parseInt(heights[index])+(elements[index].height()-$window.height()));
+							interstitialScroll(parseInt(heights[index])+(elements[index].outerHeight()-$window.height()));
 						}
 
 					}
@@ -521,7 +517,8 @@
 			refresh:function(withCallback,scroll) {
 				clearTimeout(timeoutId2);
 				timeoutId2 = setTimeout(function() {
-					sizePanels();
+					//retain position
+					sizePanels(true);
 					//scroll, firstLoad
 					calculatePositions(scroll,false);
 					if(withCallback) {
@@ -531,7 +528,8 @@
 			},
 			handleUpdate:function() {
 				//callbacks, scroll
-				util.refresh(false,true);
+				//changed from false,true to false,false
+				util.refresh(false,false);
 			},
 			handleResize:function() {
 				//callbacks, scroll
@@ -544,7 +542,8 @@
 		};
 		settings = $.extend(settings, options);
 
-		sizePanels();
+		//retain position
+		sizePanels(false);
 
 		calculatePositions(false,true);
 
@@ -581,7 +580,11 @@
 			}
 		}
 
-		function sizePanels() {
+		function sizePanels(keepPosition) {
+			if(keepPosition) {
+				top = $window.scrollTop();				
+			}
+
 			var selector = settings.section;
 			overflow = [];
 			if(settings.interstitialSection.length) {
@@ -597,17 +600,16 @@
 					if($this.is(settings.interstitialSection)) {
 						overflow[i] = false;
 					} else {
-
 						if(($this.css("height","auto").outerHeight()<$window.height()) || $this.css("overflow")==="hidden") {
 							$this.css({"height":$window.height()});
 
 							overflow[i] = false;
 						} else {
-
+							
 							$this.css({"height":$this.height()});
 
 							if(settings.overflowScroll) {
-									overflow[i] = true;
+								overflow[i] = true;
 							} else {
 								overflow[i] = false;
 							}
@@ -624,6 +626,9 @@
 					}
 				}
 			});
+			if(keepPosition) {
+				$window.scrollTop(top);
+			}
 		}
 		function calculatePositions(scroll,firstLoad) {
 			var selector = settings.section;
@@ -648,7 +653,8 @@
 						} else {
 							names[i] = "#";
 							if(i===$(selector).length-1 && i>1) {
-								heights[i] = heights[i-1]+parseInt($this.height());
+
+								heights[i] = heights[i-1]+(parseInt($($(selector)[i-1]).outerHeight())-parseInt($(window).height()))+parseInt($this.outerHeight());
 							}
 						}
 					}

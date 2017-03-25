@@ -10,6 +10,8 @@
 			{"name":"css3 + sass"},
 			{"name":"js + jquery"},
 			{"name":"polymer"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -24,6 +26,8 @@
 			{"name":"polymer"},
 			{"name":"php"},
 			{"name":"mysql"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -36,6 +40,8 @@
 			{"name":"css3 + sass"},
 			{"name":"js + jquery"},
 			{"name":"php"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -47,6 +53,8 @@
 			{"name":"html5"},
 			{"name":"css3"},
 			{"name":"js + jquery"}
+		],
+		"creators":[
 		]
 	}
 	],
@@ -62,6 +70,8 @@
 		"software":[
 			{"name":"unreal engine 4"},
 			{"name":"blender"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -77,6 +87,12 @@
 			{"name":"css3 + sass"},
 			{"name":"js + jquery + threejs"},
 			{"name":"webaudio"}
+		],
+		"creators":[
+			{
+				"name":"pejter",
+				"href":"https://github.com/pejter"
+			}
 		]
 	},
 	{
@@ -91,6 +107,16 @@
 			{"name":"unity"},
 			{"name":"fruity loops"},
 			{"name":"blender"}
+		],
+		"creators":[
+			{
+				"name":"pejter",
+				"href":"https://github.com/pejter"
+			},
+			{
+				"name":"grandipl",
+				"href":"https://github.com/GrandiPL"
+			}
 		]
 	},
 	{
@@ -105,6 +131,8 @@
 			{"name":"c++"},
 			{"name":"allegro 5"},
 			{"name":"lmms"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -119,6 +147,12 @@
 			{"name":"phaserjs"},
 			{"name":"html5"},
 			{"name":"css3"}
+		],
+		"creators":[
+			{
+				"name":"grandipl",
+				"href":"https://github.com/GrandiPL"
+			}
 		]
 	}
 	],
@@ -131,6 +165,8 @@
 		"software":[
 			{"name":"c++ qt"},
 			{"name":"sqlite"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -144,6 +180,8 @@
 			{"name":"html5"},
 			{"name":"css3"},
 			{"name":"bootstrap"}
+		],
+		"creators":[
 		]
 	},
 	{
@@ -154,6 +192,12 @@
 		"software":[
 			{"name":"c++ qt"},
 			{"name":"qcustomplot"}
+		],
+		"creators":[
+			{
+				"name":"matesik1995",
+				"href":"https://github.com/Matesik1995"
+			}
 		]
 	},
 	{
@@ -163,6 +207,12 @@
 		"src":"https://github.com/Druggist/genetic-algorithm",
 		"software":[
 			{"name":"c++11"}
+		],
+		"creators":[
+			{
+				"name":"s3gm3nt4ti0nf4ult",
+				"href":"https://github.com/s3gm3nt4ti0nf4ult"
+			}
 		]
 	}
 	]

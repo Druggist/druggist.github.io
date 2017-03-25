@@ -12,7 +12,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 			sectionName : "section-name",
 			interstitialSection : "",
 			easing: "easeOutExpo",
-			scrollSpeed: 900,
+			scrollSpeed: 750,
 			offset : 0,
 			scrollbars: true,
 			standardScrollElements: "",

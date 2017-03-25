@@ -72,7 +72,7 @@ gulp.task("minifyCss", function() {
 // Image Optization Task
 //////////////////////////////////////////
 gulp.task('opImages', function () {
-	gulp.src(['app/static/img/**/*'])
+	gulp.src(['app/static/img/**/*.jpg'])
 		.pipe(plumber())
 		.pipe(imageop({
 			pngquant: true,
@@ -86,8 +86,8 @@ gulp.task('opImages', function () {
 			concurrent: 10
 		}))
 		.pipe(imageResize({
-			width : 800,
-			height : 600,
+			width : 640,
+			height : 640,
 			flatten: true,
 			imageMagick: true
 		}))

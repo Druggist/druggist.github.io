@@ -1,8 +1,5 @@
 extends _template
 
-block head
-	link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
-
 block body
 
 	include _navbar.jade 
@@ -22,13 +19,13 @@ block body
 			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
 			h1.d-header.shake-slow3.shake-constant Druggist
 			a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
-				i.material-icons arrow_downward 
+				i.fa.fa-arrow-down(aria-hidden="true")
 		.hide-on-large-only.center
 			h1.d-header.center Druggist
 			h2.desc.center Yet another portfolio page
 			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
 			a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me_section")
-				i.material-icons arrow_downward 
+				i.fa.fa-arrow-down(aria-hidden="true")
 
 	.section.scrollspy#about_me_section(data-section-name="about_me")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -139,7 +136,7 @@ block body
 	.modal#info_modal
 		.close-wrapper
 			a.close(href="#")
-				i.material-icons close
+				i.fa.fa-times(aria-hidden="true")
 			svg.top(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon(points="100 100, 0 0, 100 0")
 		.row.last

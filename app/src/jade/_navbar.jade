@@ -4,7 +4,7 @@
 			svg(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon(points="0 0, 100 0, 0 100")
 			a.button-collapse(href="#", data-activates="mobile-nav")
-				i.material-icons menu
+				i.fa.fa-bars(aria-hidden="true")
 
 .navbar-fixed.hide-on-large-only
 	nav
@@ -30,7 +30,7 @@
 	ul
 		li
 			a#previous(href="#") 
-				i.material-icons keyboard_arrow_up
+				i.fa.fa-chevron-up(aria-hidden="true")
 		li
 			a(href="#main") 
 				i.fa.fa-bullseye(aria-hidden="true")
@@ -62,4 +62,4 @@
 				span Contact
 		li
 			a.disabled#next(href="#") 
-				i.material-icons keyboard_arrow_down
+				i.fa.fa-chevron-down(aria-hidden="true")

@@ -22,17 +22,19 @@ body
 	@media only screen and (min-width: 601px)
 		height: 64px
 
+#nav-wrapper,
 .nav-trigger
-	height: 90px
+	position: fixed
+	height: 90px 
 	width: 90px
-
-	svg
-		polygon
-			transition: .3s ease-out
-			fill: color("blue", "base")
+	left: 0 
+	top: 0
+	z-index: 8
 
 	a
-		font-size: 2.75em
+		font-size: 2.5em
+		padding: 0 5px
+		margin-top: 5px
 		color: color("grey", "lighten-2")
 		position: relative
 		z-index: 2
@@ -40,6 +42,12 @@ body
 		i 
 			font-size: 1.25em
  
+.nav-trigger
+	svg
+		polygon
+			transition: .3s ease-out
+			fill: color("blue", "base")
+
 .about_me
 	svg
 		polygon
@@ -70,48 +78,93 @@ body
 		polygon
 			fill: color("blue-grey", "darken-2")
 
-#nav-wrapper
-	position: fixed
-	height: 90px 
-	width: 90px
-	left: 0 
-	top: 0
-	z-index: 8
 
 #mobile-nav 
 	z-index: 999
 
+#mobile-nav,
+.vertical-bullet-menu
 	a 
 		color: color("grey", "base")
 
 	a:hover
 		color: color("grey", "lighten-2")
 
+		i,
+		span
+			color: color("grey", "lighten-2")
+
+		span
+			width: 200px
+
 	a.active 
 		color: color("blue", "base")
 
-	a[href="#websites_section"].active
+		i,
+		span
+			color: color("blue", "base")
+
+	a[href="#websites_section"].active,
+	a[href="#websites"].active
 		color: color("green", "base")
 
-	a[href="#games_section"].active
+		i,
+		span
+			color: color("green", "base")
+
+	a[href="#games_section"].active,
+	a[href="#games"].active
 		color: color("red", "base")
 
-	a[href="#apps_section"].active
+		i,
+		span
+			color: color("red", "base")
+
+	a[href="#apps_section"].active,
+	a[href="#apps"].active
 		color: color("purple", "base")
 
-	a[href="#support_me_section"].active
+		i,
+		span
+			color: color("purple", "base")
+
+	a[href="#support_me_section"].active,
+	a[href="#support_me"].active
 		color: color("amber", "base")
 
-	a[href="#contact_section"].active
+		i,
+		span
+			color: color("amber", "base")
+
+	a[href="#contact_section"].active,
+	a[href="#contact"].active
 		color: color("blue-grey", "base")
 
+		i,
+		span
+			color: color("blue-grey", "base")
+
+	a.expanded
+		span
+			width: 200px
+
+	a.disabled,
+	a.disabled:hover,
+	a.disabled:focus,
+	a.disabled:active
+		pointer-events: none
+		cursor: default
+
+		i,
+		span
+			color: color("grey", "darken-3")
 
 .vertical-bullet-menu
 	bottom: 0
 	margin-left: 50px
 	position: fixed
 	transition: .3s ease-out
-	z-index: 999
+	z-index: 10
 
 	a
 		margin: 15px 0
@@ -136,59 +189,6 @@ body
 			overflow: hidden
 			transition: .5s ease-in-out
 
-	a:hover
-		i,
-		span
-			color: color("grey", "lighten-2")
-
-		span
-			width: 200px
-
-	a.expanded
-		span
-			width: 200px
-
-	a.active
-		i,
-		span
-			color: color("blue", "base")
-
-	a.disabled,
-	a.disabled:hover,
-	a.disabled:focus,
-	a.disabled:active
-		pointer-events: none
-		cursor: default
-
-		i,
-		span
-			color: color("grey", "darken-3")
-
-	a[href="#websites"].active
-		i,
-		span
-			color: color("green", "base")
-
-	a[href="#games"].active
-		i,
-		span
-			color: color("red", "base")
-
-	a[href="#apps"].active
-		i,
-		span
-			color: color("purple", "base")
-
-	a[href="#support_me"].active
-		i,
-		span
-			color: color("amber", "base")
-
-	a[href="#contact"].active
-		i,
-		span
-			color: color("blue-grey", "base")
-
 .vertical-bullet-menu.close
 	-ms-transform: translate(-200%, 0)
 	-webkit-transform: translate(-200%, 0)
@@ -198,6 +198,8 @@ body
 #sidenav-overlay
 	z-index: 899!important
 	height: 100%
+
+//-------- SECTIONS -------
 
 svg
 	height: 100%
@@ -211,13 +213,18 @@ svg
 	height: auto
 	min-height: 100vh
 	padding: 0
+	margin-bottom: 25vh
+
+	p
+		color: color("grey", "lighten-1")
+		text-align: justify
 
 	h2
 		font-weight: 900
 		text-transform: uppercase
 		padding-top: 20px
 		margin-bottom: 40px
-		font-size: 6em
+		font-size: 5.5rem
 
 		@media screen and (max-width: 992px)
 			font-size: 3.75em
@@ -236,9 +243,16 @@ svg
 		-webkit-filter: drop-shadow(0px -4px 5px #000)
 		filter: drop-shadow(0px -4px 5px #000)
 
+	svg.text
+		text
+			font-size: 3em
+			text-transform: uppercase
+			font-family: Roboto
+			font-weight: 200
+			fill: color("grey", "darken-4")
+			text-decoration: none
+
 #main_section
-	margin-bottom: 25vh
-	
 	.hide-on-med-and-down
 		svg.top
 			polygon
@@ -247,15 +261,6 @@ svg
 		svg.bottom
 			polygon
 				fill: color("grey", "darken-3")
-
-		svg.text
-			text
-				font-size: 3em
-				text-transform: uppercase
-				font-family: Roboto
-				font-weight: 200
-				fill: color("grey", "darken-3")
-				text-decoration: none
 
 		a.sources
 			position: absolute
@@ -283,7 +288,7 @@ svg
 			height: 160px
 			
 			i
-				line-height: 155px
+				line-height: 160px
 				font-size: 9em
 				color: color("grey", "darken-3")
 				transition: .3s ease-out
@@ -345,8 +350,6 @@ svg
 				color: #fff
 
 #about_me_section
-	margin-bottom: 25vh
-
 	svg.top
 		polygon
 			fill: color("blue", "darken-3")
@@ -358,16 +361,10 @@ svg
 	h2
 		color: color("blue", "base")
 
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
-
 	.center-row
 		height: calc(100vh - 300px)
 
 #websites_section
-	margin-bottom: 25vh
-
 	svg.top
 		polygon
 			fill: color("green", "darken-3")
@@ -379,13 +376,7 @@ svg
 	h2
 		color: color("green", "base")
 
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
-
 #games_section
-	margin-bottom: 25vh
-
 	svg.top
 		polygon
 			fill: color("red", "darken-3")
@@ -397,16 +388,7 @@ svg
 	h2
 		color: color("red", "base")
 
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
-
-	.card
-		z-index: 2
-
 #apps_section
-	margin-bottom: 25vh
-
 	svg.top
 		polygon
 			fill: color("purple", "darken-3")
@@ -418,13 +400,7 @@ svg
 	h2
 		color: color("purple", "base")
 
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
-
 #support_me_section
-	margin-bottom: 25vh
-	
 	svg.top
 		polygon
 			fill: color("amber", "darken-3")
@@ -433,21 +409,8 @@ svg
 		polygon
 			fill: color("amber", "base")
 
-	svg.text
-		text
-			font-size: 3em
-			text-transform: uppercase
-			font-family: Roboto
-			font-weight: 200
-			fill: color("grey", "darken-4")
-			text-decoration: none
-
 	h2
 		color: color("amber", "base")
-
-	p
-		color: color("grey", "lighten-1")
-		text-align: justify
 
 	.beer-arrows
 		position: relative
@@ -572,7 +535,8 @@ svg
 				transform: rotate(-10deg)
 
 #contact_section
-	
+	margin-bottom: 0
+
 	svg.top
 		polygon
 			fill: color("blue-grey", "base")
@@ -734,7 +698,7 @@ a.tile:hover
 		top: 0
 
 		a
-			color: color("grey", "lighten-2")
+			color: rgba(0,0,0,0.5)
 			position: absolute
 			right: 5px
 			top: 5px
@@ -743,6 +707,9 @@ a.tile:hover
 			i 
 				font-size: 2.5em
 		
+		a:hover
+			color: rgba(255,255,255,0.5)
+
 		svg
 			z-index: 1023
 
@@ -854,4 +821,6 @@ a.tile:hover
 		.col 
 			padding: 0
 
-
+@media only screen and (min-width: 993px)
+	.row .col.l11
+		margin: auto

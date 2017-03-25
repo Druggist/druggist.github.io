@@ -53,16 +53,11 @@ $(document).ready(function(){
       		 if(!isMobile) $.scrollify.enable();
       	}
 	});
+	mobileNav();
 }); 
 
 $(window).scroll(function(){
-	if(isMobile){
-		$href = $('a.active[href$="_section"]').attr('href');
-		$href = $href.replace('#','');
-		$href = $href.replace('_section','');
-		$(".nav-trigger").attr('class', 'nav-trigger');
-		$(".nav-trigger").addClass($href);
-	}
+	mobileNav();
 });
 
 $('a[href^="#"]').click(function(e){
@@ -73,14 +68,8 @@ $('a[href^="#"]').click(function(e){
 });
 
 $('a[href$="_section"]').click(function(e){
-	if(isMobile){
-		$('.button-collapse').sideNav('hide');
-		$href = $(this).attr('href');
-		$href = $href.replace('#','');
-		$href = $href.replace('_section','');
-		$(".nav-trigger").attr('class', 'nav-trigger');
-		$(".nav-trigger").addClass($href);
-	}
+	$('.button-collapse').sideNav('hide');
+	mobileNav();
 });
 
 $('#next').click(function(e){
@@ -143,6 +132,16 @@ function appendEmail(){
 	var user = 'm.najdora',
     	domain = 'gmail.com';
     $('.email > span').append(user + '@' + domain);
+}
+
+function mobileNav(){
+	if(isMobile){
+		$href = ($('a.active[href$="_section"]').attr('href') != null)? $('a.active[href$="_section"]').attr('href') : "";
+		$href = $href.replace('#','');
+		$href = $href.replace('_section','');
+		$(".nav-trigger").attr('class', 'nav-trigger');
+		$(".nav-trigger").addClass($href);
+	}
 }
 
 function menuClasses($href){

@@ -724,6 +724,7 @@ a.tile:hover
 	width: 100%
 	background-color: transparent
 	box-shadow: none
+	top: 0!important
 
 	.close-wrapper
 		position: fixed
@@ -756,10 +757,10 @@ a.tile:hover
 		padding-top: 5px
 		padding-bottom: 5px
 		max-height: 60vh
-		height: 60vh
 
 		@media screen and (min-width: 993px)
 			margin-top: 20px
+			height: 60vh
 
 		img
 			max-height: calc(60vh - 90px)
@@ -780,17 +781,19 @@ a.tile:hover
 		max-height: calc(40vh - 60px)
 		box-sizing: border-box
 
-	.modal-content.software
-		height: calc(72.5vh - 30px)
-		max-height: calc(72.5vh - 20px)
+	.modal-content.software,
+	.modal-content.creators
+		height: calc(50vh - 30px)
+		max-height: calc(50vh - 20px)
 		margin-right: 10px
+		margin-left: 10px
 
 		@media screen and (min-width: 993px)
-			margin-top: calc(27.5vh + 10px)
 			margin-left: -10px
 
 		h5
 			font-size: 1.25em
+			text-align: left
 			font-weight: 500
 		ul
 			li 
@@ -813,8 +816,37 @@ a.tile:hover
 			li::before
 				color: color("purple", "base")
 
+	.modal-content.creators
+		height: calc(30vh - 30px)
+		max-height: calc(30vh - 20px)
+		margin-top: 10px
+		margin-bottom: 20px
+	
+		@media screen and (min-width: 993px)
+			margin-top: calc(20vh + 20px)
+
+		a 
+			color: color("grey", "lighten-1")
+		
+		a:hover
+			color: color("grey", "lighten-3")
+
+	.modal-content.creators.invisible
+		height: 0!important
+		opacity: 0!important
+		margin: 0 
+		padding: 0
+
+		@media screen and (min-width: 993px)
+			height: calc(30vh - 30px)!important
+			margin-top: 10px
+			margin-bottom: 20px
+			margin-top: calc(20vh + 20px)
+			margin-bottom: 20px
+
 	.modal-content.links
 		height: 56px
+		margin-top: 80px
 		
 		@media screen and (min-width: 993px)
 			margin-top: calc(60vh - 36px)

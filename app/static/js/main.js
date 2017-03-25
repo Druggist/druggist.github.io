@@ -46,8 +46,8 @@ $(document).ready(function(){
 		scrollOffset: 0
 	});
 	$('.modal').modal({
-		starting_top: '0',
-      	ending_top: '0',
+		starting_top: '0%',
+      	ending_top: '0%',
       	opacity: .9,
       	complete: function() {
       		 if(!isMobile) $.scrollify.enable();
@@ -117,6 +117,8 @@ $('body').on('click', '.modal-trigger', function() {
 	$(".close-wrapper").addClass(data[0]);
 	$(".software-list").attr('class', 'software-list');
 	$(".software-list").addClass(data[0]);
+	$(".creators-list").attr('class', 'creators-list');
+	$(".creators-list").addClass(data[0]);
 	printModal(data);
 });
 
@@ -243,5 +245,11 @@ function printModal(data){
 	$(".software-list").empty();
 	$.each(tile["software"], function(index, software){
 		$(".software-list").append('<li>'+software["name"]+'</li>');
+	});
+	$(".modal-content.creators").removeClass("invisible");
+	if(tile["creators"].length === 0) $(".modal-content.creators").addClass("invisible");
+	$(".creators-list").empty();
+	$.each(tile["creators"], function(index, creator){
+		$(".creators-list").append('<li><a href="'+creator["href"]+'" target="_blank">'+creator["name"]+'</a></li>');
 	});
 }

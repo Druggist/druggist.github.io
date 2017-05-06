@@ -17,7 +17,7 @@
 	{
 		"title":"ROD 1000", 
 		"img":"static/img/rod1000.jpg", 
-		"desc":"Websites made for family gardens in Poznan. Main features are: news feed, gallery and noticeboard.", 
+		"desc":"Website made for family gardens in Poznan. Main features are: news feed, gallery and noticeboard.", 
 		"www":"http://rod1000.pl/",
 		"software":[
 			{"name":"html5 + jade"},
@@ -26,6 +26,21 @@
 			{"name":"polymer"},
 			{"name":"php"},
 			{"name":"mysql"}
+		],
+		"creators":[
+		]
+	},
+	{
+		"title":"Tiens na Ursynowie", 
+		"img":"static/img/tiens.jpg", 
+		"desc":"Website about Chinese medicine with detailed TIENS product list.", 
+		"www":"http://tiensnaursynowie.pl/",
+		"software":[
+			{"name":"html5"},
+			{"name":"css3 + sass"},
+			{"name":"js + jquery"},
+			{"name":"wordpress"},
+			{"name":"php"}
 		],
 		"creators":[
 		]

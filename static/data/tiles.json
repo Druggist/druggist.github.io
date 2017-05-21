@@ -173,6 +173,18 @@
 	],
 	"apps":[
 	{
+		"title":"Gauss - Jordan elimination", 
+		"img":"static/img/gaussjordan.jpg", 
+		"desc":"App for quick linear equations solving. Has a modes for standard and interval arithmetic.", 
+		"src":"https://github.com/Druggist/gauss-jordan-elimination",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"QML"}
+		],
+		"creators":[
+		]
+	},	
+	{
 		"title":"Receipt Master", 
 		"img":"static/img/receiptmaster.jpg", 
 		"desc":"App for gathering, managing and keeping up to date receipts.", 

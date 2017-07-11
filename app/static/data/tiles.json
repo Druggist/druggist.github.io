@@ -169,6 +169,25 @@
 				"href":"https://github.com/GrandiPL"
 			}
 		]
+	},
+	{
+		"title":"Arkanoid 3D", 
+		"shortTitle":"Arkanoid 3D", 
+		"img":"static/img/arkanoid.jpg", 
+		"desc":"Small project made entirely in OpenGL 3.3. Featuring model loading, basic physics and two light sources.", 
+		"src":"https://github.com/Druggist/arkanoid_opengl",
+		"game": "",
+		"download":false,
+		"software":[
+			{"name":"OpenGL 3.3"},
+			{"name":"C++ 11"}
+		],
+		"creators":[
+			{
+				"name":"matesik1995",
+				"href":"https://github.com/Matesik1995"
+			}
+		]
 	}
 	],
 	"apps":[

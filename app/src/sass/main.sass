@@ -262,11 +262,16 @@ svg
 			polygon
 				fill: color("grey", "darken-3")
 
-		a.sources
+		.main-links
 			position: absolute
-			bottom: 40px 
+			bottom: 40px  
 			right: 50px
 			z-index: 2
+
+			a 
+				position: relative 
+				display: block
+				margin: 10px auto 
 
 		h1.d-header
 			bottom: 50px
@@ -300,10 +305,6 @@ svg
 				color: color("grey", "base")
 
 		@media screen and (max-width: 1369px)
-			a.sources
-				bottom: 140px 
-				right: 30px
-
 			h1.d-header
 				bottom: 150px
 				right: 20px
@@ -330,8 +331,14 @@ svg
 				text-align: center
 				padding-right: 0
 
-		a.sources
+		.main-links
 			margin-top: 20px
+
+			a 
+				position: relative 
+				display: block
+				margin: 10px auto
+				max-width: 50% 
 
 		a.more 
 			position: absolute
@@ -349,7 +356,8 @@ svg
 			i
 				color: #fff
 
-#about_me_section
+#about_me_section,
+#teaching
 	svg.top
 		polygon
 			fill: color("blue", "darken-3")
@@ -825,3 +833,29 @@ a.tile:hover
 @media only screen and (min-width: 993px)
 	.row .col.l11
 		margin: auto
+
+#teaching
+	h3
+		color: color("grey", "lighten-2")
+		margin-left: 10px
+		display: block
+		padding: 5px
+		font-size: 24px
+		font-weight: 600
+		letter-spacing: 1.5px
+
+	.collection
+		z-index: 2		
+		@extend .z-depth-3
+		margin-bottom: 50px
+		border-radius: 3px
+		border-color: transparent
+
+		.collection-item
+			background-color: color("grey", "darken-3")
+			transition: .3s ease-out
+			border-color: color("grey", "darken-4")
+			color: color("grey", "lighten-2")
+		
+		.collection-item:hover
+			background-color: color("blue", "darken-3")

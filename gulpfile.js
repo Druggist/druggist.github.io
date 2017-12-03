@@ -98,7 +98,7 @@ gulp.task('opImages', function () {
 // Html Tasks
 //////////////////////////////////////////
 gulp.task("compileJade", function (){
-	gulp.src(['app/src/jade/*.jade', '!app/src/jade/_*.jade'])
+	gulp.src(['app/src/jade/**/*.jade', '!app/src/jade/_*.jade'])
 		.pipe(plumber())
 		.pipe(jade({pretty: true}))
 		.pipe(gulp.dest('app/'));
@@ -157,7 +157,7 @@ gulp.task("watch", function () {
 	gulp.watch(['app/static/js/*.js', '!app/static/js/*.min.js'], ["watchJs"]);
 	gulp.watch("app/src/sass/*.sass", ["compileSass"]);
 	gulp.watch(["app/static/css/*.css", "!app/static/css/*.min.css"], ["minifyCss"]);
-	gulp.watch("app/src/jade/*.jade", ["compileJade"]);
+	gulp.watch("app/src/jade/**/*.jade", ["compileJade"]);
 	gulp.watch("app/*.html", ["watchHtml"]);
 });
 

@@ -16,28 +16,32 @@ block body
 					textPath(xlink:href="#textPath", startOffset="65%") Yet another portfolio page
 			svg.bottom(viewbox="0 0 100 100", preserveAspectRatio="none")
 				polygon.bottom(points="0 20, 0 100, 65 100, 65 100")
-			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+			.main-links
+				a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+				a.waves-effect.waves-light.btn.teaching(href="teaching/") Teaching
 			h1.d-header.shake-slow3.shake-constant Druggist
 			a.waves-effect.waves-light.btn-floating.btn-huge.more.grey.darken-4(href="#about_me")
 				i.fa.fa-arrow-down(aria-hidden="true")
 		.hide-on-large-only.center
 			h1.d-header.center Druggist
 			h2.desc.center Yet another portfolio page
-			a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+			.main-links
+				a.waves-effect.waves-light.btn.sources(href="https://github.com/druggist") Github sources
+				a.waves-effect.waves-light.btn.teaching(href="teaching/") Teaching
 			a.waves-effect.waves-light.btn-floating.btn-large.more.grey.darken-3(href="#about_me_section")
 				i.fa.fa-arrow-down(aria-hidden="true")
 
-	.section.scrollspy#about_me_section(data-section-name="about_me")
-		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon(points="0 0, 35 0, 0 35")
-		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 65, 100 100, 75 100")
-		.row
-			.col.s11.l12.offset-s1
-				h2.center About me
-		.row.valign-wrapper.center-row.last
-			.col.s10.l8.offset-l2.offset-s1.valign
-				p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
+	//- .section.scrollspy#about_me_section(data-section-name="about_me")
+	//- 	svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+	//- 		polygon(points="0 0, 35 0, 0 35")
+	//- 	svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+	//- 		polygon.bottom(points="100 65, 100 100, 75 100")
+	//- 	.row
+	//- 		.col.s11.l12.offset-s1
+	//- 			h2.center About me
+	//- 	.row.valign-wrapper.center-row.last
+	//- 		.col.s10.l8.offset-l2.offset-s1.valign
+	//- 			p.flow-text Hey I'm Michal and this is my portfolio page. I'm IT student from Poland. I want to develop myself in certain directions of IT which are: web and game dev. My thirst for knowledge in that matter knows no bounds. I'm really passionate about web technologies front-end ones like the newest frameworks and design concepts as well as back-end ones. Game creation on the other hand is my hobby. I can really express myself creating them and It's just fun for me. Below you can see some of my projects. If you have any questions regarding them feel free to ask.
 
 	.section.scrollspy#websites_section(data-section-name="websites")
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
@@ -66,7 +70,7 @@ block body
 		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
 			polygon(points="0 0, 25 0, 0 47")
 		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
-			polygon.bottom(points="100 65, 100 100, 75 100")
+			polygon.bottom(points="100 75, 100 100, 75 100")
 		.row
 			.col.s11.l12.offset-s1
 				h2.center Apps & more

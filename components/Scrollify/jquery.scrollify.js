@@ -1,6 +1,6 @@
 /*!
  * jQuery Scrollify
- * Version 1.0.14
+ * Version 1.0.17
  *
  * Requires:
  * - jQuery 1.7 or higher
@@ -78,7 +78,7 @@ if touchScroll is false - update index
 			interstitialSection: "",
 			easing: "easeOutExpo",
 			scrollSpeed: 1100,
-			offset : 0,
+			offset: 0,
 			scrollbars: true,
 			target:"html,body",
 			standardScrollElements: false,
@@ -301,7 +301,7 @@ if touchScroll is false - update index
 					return false;
 				}
 				if(delta<0) {
-					if(index<heights.length-1) {						
+					if(index<heights.length-1) {
 						if(atBottom()) {
 							if(isAccelerating(scrollSamples)) {
 								e.preventDefault();
@@ -332,7 +332,7 @@ if touchScroll is false - update index
 
 			},
 			keyHandler:function(e) {
-				if(disabled===true) {
+				if(disabled===true || document.activeElement.readOnly===false) {
 					return true;
 				}
 				if(locked===true) {
@@ -460,7 +460,7 @@ if touchScroll is false - update index
 			},
 			down: function() {
 
-				if(index<heights.length-1) {
+				if(index<heights.length) {
 
 					if(atBottom() && index<heights.length-1) {
 
@@ -582,7 +582,7 @@ if touchScroll is false - update index
 
 		function sizePanels(keepPosition) {
 			if(keepPosition) {
-				top = $window.scrollTop();				
+				top = $window.scrollTop();
 			}
 
 			var selector = settings.section;
@@ -605,7 +605,7 @@ if touchScroll is false - update index
 
 							overflow[i] = false;
 						} else {
-							
+
 							$this.css({"height":$this.height()});
 
 							if(settings.overflowScroll) {
@@ -802,6 +802,9 @@ if touchScroll is false - update index
 	};
 	scrollify.current = function() {
 		return elements[index];
+	};
+	scrollify.currentIndex = function() {
+		return index;
 	};
 	scrollify.disable = function() {
 		disabled = true;

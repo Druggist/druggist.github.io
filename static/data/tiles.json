@@ -202,32 +202,21 @@
 		],
 		"creators":[
 		]
-	},	
-	{
-		"title":"Receipt Master", 
-		"img":"static/img/receiptmaster.jpg", 
-		"desc":"App for gathering, managing and keeping up to date receipts.", 
-		"src":"https://github.com/Druggist/receipt_master",
-		"software":[
-			{"name":"c++ qt"},
-			{"name":"sqlite"}
-		],
-		"creators":[
-		]
 	},
 	{
-		"title":"Timetable generator", 
-		"img":"static/img/timetable.jpg", 
-		"desc":"Simple app converting xml file with timetable data to pure html timetable.", 
-		"src":"https://github.com/Druggist/timetable_zsl",
+		"title":"Petanque detect", 
+		"img":"static/img/petanque.jpg", 
+		"desc":"Computer vision app based on OpenCV. Purpose of this app is to detect boules and show distance from the jack. App can be feeded with many different sources: video, pc camera or smartphone with IP Webcam.", 
+		"src":"https://github.com/Druggist/petanque-detect",
 		"software":[
-			{"name":"c++ qt"},
-			{"name":"sqlite"},
-			{"name":"html5"},
-			{"name":"css3"},
-			{"name":"bootstrap"}
+			{"name":"Python3"},
+			{"name":"OpenCV"}
 		],
 		"creators":[
+			{
+				"name":"matesik1995",
+				"href":"https://github.com/Matesik1995"
+			}
 		]
 	},
 	{
@@ -259,6 +248,49 @@
 				"name":"s3gm3nt4ti0nf4ult",
 				"href":"https://github.com/s3gm3nt4ti0nf4ult"
 			}
+		]
+	},
+	{
+		"title":"Receipt Master", 
+		"img":"static/img/receiptmaster.jpg", 
+		"desc":"App for gathering, managing and keeping up to date receipts.", 
+		"src":"https://github.com/Druggist/receipt_master",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"sqlite"}
+		],
+		"creators":[
+		]
+	},
+	{
+		"title":"Best Video Game", 
+		"img":"static/img/videogame.jpg", 
+		"desc":"App made in Drools for choosing perfect video game. Based on silveroakcasino.com chart.", 
+		"src":"https://github.com/Druggist/pick-best-videogame",
+		"software":[
+			{"name":"Drools"},
+			{"name":"JAVA"}
+		],
+		"creators":[
+			{
+				"name":"matesik1995",
+				"href":"https://github.com/Matesik1995"
+			}
+		]
+	},
+	{
+		"title":"Timetable generator", 
+		"img":"static/img/timetable.jpg", 
+		"desc":"Simple app converting xml file with timetable data to pure html timetable.", 
+		"src":"https://github.com/Druggist/timetable_zsl",
+		"software":[
+			{"name":"c++ qt"},
+			{"name":"sqlite"},
+			{"name":"html5"},
+			{"name":"css3"},
+			{"name":"bootstrap"}
+		],
+		"creators":[
 		]
 	}
 	]

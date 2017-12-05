@@ -1,0 +1,35 @@
+extends _template
+
+block body
+	.section#teaching
+		svg.top.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon(points="0 0, 20 0, 0 40")
+		svg.bottom.hide-on-med-and-down(viewbox="0 0 100 100", preserveAspectRatio="none")
+			polygon.bottom(points="100 65, 100 100, 80 100")
+		.row
+			.col.s11.l12.offset-s1
+				h2.center Bazy Danych 
+		.row.last
+			.col.s10.l8.offset-l2.offset-s1
+				.row
+					h3 Prezentacje
+					.collection
+						a.collection-item(href="https://docs.google.com/presentation/d/1MRpXR6B1TcXWZ0EKvYivBvA3ISavJgVkwIv9cQL88iM/edit?usp=sharing", ) DDL i DML
+					h3 Zadania
+					.collection
+						a.collection-item(href="data/test.zip" target="_blank") Test sprawdzający
+						a.collection-item(href="data/database.sql" target="_blank") Baza danych
+						a.collection-item(href="data/ddl_dml.pdf" target="_blank") DDL i DML
+
+					h3 Przydatne linki
+					.collection
+						a.collection-item(href="https://dev.mysql.com/doc/" target="_blank") Dokumentacja MySQL
+						a.collection-item(href="https://www.w3schools.com/sql/" target="_blank") W3School SQL
+				
+	#outdated
+
+block script
+	script(src="../components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js")
+	script(src="../static/js/outdated.min.js")
+	script(src="../components/jquery/dist/jquery.min.js")
+	script(src="../components/materialize/dist/js/materialize.min.js")

@@ -846,18 +846,31 @@ a.tile:hover
 		font-weight: 600
 		letter-spacing: 1.5px
 
-	.collection
+	.collection,
+	.tabs
 		z-index: 2		
 		@extend .z-depth-3
 		margin-bottom: 50px
 		border-radius: 3px
 		border-color: transparent
 
-		.collection-item
+		.collection-item,
+		.tab
 			background-color: color("grey", "darken-3")
 			transition: .3s ease-out
 			border-color: color("grey", "darken-4")
 			color: color("grey", "lighten-2")
+
+			a
+				color: color("grey", "lighten-2")
 		
-		.collection-item:hover
+		.collection-item:hover,
+		.tab:hover
 			background-color: color("blue", "darken-3")
+		
+	.tabs
+		background-color: transparent
+		border-radius: 5px
+		.tab
+			border-color: transparent
+

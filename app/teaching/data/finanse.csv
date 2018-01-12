@@ -1,0 +1,700 @@
+Government;Canada; Carretera ; None ;1618,5; $3,00 ; $20,00 ; $-   ;01.01.2014
+Government;Germany; Carretera ; None ;1321; $3,00 ; $20,00 ; $-   ;01.01.2014
+Midmarket;France; Carretera ; None ;2178; $3,00 ; $15,00 ; $-   ;01.06.2014
+Midmarket;Germany; Carretera ; None ;888; $3,00 ; $15,00 ; $-   ;01.06.2014
+Midmarket;Mexico; Carretera ; None ;2470; $3,00 ; $15,00 ; $-   ;01.06.2014
+Government;Germany; Carretera ; None ;1513; $3,00 ; $350,00 ; $-   ;01.12.2014
+Midmarket;Germany; Montana ; None ;921; $5,00 ; $15,00 ; $-   ;01.03.2014
+Channel Partners;Canada; Montana ; None ;2518; $5,00 ; $12,00 ; $-   ;01.06.2014
+Government;France; Montana ; None ;1899; $5,00 ; $20,00 ; $-   ;01.06.2014
+Channel Partners;Germany; Montana ; None ;1545; $5,00 ; $12,00 ; $-   ;01.06.2014
+Midmarket;Mexico; Montana ; None ;2470; $5,00 ; $15,00 ; $-   ;01.06.2014
+Enterprise;Canada; Montana ; None ;2665,5; $5,00 ; $125,00 ; $-   ;01.07.2014
+Small Business;Mexico; Montana ; None ;958; $5,00 ; $300,00 ; $-   ;01.08.2014
+Government;Germany; Montana ; None ;2146; $5,00 ; $7,00 ; $-   ;01.09.2014
+Enterprise;Canada; Montana ; None ;345; $5,00 ; $125,00 ; $-   ;01.10.2013
+Midmarket;United States of America; Montana ; None ;615; $5,00 ; $15,00 ; $-   ;01.12.2014
+Government;Canada; Paseo ; None ;292; $10,00 ; $20,00 ; $-   ;01.02.2014
+Midmarket;Mexico; Paseo ; None ;974; $10,00 ; $15,00 ; $-   ;01.02.2014
+Channel Partners;Canada; Paseo ; None ;2518; $10,00 ; $12,00 ; $-   ;01.06.2014
+Government;Germany; Paseo ; None ;1006; $10,00 ; $350,00 ; $-   ;01.06.2014
+Channel Partners;Germany; Paseo ; None ;367; $10,00 ; $12,00 ; $-   ;01.07.2014
+Government;Mexico; Paseo ; None ;883; $10,00 ; $7,00 ; $-   ;01.08.2014
+Midmarket;France; Paseo ; None ;549; $10,00 ; $15,00 ; $-   ;01.09.2013
+Small Business;Mexico; Paseo ; None ;788; $10,00 ; $300,00 ; $-   ;01.09.2013
+Midmarket;Mexico; Paseo ; None ;2472; $10,00 ; $15,00 ; $-   ;01.09.2014
+Government;United States of America; Paseo ; None ;1143; $10,00 ; $7,00 ; $-   ;01.10.2014
+Government;Canada; Paseo ; None ;1725; $10,00 ; $350,00 ; $-   ;01.11.2013
+Channel Partners;United States of America; Paseo ; None ;912; $10,00 ; $12,00 ; $-   ;01.11.2013
+Midmarket;Canada; Paseo ; None ;2152; $10,00 ; $15,00 ; $-   ;01.12.2013
+Government;Canada; Paseo ; None ;1817; $10,00 ; $20,00 ; $-   ;01.12.2014
+Government;Germany; Paseo ; None ;1513; $10,00 ; $350,00 ; $-   ;01.12.2014
+Government;Mexico; Velo ; None ;1493; $120,00 ; $7,00 ; $-   ;01.01.2014
+Enterprise;France; Velo ; None ;1804; $120,00 ; $125,00 ; $-   ;01.02.2014
+Channel Partners;Germany; Velo ; None ;2161; $120,00 ; $12,00 ; $-   ;01.03.2014
+Government;Germany; Velo ; None ;1006; $120,00 ; $350,00 ; $-   ;01.06.2014
+Channel Partners;Germany; Velo ; None ;1545; $120,00 ; $12,00 ; $-   ;01.06.2014
+Enterprise;United States of America; Velo ; None ;2821; $120,00 ; $125,00 ; $-   ;01.08.2014
+Enterprise;Canada; Velo ; None ;345; $120,00 ; $125,00 ; $-   ;01.10.2013
+Small Business;Canada; VTT ; None ;2001; $250,00 ; $300,00 ; $-   ;01.02.2014
+Channel Partners;Germany; VTT ; None ;2838; $250,00 ; $12,00 ; $-   ;01.04.2014
+Midmarket;France; VTT ; None ;2178; $250,00 ; $15,00 ; $-   ;01.06.2014
+Midmarket;Germany; VTT ; None ;888; $250,00 ; $15,00 ; $-   ;01.06.2014
+Government;France; VTT ; None ;1527; $250,00 ; $350,00 ; $-   ;01.09.2013
+Small Business;France; VTT ; None ;2151; $250,00 ; $300,00 ; $-   ;01.09.2014
+Government;Canada; VTT ; None ;1817; $250,00 ; $20,00 ; $-   ;01.12.2014
+Government;France; Amarilla ; None ;2750; $260,00 ; $350,00 ; $-   ;01.02.2014
+Channel Partners;United States of America; Amarilla ; None ;1953; $260,00 ; $12,00 ; $-   ;01.04.2014
+Enterprise;Germany; Amarilla ; None ;4219,5; $260,00 ; $125,00 ; $-   ;01.04.2014
+Government;France; Amarilla ; None ;1899; $260,00 ; $20,00 ; $-   ;01.06.2014
+Government;Germany; Amarilla ; None ;1686; $260,00 ; $7,00 ; $-   ;01.07.2014
+Channel Partners;United States of America; Amarilla ; None ;2141; $260,00 ; $12,00 ; $-   ;01.08.2014
+Government;United States of America; Amarilla ; None ;1143; $260,00 ; $7,00 ; $-   ;01.10.2014
+Midmarket;United States of America; Amarilla ; None ;615; $260,00 ; $15,00 ; $-   ;01.12.2014
+Government;France; Paseo ; Low ;3945; $10,00 ; $7,00 ; $276,15 ;01.01.2014
+Midmarket;France; Paseo ; Low ;2296; $10,00 ; $15,00 ; $344,40 ;01.02.2014
+Government;France; Paseo ; Low ;1030; $10,00 ; $7,00 ; $72,10 ;01.05.2014
+Government;France; Velo ; Low ;639; $120,00 ; $7,00 ; $44,73 ;01.11.2014
+Government;Canada; VTT ; Low ;1326; $250,00 ; $7,00 ; $92,82 ;01.03.2014
+Channel Partners;United States of America; Carretera ; Low ;1858; $3,00 ; $12,00 ; $222,96 ;01.02.2014
+Government;Mexico; Carretera ; Low ;1210; $3,00 ; $350,00 ; $4 235,00 ;01.03.2014
+Government;United States of America; Carretera ; Low ;2529; $3,00 ; $7,00 ; $177,03 ;01.07.2014
+Channel Partners;Canada; Carretera ; Low ;1445; $3,00 ; $12,00 ; $173,40 ;01.09.2014
+Enterprise;United States of America; Carretera ; Low ;330; $3,00 ; $125,00 ; $412,50 ;01.09.2013
+Channel Partners;France; Carretera ; Low ;2671; $3,00 ; $12,00 ; $320,52 ;01.09.2014
+Channel Partners;Germany; Carretera ; Low ;766; $3,00 ; $12,00 ; $91,92 ;01.10.2013
+Small Business;Mexico; Carretera ; Low ;494; $3,00 ; $300,00 ; $1 482,00 ;01.10.2013
+Government;Mexico; Carretera ; Low ;1397; $3,00 ; $350,00 ; $4 889,50 ;01.10.2014
+Government;France; Carretera ; Low ;2155; $3,00 ; $350,00 ; $7 542,50 ;01.12.2014
+Midmarket;Mexico; Montana ; Low ;2214; $5,00 ; $15,00 ; $332,10 ;01.03.2014
+Small Business;United States of America; Montana ; Low ;2301; $5,00 ; $300,00 ; $6 903,00 ;01.04.2014
+Government;France; Montana ; Low ;1375,5; $5,00 ; $20,00 ; $275,10 ;01.07.2014
+Government;Canada; Montana ; Low ;1830; $5,00 ; $7,00 ; $128,10 ;01.08.2014
+Small Business;United States of America; Montana ; Low ;2498; $5,00 ; $300,00 ; $7 494,00 ;01.09.2013
+Enterprise;United States of America; Montana ; Low ;663; $5,00 ; $125,00 ; $828,75 ;01.10.2013
+Midmarket;United States of America; Paseo ; Low ;1514; $10,00 ; $15,00 ; $227,10 ;01.02.2014
+Government;United States of America; Paseo ; Low ;4492,5; $10,00 ; $7,00 ; $314,48 ;01.04.2014
+Enterprise;United States of America; Paseo ; Low ;727; $10,00 ; $125,00 ; $908,75 ;01.06.2014
+Enterprise;France; Paseo ; Low ;787; $10,00 ; $125,00 ; $983,75 ;01.06.2014
+Enterprise;Mexico; Paseo ; Low ;1823; $10,00 ; $125,00 ; $2 278,75 ;01.07.2014
+Midmarket;Germany; Paseo ; Low ;747; $10,00 ; $15,00 ; $112,05 ;01.09.2014
+Channel Partners;Germany; Paseo ; Low ;766; $10,00 ; $12,00 ; $91,92 ;01.10.2013
+Small Business;United States of America; Paseo ; Low ;2905; $10,00 ; $300,00 ; $8 715,00 ;01.11.2014
+Government;France; Paseo ; Low ;2155; $10,00 ; $350,00 ; $7 542,50 ;01.12.2014
+Government;France; Velo ; Low ;3864; $120,00 ; $20,00 ; $772,80 ;01.04.2014
+Government;Mexico; Velo ; Low ;362; $120,00 ; $7,00 ; $25,34 ;01.05.2014
+Enterprise;Canada; Velo ; Low ;923; $120,00 ; $125,00 ; $1 153,75 ;01.08.2014
+Enterprise;United States of America; Velo ; Low ;663; $120,00 ; $125,00 ; $828,75 ;01.10.2013
+Government;Canada; Velo ; Low ;2092; $120,00 ; $7,00 ; $146,44 ;01.11.2013
+Government;Germany; VTT ; Low ;263; $250,00 ; $7,00 ; $18,41 ;01.03.2014
+Government;Canada; VTT ; Low ;943,5; $250,00 ; $350,00 ; $3 302,25 ;01.04.2014
+Enterprise;United States of America; VTT ; Low ;727; $250,00 ; $125,00 ; $908,75 ;01.06.2014
+Enterprise;France; VTT ; Low ;787; $250,00 ; $125,00 ; $983,75 ;01.06.2014
+Small Business;Germany; VTT ; Low ;986; $250,00 ; $300,00 ; $2 958,00 ;01.09.2014
+Small Business;Mexico; VTT ; Low ;494; $250,00 ; $300,00 ; $1 482,00 ;01.10.2013
+Government;Mexico; VTT ; Low ;1397; $250,00 ; $350,00 ; $4 889,50 ;01.10.2014
+Enterprise;France; VTT ; Low ;1744; $250,00 ; $125,00 ; $2 180,00 ;01.11.2014
+Channel Partners;United States of America; Amarilla ; Low ;1989; $260,00 ; $12,00 ; $238,68 ;01.09.2013
+Midmarket;France; Amarilla ; Low ;321; $260,00 ; $15,00 ; $48,15 ;01.11.2013
+Enterprise;Canada; Carretera ; Low ;742,5; $3,00 ; $125,00 ; $1 856,25 ;01.04.2014
+Channel Partners;Canada; Carretera ; Low ;1295; $3,00 ; $12,00 ; $310,80 ;01.10.2014
+Small Business;Germany; Carretera ; Low ;214; $3,00 ; $300,00 ; $1 284,00 ;01.10.2013
+Government;France; Carretera ; Low ;2145; $3,00 ; $7,00 ; $300,30 ;01.11.2013
+Government;Canada; Carretera ; Low ;2852; $3,00 ; $350,00 ; $19 964,00 ;01.12.2014
+Channel Partners;United States of America; Montana ; Low ;1142; $5,00 ; $12,00 ; $274,08 ;01.06.2014
+Government;United States of America; Montana ; Low ;1566; $5,00 ; $20,00 ; $626,40 ;01.10.2014
+Channel Partners;Mexico; Montana ; Low ;690; $5,00 ; $12,00 ; $165,60 ;01.11.2014
+Enterprise;Mexico; Montana ; Low ;1660; $5,00 ; $125,00 ; $4 150,00 ;01.11.2013
+Midmarket;Canada; Paseo ; Low ;2363; $10,00 ; $15,00 ; $708,90 ;01.02.2014
+Small Business;France; Paseo ; Low ;918; $10,00 ; $300,00 ; $5 508,00 ;01.05.2014
+Small Business;Germany; Paseo ; Low ;1728; $10,00 ; $300,00 ; $10 368,00 ;01.05.2014
+Channel Partners;United States of America; Paseo ; Low ;1142; $10,00 ; $12,00 ; $274,08 ;01.06.2014
+Enterprise;Mexico; Paseo ; Low ;662; $10,00 ; $125,00 ; $1 655,00 ;01.06.2014
+Channel Partners;Canada; Paseo ; Low ;1295; $10,00 ; $12,00 ; $310,80 ;01.10.2014
+Enterprise;Germany; Paseo ; Low ;809; $10,00 ; $125,00 ; $2 022,50 ;01.10.2013
+Enterprise;Mexico; Paseo ; Low ;2145; $10,00 ; $125,00 ; $5 362,50 ;01.10.2013
+Channel Partners;France; Paseo ; Low ;1785; $10,00 ; $12,00 ; $428,40 ;01.11.2013
+Small Business;Canada; Paseo ; Low ;1916; $10,00 ; $300,00 ; $11 496,00 ;01.12.2014
+Government;Canada; Paseo ; Low ;2852; $10,00 ; $350,00 ; $19 964,00 ;01.12.2014
+Enterprise;Canada; Paseo ; Low ;2729; $10,00 ; $125,00 ; $6 822,50 ;01.12.2014
+Midmarket;United States of America; Paseo ; Low ;1925; $10,00 ; $15,00 ; $577,50 ;01.12.2013
+Government;United States of America; Paseo ; Low ;2013; $10,00 ; $7,00 ; $281,82 ;01.12.2013
+Channel Partners;France; Paseo ; Low ;1055; $10,00 ; $12,00 ; $253,20 ;01.12.2014
+Channel Partners;Mexico; Paseo ; Low ;1084; $10,00 ; $12,00 ; $260,16 ;01.12.2014
+Government;United States of America; Velo ; Low ;1566; $120,00 ; $20,00 ; $626,40 ;01.10.2014
+Government;Germany; Velo ; Low ;2966; $120,00 ; $350,00 ; $20 762,00 ;01.10.2013
+Government;Germany; Velo ; Low ;2877; $120,00 ; $350,00 ; $20 139,00 ;01.10.2014
+Enterprise;Germany; Velo ; Low ;809; $120,00 ; $125,00 ; $2 022,50 ;01.10.2013
+Enterprise;Mexico; Velo ; Low ;2145; $120,00 ; $125,00 ; $5 362,50 ;01.10.2013
+Channel Partners;France; Velo ; Low ;1055; $120,00 ; $12,00 ; $253,20 ;01.12.2014
+Government;Mexico; Velo ; Low ;544; $120,00 ; $20,00 ; $217,60 ;01.12.2013
+Channel Partners;Mexico; Velo ; Low ;1084; $120,00 ; $12,00 ; $260,16 ;01.12.2014
+Enterprise;Mexico; VTT ; Low ;662; $250,00 ; $125,00 ; $1 655,00 ;01.06.2014
+Small Business;Germany; VTT ; Low ;214; $250,00 ; $300,00 ; $1 284,00 ;01.10.2013
+Government;Germany; VTT ; Low ;2877; $250,00 ; $350,00 ; $20 139,00 ;01.10.2014
+Enterprise;Canada; VTT ; Low ;2729; $250,00 ; $125,00 ; $6 822,50 ;01.12.2014
+Government;United States of America; VTT ; Low ;266; $250,00 ; $350,00 ; $1 862,00 ;01.12.2013
+Government;Mexico; VTT ; Low ;1940; $250,00 ; $350,00 ; $13 580,00 ;01.12.2013
+Small Business;Germany; Amarilla ; Low ;259; $260,00 ; $300,00 ; $1 554,00 ;01.03.2014
+Small Business;Mexico; Amarilla ; Low ;1101; $260,00 ; $300,00 ; $6 606,00 ;01.03.2014
+Enterprise;Germany; Amarilla ; Low ;2276; $260,00 ; $125,00 ; $5 690,00 ;01.05.2014
+Government;Germany; Amarilla ; Low ;2966; $260,00 ; $350,00 ; $20 762,00 ;01.10.2013
+Government;United States of America; Amarilla ; Low ;1236; $260,00 ; $20,00 ; $494,40 ;01.11.2014
+Government;France; Amarilla ; Low ;941; $260,00 ; $20,00 ; $376,40 ;01.11.2014
+Small Business;Canada; Amarilla ; Low ;1916; $260,00 ; $300,00 ; $11 496,00 ;01.12.2014
+Enterprise;France; Carretera ; Low ;4243,5; $3,00 ; $125,00 ; $15 913,13 ;01.04.2014
+Government;Germany; Carretera ; Low ;2580; $3,00 ; $20,00 ; $1 548,00 ;01.04.2014
+Small Business;Germany; Carretera ; Low ;689; $3,00 ; $300,00 ; $6 201,00 ;01.06.2014
+Channel Partners;United States of America; Carretera ; Low ;1947; $3,00 ; $12,00 ; $700,92 ;01.09.2014
+Channel Partners;Canada; Carretera ; Low ;908; $3,00 ; $12,00 ; $326,88 ;01.12.2013
+Government;Germany; Montana ; Low ;1958; $5,00 ; $7,00 ; $411,18 ;01.02.2014
+Channel Partners;France; Montana ; Low ;1901; $5,00 ; $12,00 ; $684,36 ;01.06.2014
+Government;France; Montana ; Low ;544; $5,00 ; $7,00 ; $114,24 ;01.09.2014
+Government;Germany; Montana ; Low ;1797; $5,00 ; $350,00 ; $18 868,50 ;01.09.2013
+Enterprise;France; Montana ; Low ;1287; $5,00 ; $125,00 ; $4 826,25 ;01.12.2014
+Enterprise;Germany; Montana ; Low ;1706; $5,00 ; $125,00 ; $6 397,50 ;01.12.2014
+Small Business;France; Paseo ; Low ;2434,5; $10,00 ; $300,00 ; $21 910,50 ;01.01.2014
+Enterprise;Canada; Paseo ; Low ;1774; $10,00 ; $125,00 ; $6 652,50 ;01.03.2014
+Channel Partners;France; Paseo ; Low ;1901; $10,00 ; $12,00 ; $684,36 ;01.06.2014
+Small Business;Germany; Paseo ; Low ;689; $10,00 ; $300,00 ; $6 201,00 ;01.06.2014
+Enterprise;Germany; Paseo ; Low ;1570; $10,00 ; $125,00 ; $5 887,50 ;01.06.2014
+Channel Partners;United States of America; Paseo ; Low ;1369,5; $10,00 ; $12,00 ; $493,02 ;01.07.2014
+Enterprise;Canada; Paseo ; Low ;2009; $10,00 ; $125,00 ; $7 533,75 ;01.10.2014
+Midmarket;Germany; Paseo ; Low ;1945; $10,00 ; $15,00 ; $875,25 ;01.10.2013
+Enterprise;France; Paseo ; Low ;1287; $10,00 ; $125,00 ; $4 826,25 ;01.12.2014
+Enterprise;Germany; Paseo ; Low ;1706; $10,00 ; $125,00 ; $6 397,50 ;01.12.2014
+Enterprise;Canada; Velo ; Low ;2009; $120,00 ; $125,00 ; $7 533,75 ;01.10.2014
+Small Business;United States of America; VTT ; Low ;2844; $250,00 ; $300,00 ; $25 596,00 ;01.02.2014
+Channel Partners;Mexico; VTT ; Low ;1916; $250,00 ; $12,00 ; $689,76 ;01.04.2014
+Enterprise;Germany; VTT ; Low ;1570; $250,00 ; $125,00 ; $5 887,50 ;01.06.2014
+Small Business;Canada; VTT ; Low ;1874; $250,00 ; $300,00 ; $16 866,00 ;01.08.2014
+Government;Mexico; VTT ; Low ;1642; $250,00 ; $350,00 ; $17 241,00 ;01.08.2014
+Midmarket;Germany; VTT ; Low ;1945; $250,00 ; $15,00 ; $875,25 ;01.10.2013
+Government;Canada; Carretera ; Low ;831; $3,00 ; $20,00 ; $498,60 ;01.05.2014
+Government;Mexico; Paseo ; Low ;1760; $10,00 ; $7,00 ; $369,60 ;01.09.2013
+Government;Canada; Velo ; Low ;3850,5; $120,00 ; $20,00 ; $2 310,30 ;01.04.2014
+Channel Partners;Germany; VTT ; Low ;2479; $250,00 ; $12,00 ; $892,44 ;01.01.2014
+Midmarket;Mexico; Montana ; Low ;2031; $5,00 ; $15,00 ; $1 218,60 ;01.10.2014
+Midmarket;Mexico; Paseo ; Low ;2031; $10,00 ; $15,00 ; $1 218,60 ;01.10.2014
+Midmarket;France; Paseo ; Low ;2261; $10,00 ; $15,00 ; $1 356,60 ;01.12.2013
+Government;United States of America; Velo ; Low ;736; $120,00 ; $20,00 ; $588,80 ;01.09.2013
+Government;Canada; Carretera ; Low ;2851; $3,00 ; $7,00 ; $798,28 ;01.10.2013
+Small Business;Germany; Carretera ; Low ;2021; $3,00 ; $300,00 ; $24 252,00 ;01.10.2014
+Government;United States of America; Carretera ; Low ;274; $3,00 ; $350,00 ; $3 836,00 ;01.12.2014
+Midmarket;Canada; Montana ; Low ;1967; $5,00 ; $15,00 ; $1 180,20 ;01.03.2014
+Small Business;Germany; Montana ; Low ;1859; $5,00 ; $300,00 ; $22 308,00 ;01.08.2014
+Government;Canada; Montana ; Low ;2851; $5,00 ; $7,00 ; $798,28 ;01.10.2013
+Small Business;Germany; Montana ; Low ;2021; $5,00 ; $300,00 ; $24 252,00 ;01.10.2014
+Enterprise;Mexico; Montana ; Low ;1138; $5,00 ; $125,00 ; $5 690,00 ;01.12.2014
+Government;Canada; Paseo ; Low ;4251; $10,00 ; $7,00 ; $1 190,28 ;01.01.2014
+Enterprise;Germany; Paseo ; Low ;795; $10,00 ; $125,00 ; $3 975,00 ;01.03.2014
+Small Business;Germany; Paseo ; Low ;1414,5; $10,00 ; $300,00 ; $16 974,00 ;01.04.2014
+Small Business;United States of America; Paseo ; Low ;2918; $10,00 ; $300,00 ; $35 016,00 ;01.05.2014
+Government;United States of America; Paseo ; Low ;3450; $10,00 ; $350,00 ; $48 300,00 ;01.07.2014
+Enterprise;France; Paseo ; Low ;2988; $10,00 ; $125,00 ; $14 940,00 ;01.07.2014
+Midmarket;Canada; Paseo ; Low ;218; $10,00 ; $15,00 ; $130,80 ;01.09.2014
+Government;Canada; Paseo ; Low ;2074; $10,00 ; $20,00 ; $1 659,20 ;01.09.2014
+Government;United States of America; Paseo ; Low ;1056; $10,00 ; $20,00 ; $844,80 ;01.09.2014
+Midmarket;United States of America; Paseo ; Low ;671; $10,00 ; $15,00 ; $402,60 ;01.10.2013
+Midmarket;Mexico; Paseo ; Low ;1514; $10,00 ; $15,00 ; $908,40 ;01.10.2013
+Government;United States of America; Paseo ; Low ;274; $10,00 ; $350,00 ; $3 836,00 ;01.12.2014
+Enterprise;Mexico; Paseo ; Low ;1138; $10,00 ; $125,00 ; $5 690,00 ;01.12.2014
+Channel Partners;United States of America; Velo ; Low ;1465; $120,00 ; $12,00 ; $703,20 ;01.03.2014
+Government;Canada; Velo ; Low ;2646; $120,00 ; $20,00 ; $2 116,80 ;01.09.2013
+Government;France; Velo ; Low ;2177; $120,00 ; $350,00 ; $30 478,00 ;01.10.2014
+Channel Partners;France; VTT ; Low ;866; $250,00 ; $12,00 ; $415,68 ;01.05.2014
+Government;United States of America; VTT ; Low ;349; $250,00 ; $350,00 ; $4 886,00 ;01.09.2013
+Government;France; VTT ; Low ;2177; $250,00 ; $350,00 ; $30 478,00 ;01.10.2014
+Midmarket;Mexico; VTT ; Low ;1514; $250,00 ; $15,00 ; $908,40 ;01.10.2013
+Government;Mexico; Amarilla ; Low ;1865; $260,00 ; $350,00 ; $26 110,00 ;01.02.2014
+Enterprise;Mexico; Amarilla ; Low ;1074; $260,00 ; $125,00 ; $5 370,00 ;01.04.2014
+Government;Germany; Amarilla ; Low ;1907; $260,00 ; $350,00 ; $26 698,00 ;01.09.2014
+Midmarket;United States of America; Amarilla ; Low ;671; $260,00 ; $15,00 ; $402,60 ;01.10.2013
+Government;Canada; Amarilla ; Low ;1778; $260,00 ; $350,00 ; $24 892,00 ;01.12.2013
+Government;Germany; Montana ; Medium ;1159; $5,00 ; $7,00 ; $405,65 ;01.10.2013
+Government;Germany; Paseo ; Medium ;1372; $10,00 ; $7,00 ; $480,20 ;01.01.2014
+Government;Canada; Paseo ; Medium ;2349; $10,00 ; $7,00 ; $822,15 ;01.09.2013
+Government;Mexico; Paseo ; Medium ;2689; $10,00 ; $7,00 ; $941,15 ;01.10.2014
+Channel Partners;Canada; Paseo ; Medium ;2431; $10,00 ; $12,00 ; $1 458,60 ;01.12.2014
+Channel Partners;Canada; Velo ; Medium ;2431; $120,00 ; $12,00 ; $1 458,60 ;01.12.2014
+Government;Mexico; VTT ; Medium ;2689; $250,00 ; $7,00 ; $941,15 ;01.10.2014
+Government;Mexico; Amarilla ; Medium ;1683; $260,00 ; $7,00 ; $589,05 ;01.07.2014
+Channel Partners;Mexico; Amarilla ; Medium ;1123; $260,00 ; $12,00 ; $673,80 ;01.08.2014
+Government;Germany; Amarilla ; Medium ;1159; $260,00 ; $7,00 ; $405,65 ;01.10.2013
+Channel Partners;France; Carretera ; Medium ;1865; $3,00 ; $12,00 ; $1 119,00 ;01.02.2014
+Channel Partners;Germany; Carretera ; Medium ;1116; $3,00 ; $12,00 ; $669,60 ;01.02.2014
+Government;France; Carretera ; Medium ;1563; $3,00 ; $20,00 ; $1 563,00 ;01.05.2014
+Small Business;United States of America; Carretera ; Medium ;991; $3,00 ; $300,00 ; $14 865,00 ;01.06.2014
+Government;Germany; Carretera ; Medium ;1016; $3,00 ; $7,00 ; $355,60 ;01.11.2013
+Midmarket;Mexico; Carretera ; Medium ;2791; $3,00 ; $15,00 ; $2 093,25 ;01.11.2014
+Government;United States of America; Carretera ; Medium ;570; $3,00 ; $7,00 ; $199,50 ;01.12.2014
+Government;France; Carretera ; Medium ;2487; $3,00 ; $7,00 ; $870,45 ;01.12.2014
+Government;France; Montana ; Medium ;1384,5; $5,00 ; $350,00 ; $24 228,75 ;01.01.2014
+Enterprise;United States of America; Montana ; Medium ;3627; $5,00 ; $125,00 ; $22 668,75 ;01.07.2014
+Government;Mexico; Montana ; Medium ;720; $5,00 ; $350,00 ; $12 600,00 ;01.09.2013
+Channel Partners;Germany; Montana ; Medium ;2342; $5,00 ; $12,00 ; $1 405,20 ;01.11.2014
+Small Business;Mexico; Montana ; Medium ;1100; $5,00 ; $300,00 ; $16 500,00 ;01.12.2013
+Government;France; Paseo ; Medium ;1303; $10,00 ; $20,00 ; $1 303,00 ;01.02.2014
+Enterprise;United States of America; Paseo ; Medium ;2992; $10,00 ; $125,00 ; $18 700,00 ;01.03.2014
+Enterprise;France; Paseo ; Medium ;2385; $10,00 ; $125,00 ; $14 906,25 ;01.03.2014
+Small Business;Mexico; Paseo ; Medium ;1607; $10,00 ; $300,00 ; $24 105,00 ;01.04.2014
+Government;United States of America; Paseo ; Medium ;2327; $10,00 ; $7,00 ; $814,45 ;01.05.2014
+Small Business;United States of America; Paseo ; Medium ;991; $10,00 ; $300,00 ; $14 865,00 ;01.06.2014
+Government;United States of America; Paseo ; Medium ;602; $10,00 ; $350,00 ; $10 535,00 ;01.06.2014
+Midmarket;France; Paseo ; Medium ;2620; $10,00 ; $15,00 ; $1 965,00 ;01.09.2014
+Government;Canada; Paseo ; Medium ;1228; $10,00 ; $350,00 ; $21 490,00 ;01.10.2013
+Government;Canada; Paseo ; Medium ;1389; $10,00 ; $20,00 ; $1 389,00 ;01.10.2013
+Enterprise;United States of America; Paseo ; Medium ;861; $10,00 ; $125,00 ; $5 381,25 ;01.10.2014
+Enterprise;France; Paseo ; Medium ;704; $10,00 ; $125,00 ; $4 400,00 ;01.10.2013
+Government;Canada; Paseo ; Medium ;1802; $10,00 ; $20,00 ; $1 802,00 ;01.12.2013
+Government;United States of America; Paseo ; Medium ;2663; $10,00 ; $20,00 ; $2 663,00 ;01.12.2014
+Government;France; Paseo ; Medium ;2136; $10,00 ; $7,00 ; $747,60 ;01.12.2013
+Midmarket;Germany; Paseo ; Medium ;2116; $10,00 ; $15,00 ; $1 587,00 ;01.12.2013
+Midmarket;United States of America; Velo ; Medium ;555; $120,00 ; $15,00 ; $416,25 ;01.01.2014
+Midmarket;Mexico; Velo ; Medium ;2861; $120,00 ; $15,00 ; $2 145,75 ;01.01.2014
+Enterprise;Germany; Velo ; Medium ;807; $120,00 ; $125,00 ; $5 043,75 ;01.02.2014
+Government;United States of America; Velo ; Medium ;602; $120,00 ; $350,00 ; $10 535,00 ;01.06.2014
+Government;United States of America; Velo ; Medium ;2832; $120,00 ; $20,00 ; $2 832,00 ;01.08.2014
+Government;France; Velo ; Medium ;1579; $120,00 ; $20,00 ; $1 579,00 ;01.08.2014
+Enterprise;United States of America; Velo ; Medium ;861; $120,00 ; $125,00 ; $5 381,25 ;01.10.2014
+Enterprise;France; Velo ; Medium ;704; $120,00 ; $125,00 ; $4 400,00 ;01.10.2013
+Government;France; Velo ; Medium ;1033; $120,00 ; $20,00 ; $1 033,00 ;01.12.2013
+Small Business;Germany; Velo ; Medium ;1250; $120,00 ; $300,00 ; $18 750,00 ;01.12.2014
+Government;Canada; VTT ; Medium ;1389; $250,00 ; $20,00 ; $1 389,00 ;01.10.2013
+Government;United States of America; VTT ; Medium ;1265; $250,00 ; $20,00 ; $1 265,00 ;01.11.2013
+Government;Germany; VTT ; Medium ;2297; $250,00 ; $20,00 ; $2 297,00 ;01.11.2013
+Government;United States of America; VTT ; Medium ;2663; $250,00 ; $20,00 ; $2 663,00 ;01.12.2014
+Government;United States of America; VTT ; Medium ;570; $250,00 ; $7,00 ; $199,50 ;01.12.2014
+Government;France; VTT ; Medium ;2487; $250,00 ; $7,00 ; $870,45 ;01.12.2014
+Government;Germany; Amarilla ; Medium ;1350; $260,00 ; $350,00 ; $23 625,00 ;01.02.2014
+Government;Canada; Amarilla ; Medium ;552; $260,00 ; $350,00 ; $9 660,00 ;01.08.2014
+Government;Canada; Amarilla ; Medium ;1228; $260,00 ; $350,00 ; $21 490,00 ;01.10.2013
+Small Business;Germany; Amarilla ; Medium ;1250; $260,00 ; $300,00 ; $18 750,00 ;01.12.2014
+Midmarket;France; Paseo ; Medium ;3801; $10,00 ; $15,00 ; $3 420,90 ;01.04.2014
+Government;United States of America; Carretera ; Medium ;1117,5; $3,00 ; $20,00 ; $1 341,00 ;01.01.2014
+Midmarket;Canada; Carretera ; Medium ;2844; $3,00 ; $15,00 ; $2 559,60 ;01.06.2014
+Channel Partners;Mexico; Carretera ; Medium ;562; $3,00 ; $12,00 ; $404,64 ;01.09.2014
+Channel Partners;Canada; Carretera ; Medium ;2299; $3,00 ; $12,00 ; $1 655,28 ;01.10.2013
+Midmarket;United States of America; Carretera ; Medium ;2030; $3,00 ; $15,00 ; $1 827,00 ;01.11.2014
+Government;United States of America; Carretera ; Medium ;263; $3,00 ; $7,00 ; $110,46 ;01.11.2013
+Enterprise;Germany; Carretera ; Medium ;887; $3,00 ; $125,00 ; $6 652,50 ;01.12.2013
+Government;Mexico; Montana ; Medium ;980; $5,00 ; $350,00 ; $20 580,00 ;01.04.2014
+Government;Germany; Montana ; Medium ;1460; $5,00 ; $350,00 ; $30 660,00 ;01.05.2014
+Government;France; Montana ; Medium ;1403; $5,00 ; $7,00 ; $589,26 ;01.10.2013
+Channel Partners;United States of America; Montana ; Medium ;2723; $5,00 ; $12,00 ; $1 960,56 ;01.11.2014
+Government;France; Paseo ; Medium ;1496; $10,00 ; $350,00 ; $31 416,00 ;01.06.2014
+Channel Partners;Canada; Paseo ; Medium ;2299; $10,00 ; $12,00 ; $1 655,28 ;01.10.2013
+Government;United States of America; Paseo ; Medium ;727; $10,00 ; $350,00 ; $15 267,00 ;01.10.2013
+Enterprise;Canada; Velo ; Medium ;952; $120,00 ; $125,00 ; $7 140,00 ;01.02.2014
+Enterprise;United States of America; Velo ; Medium ;2755; $120,00 ; $125,00 ; $20 662,50 ;01.02.2014
+Midmarket;Germany; Velo ; Medium ;1530; $120,00 ; $15,00 ; $1 377,00 ;01.05.2014
+Government;France; Velo ; Medium ;1496; $120,00 ; $350,00 ; $31 416,00 ;01.06.2014
+Government;Mexico; Velo ; Medium ;1498; $120,00 ; $7,00 ; $629,16 ;01.06.2014
+Small Business;France; Velo ; Medium ;1221; $120,00 ; $300,00 ; $21 978,00 ;01.10.2013
+Government;France; Velo ; Medium ;2076; $120,00 ; $350,00 ; $43 596,00 ;01.10.2013
+Midmarket;Canada; VTT ; Medium ;2844; $250,00 ; $15,00 ; $2 559,60 ;01.06.2014
+Government;Mexico; VTT ; Medium ;1498; $250,00 ; $7,00 ; $629,16 ;01.06.2014
+Small Business;France; VTT ; Medium ;1221; $250,00 ; $300,00 ; $21 978,00 ;01.10.2013
+Government;Mexico; VTT ; Medium ;1123; $250,00 ; $20,00 ; $1 347,60 ;01.11.2013
+Small Business;Canada; VTT ; Medium ;2436; $250,00 ; $300,00 ; $43 848,00 ;01.12.2013
+Enterprise;France; Amarilla ; Medium ;1987,5; $260,00 ; $125,00 ; $14 906,25 ;01.01.2014
+Government;Mexico; Amarilla ; Medium ;1679; $260,00 ; $350,00 ; $35 259,00 ;01.09.2014
+Government;United States of America; Amarilla ; Medium ;727; $260,00 ; $350,00 ; $15 267,00 ;01.10.2013
+Government;France; Amarilla ; Medium ;1403; $260,00 ; $7,00 ; $589,26 ;01.10.2013
+Government;France; Amarilla ; Medium ;2076; $260,00 ; $350,00 ; $43 596,00 ;01.10.2013
+Government;France; Montana ; Medium ;1757; $5,00 ; $20,00 ; $2 108,40 ;01.10.2013
+Midmarket;United States of America; Paseo ; Medium ;2198; $10,00 ; $15,00 ; $1 978,20 ;01.08.2014
+Midmarket;Germany; Paseo ; Medium ;1743; $10,00 ; $15,00 ; $1 568,70 ;01.08.2014
+Midmarket;United States of America; Paseo ; Medium ;1153; $10,00 ; $15,00 ; $1 037,70 ;01.10.2014
+Government;France; Paseo ; Medium ;1757; $10,00 ; $20,00 ; $2 108,40 ;01.10.2013
+Government;Germany; Velo ; Medium ;1001; $120,00 ; $20,00 ; $1 201,20 ;01.08.2014
+Government;Mexico; Velo ; Medium ;1333; $120,00 ; $7,00 ; $559,86 ;01.11.2014
+Midmarket;United States of America; VTT ; Medium ;1153; $250,00 ; $15,00 ; $1 037,70 ;01.10.2014
+Channel Partners;Mexico; Carretera ; Medium ;727; $3,00 ; $12,00 ; $610,68 ;01.02.2014
+Channel Partners;Canada; Carretera ; Medium ;1884; $3,00 ; $12,00 ; $1 582,56 ;01.08.2014
+Government;Mexico; Carretera ; Medium ;1834; $3,00 ; $20,00 ; $2 567,60 ;01.09.2013
+Channel Partners;Mexico; Montana ; Medium ;2340; $5,00 ; $12,00 ; $1 965,60 ;01.01.2014
+Channel Partners;France; Montana ; Medium ;2342; $5,00 ; $12,00 ; $1 967,28 ;01.11.2014
+Government;France; Paseo ; Medium ;1031; $10,00 ; $7,00 ; $505,19 ;01.09.2013
+Midmarket;Canada; Velo ; Medium ;1262; $120,00 ; $15,00 ; $1 325,10 ;01.05.2014
+Government;Canada; Velo ; Medium ;1135; $120,00 ; $7,00 ; $556,15 ;01.06.2014
+Government;United States of America; Velo ; Medium ;547; $120,00 ; $7,00 ; $268,03 ;01.11.2014
+Government;Canada; Velo ; Medium ;1582; $120,00 ; $7,00 ; $775,18 ;01.12.2014
+Channel Partners;France; VTT ; Medium ;1738,5; $250,00 ; $12,00 ; $1 460,34 ;01.04.2014
+Channel Partners;Germany; VTT ; Medium ;2215; $250,00 ; $12,00 ; $1 860,60 ;01.09.2013
+Government;Canada; VTT ; Medium ;1582; $250,00 ; $7,00 ; $775,18 ;01.12.2014
+Government;Canada; Amarilla ; Medium ;1135; $260,00 ; $7,00 ; $556,15 ;01.06.2014
+Government;United States of America; Carretera ; Medium ;1761; $3,00 ; $350,00 ; $43 144,50 ;01.03.2014
+Small Business;France; Carretera ; Medium ;448; $3,00 ; $300,00 ; $9 408,00 ;01.06.2014
+Small Business;France; Carretera ; Medium ;2181; $3,00 ; $300,00 ; $45 801,00 ;01.10.2014
+Government;France; Montana ; Medium ;1976; $5,00 ; $20,00 ; $2 766,40 ;01.10.2014
+Small Business;France; Montana ; Medium ;2181; $5,00 ; $300,00 ; $45 801,00 ;01.10.2014
+Enterprise;Germany; Montana ; Medium ;2500; $5,00 ; $125,00 ; $21 875,00 ;01.11.2013
+Small Business;Canada; Paseo ; Medium ;1702; $10,00 ; $300,00 ; $35 742,00 ;01.05.2014
+Small Business;France; Paseo ; Medium ;448; $10,00 ; $300,00 ; $9 408,00 ;01.06.2014
+Enterprise;Germany; Paseo ; Medium ;3513; $10,00 ; $125,00 ; $30 738,75 ;01.07.2014
+Midmarket;France; Paseo ; Medium ;2101; $10,00 ; $15,00 ; $2 206,05 ;01.08.2014
+Midmarket;United States of America; Paseo ; Medium ;2931; $10,00 ; $15,00 ; $3 077,55 ;01.09.2013
+Government;France; Paseo ; Medium ;1535; $10,00 ; $20,00 ; $2 149,00 ;01.09.2014
+Small Business;Germany; Paseo ; Medium ;1123; $10,00 ; $300,00 ; $23 583,00 ;01.09.2013
+Small Business;Canada; Paseo ; Medium ;1404; $10,00 ; $300,00 ; $29 484,00 ;01.11.2013
+Channel Partners;Mexico; Paseo ; Medium ;2763; $10,00 ; $12,00 ; $2 320,92 ;01.11.2013
+Government;Germany; Paseo ; Medium ;2125; $10,00 ; $7,00 ; $1 041,25 ;01.12.2013
+Small Business;France; Velo ; Medium ;1659; $120,00 ; $300,00 ; $34 839,00 ;01.07.2014
+Government;Mexico; Velo ; Medium ;609; $120,00 ; $20,00 ; $852,60 ;01.08.2014
+Enterprise;Germany; Velo ; Medium ;2087; $120,00 ; $125,00 ; $18 261,25 ;01.09.2014
+Government;France; Velo ; Medium ;1976; $120,00 ; $20,00 ; $2 766,40 ;01.10.2014
+Government;United States of America; Velo ; Medium ;1421; $120,00 ; $20,00 ; $1 989,40 ;01.12.2013
+Small Business;United States of America; Velo ; Medium ;1372; $120,00 ; $300,00 ; $28 812,00 ;01.12.2014
+Government;Germany; Velo ; Medium ;588; $120,00 ; $20,00 ; $823,20 ;01.12.2013
+Channel Partners;Canada; VTT ; Medium ;3244,5; $250,00 ; $12,00 ; $2 725,38 ;01.01.2014
+Small Business;France; VTT ; Medium ;959; $250,00 ; $300,00 ; $20 139,00 ;01.02.2014
+Small Business;Mexico; VTT ; Medium ;2747; $250,00 ; $300,00 ; $57 687,00 ;01.02.2014
+Enterprise;Canada; Amarilla ; Medium ;1645; $260,00 ; $125,00 ; $14 393,75 ;01.05.2014
+Government;France; Amarilla ; Medium ;2876; $260,00 ; $350,00 ; $70 462,00 ;01.09.2014
+Enterprise;Germany; Amarilla ; Medium ;994; $260,00 ; $125,00 ; $8 697,50 ;01.09.2013
+Government;Canada; Amarilla ; Medium ;1118; $260,00 ; $20,00 ; $1 565,20 ;01.11.2014
+Small Business;United States of America; Amarilla ; Medium ;1372; $260,00 ; $300,00 ; $28 812,00 ;01.12.2014
+Government;Canada; Montana ; Medium ;488; $5,00 ; $7,00 ; $273,28 ;01.02.2014
+Government;United States of America; Montana ; Medium ;1282; $5,00 ; $20,00 ; $2 051,20 ;01.06.2014
+Government;Canada; Paseo ; Medium ;257; $10,00 ; $7,00 ; $143,92 ;01.05.2014
+Government;United States of America; Amarilla ; Medium ;1282; $260,00 ; $20,00 ; $2 051,20 ;01.06.2014
+Enterprise;Mexico; Carretera ; Medium ;1540; $3,00 ; $125,00 ; $15 400,00 ;01.08.2014
+Midmarket;France; Carretera ; Medium ;490; $3,00 ; $15,00 ; $588,00 ;01.11.2014
+Government;Mexico; Carretera ; Medium ;1362; $3,00 ; $350,00 ; $38 136,00 ;01.12.2014
+Midmarket;France; Montana ; Medium ;2501; $5,00 ; $15,00 ; $3 001,20 ;01.03.2014
+Government;Canada; Montana ; Medium ;708; $5,00 ; $20,00 ; $1 132,80 ;01.06.2014
+Government;Germany; Montana ; Medium ;645; $5,00 ; $20,00 ; $1 032,00 ;01.07.2014
+Small Business;France; Montana ; Medium ;1562; $5,00 ; $300,00 ; $37 488,00 ;01.08.2014
+Small Business;Canada; Montana ; Medium ;1283; $5,00 ; $300,00 ; $30 792,00 ;01.09.2013
+Midmarket;Germany; Montana ; Medium ;711; $5,00 ; $15,00 ; $853,20 ;01.12.2014
+Enterprise;Mexico; Paseo ; Medium ;1114; $10,00 ; $125,00 ; $11 140,00 ;01.03.2014
+Government;Germany; Paseo ; Medium ;1259; $10,00 ; $7,00 ; $705,04 ;01.04.2014
+Government;Germany; Paseo ; Medium ;1095; $10,00 ; $7,00 ; $613,20 ;01.05.2014
+Government;Germany; Paseo ; Medium ;1366; $10,00 ; $20,00 ; $2 185,60 ;01.06.2014
+Small Business;Mexico; Paseo ; Medium ;2460; $10,00 ; $300,00 ; $59 040,00 ;01.06.2014
+Government;United States of America; Paseo ; Medium ;678; $10,00 ; $7,00 ; $379,68 ;01.08.2014
+Government;Germany; Paseo ; Medium ;1598; $10,00 ; $7,00 ; $894,88 ;01.08.2014
+Government;Germany; Paseo ; Medium ;2409; $10,00 ; $7,00 ; $1 349,04 ;01.09.2013
+Government;Germany; Paseo ; Medium ;1934; $10,00 ; $20,00 ; $3 094,40 ;01.09.2014
+Government;Mexico; Paseo ; Medium ;2993; $10,00 ; $20,00 ; $4 788,80 ;01.09.2014
+Government;Germany; Paseo ; Medium ;2146; $10,00 ; $350,00 ; $60 088,00 ;01.11.2013
+Government;Mexico; Paseo ; Medium ;1946; $10,00 ; $7,00 ; $1 089,76 ;01.12.2013
+Government;Mexico; Paseo ; Medium ;1362; $10,00 ; $350,00 ; $38 136,00 ;01.12.2014
+Channel Partners;Canada; Velo ; Medium ;598; $120,00 ; $12,00 ; $574,08 ;01.03.2014
+Government;United States of America; Velo ; Medium ;2907; $120,00 ; $7,00 ; $1 627,92 ;01.06.2014
+Government;Germany; Velo ; Medium ;2338; $120,00 ; $7,00 ; $1 309,28 ;01.06.2014
+Small Business;France; Velo ; Medium ;386; $120,00 ; $300,00 ; $9 264,00 ;01.11.2013
+Small Business;Mexico; Velo ; Medium ;635; $120,00 ; $300,00 ; $15 240,00 ;01.12.2014
+Government;France; VTT ; Medium ;574,5; $250,00 ; $350,00 ; $16 086,00 ;01.04.2014
+Government;Germany; VTT ; Medium ;2338; $250,00 ; $7,00 ; $1 309,28 ;01.06.2014
+Government;France; VTT ; Medium ;381; $250,00 ; $350,00 ; $10 668,00 ;01.08.2014
+Government;Germany; VTT ; Medium ;422; $250,00 ; $350,00 ; $11 816,00 ;01.08.2014
+Small Business;Canada; VTT ; Medium ;2134; $250,00 ; $300,00 ; $51 216,00 ;01.09.2014
+Small Business;United States of America; VTT ; Medium ;808; $250,00 ; $300,00 ; $19 392,00 ;01.12.2013
+Government;Canada; Amarilla ; Medium ;708; $260,00 ; $20,00 ; $1 132,80 ;01.06.2014
+Government;United States of America; Amarilla ; Medium ;2907; $260,00 ; $7,00 ; $1 627,92 ;01.06.2014
+Government;Germany; Amarilla ; Medium ;1366; $260,00 ; $20,00 ; $2 185,60 ;01.06.2014
+Small Business;Mexico; Amarilla ; Medium ;2460; $260,00 ; $300,00 ; $59 040,00 ;01.06.2014
+Government;Germany; Amarilla ; Medium ;1520; $260,00 ; $20,00 ; $2 432,00 ;01.11.2014
+Midmarket;Germany; Amarilla ; Medium ;711; $260,00 ; $15,00 ; $853,20 ;01.12.2014
+Channel Partners;Mexico; Amarilla ; Medium ;1375; $260,00 ; $12,00 ; $1 320,00 ;01.12.2013
+Small Business;Mexico; Amarilla ; Medium ;635; $260,00 ; $300,00 ; $15 240,00 ;01.12.2014
+Government;United States of America; VTT ; Medium ;436,5; $250,00 ; $20,00 ; $698,40 ;01.07.2014
+Small Business;Canada; Carretera ; Medium ;1094; $3,00 ; $300,00 ; $29 538,00 ;01.06.2014
+Channel Partners;Mexico; Carretera ; Medium ;367; $3,00 ; $12,00 ; $396,36 ;01.10.2013
+Small Business;Canada; Montana ; Medium ;3802,5; $5,00 ; $300,00 ; $102 667,50 ;01.04.2014
+Government;France; Montana ; Medium ;1666; $5,00 ; $350,00 ; $52 479,00 ;01.05.2014
+Small Business;France; Montana ; Medium ;322; $5,00 ; $300,00 ; $8 694,00 ;01.09.2013
+Channel Partners;Canada; Montana ; Medium ;2321; $5,00 ; $12,00 ; $2 506,68 ;01.11.2014
+Enterprise;France; Montana ; Medium ;1857; $5,00 ; $125,00 ; $20 891,25 ;01.11.2013
+Government;Canada; Montana ; Medium ;1611; $5,00 ; $7,00 ; $1 014,93 ;01.12.2013
+Enterprise;United States of America; Montana ; Medium ;2797; $5,00 ; $125,00 ; $31 466,25 ;01.12.2014
+Small Business;Germany; Montana ; Medium ;334; $5,00 ; $300,00 ; $9 018,00 ;01.12.2013
+Small Business;Mexico; Paseo ; Medium ;2565; $10,00 ; $300,00 ; $69 255,00 ;01.01.2014
+Government;Mexico; Paseo ; Medium ;2417; $10,00 ; $350,00 ; $76 135,50 ;01.01.2014
+Midmarket;United States of America; Paseo ; Medium ;3675; $10,00 ; $15,00 ; $4 961,25 ;01.04.2014
+Small Business;Canada; Paseo ; Medium ;1094; $10,00 ; $300,00 ; $29 538,00 ;01.06.2014
+Midmarket;France; Paseo ; Medium ;1227; $10,00 ; $15,00 ; $1 656,45 ;01.10.2014
+Channel Partners;Mexico; Paseo ; Medium ;367; $10,00 ; $12,00 ; $396,36 ;01.10.2013
+Small Business;France; Paseo ; Medium ;1324; $10,00 ; $300,00 ; $35 748,00 ;01.11.2014
+Channel Partners;Germany; Paseo ; Medium ;1775; $10,00 ; $12,00 ; $1 917,00 ;01.11.2013
+Enterprise;United States of America; Paseo ; Medium ;2797; $10,00 ; $125,00 ; $31 466,25 ;01.12.2014
+Midmarket;Mexico; Velo ; Medium ;245; $120,00 ; $15,00 ; $330,75 ;01.05.2014
+Small Business;Canada; Velo ; Medium ;3793,5; $120,00 ; $300,00 ; $102 424,50 ;01.07.2014
+Government;Germany; Velo ; Medium ;1307; $120,00 ; $350,00 ; $41 170,50 ;01.07.2014
+Enterprise;Canada; Velo ; Medium ;567; $120,00 ; $125,00 ; $6 378,75 ;01.09.2014
+Enterprise;Mexico; Velo ; Medium ;2110; $120,00 ; $125,00 ; $23 737,50 ;01.09.2014
+Government;Canada; Velo ; Medium ;1269; $120,00 ; $350,00 ; $39 973,50 ;01.10.2014
+Channel Partners;United States of America; VTT ; Medium ;1956; $250,00 ; $12,00 ; $2 112,48 ;01.01.2014
+Small Business;Germany; VTT ; Medium ;2659; $250,00 ; $300,00 ; $71 793,00 ;01.02.2014
+Government;United States of America; VTT ; Medium ;1351,5; $250,00 ; $350,00 ; $42 572,25 ;01.04.2014
+Channel Partners;Germany; VTT ; Medium ;880; $250,00 ; $12,00 ; $950,40 ;01.05.2014
+Small Business;United States of America; VTT ; Medium ;1867; $250,00 ; $300,00 ; $50 409,00 ;01.09.2014
+Channel Partners;France; VTT ; Medium ;2234; $250,00 ; $12,00 ; $2 412,72 ;01.09.2013
+Midmarket;France; VTT ; Medium ;1227; $250,00 ; $15,00 ; $1 656,45 ;01.10.2014
+Enterprise;Mexico; VTT ; Medium ;877; $250,00 ; $125,00 ; $9 866,25 ;01.11.2014
+Government;United States of America; Amarilla ; Medium ;2071; $260,00 ; $350,00 ; $65 236,50 ;01.09.2014
+Government;Canada; Amarilla ; Medium ;1269; $260,00 ; $350,00 ; $39 973,50 ;01.10.2014
+Midmarket;Germany; Amarilla ; Medium ;970; $260,00 ; $15,00 ; $1 309,50 ;01.11.2013
+Government;Mexico; Amarilla ; Medium ;1694; $260,00 ; $20,00 ; $3 049,20 ;01.11.2014
+Government;Germany; Carretera ; Medium ;663; $3,00 ; $20,00 ; $1 193,40 ;01.05.2014
+Government;Canada; Carretera ; Medium ;819; $3,00 ; $7,00 ; $515,97 ;01.07.2014
+Channel Partners;Germany; Carretera ; Medium ;1580; $3,00 ; $12,00 ; $1 706,40 ;01.09.2014
+Government;Mexico; Carretera ; Medium ;521; $3,00 ; $7,00 ; $328,23 ;01.12.2014
+Government;United States of America; Paseo ; Medium ;973; $10,00 ; $20,00 ; $1 751,40 ;01.03.2014
+Government;Mexico; Paseo ; Medium ;1038; $10,00 ; $20,00 ; $1 868,40 ;01.06.2014
+Government;Germany; Paseo ; Medium ;360; $10,00 ; $7,00 ; $226,80 ;01.10.2014
+Channel Partners;France; Velo ; Medium ;1967; $120,00 ; $12,00 ; $2 124,36 ;01.03.2014
+Midmarket;Mexico; Velo ; Medium ;2628; $120,00 ; $15,00 ; $3 547,80 ;01.04.2014
+Government;Germany; VTT ; Medium ;360; $250,00 ; $7,00 ; $226,80 ;01.10.2014
+Government;France; VTT ; Medium ;2682; $250,00 ; $20,00 ; $4 827,60 ;01.11.2013
+Government;Mexico; VTT ; Medium ;521; $250,00 ; $7,00 ; $328,23 ;01.12.2014
+Government;Mexico; Amarilla ; Medium ;1038; $260,00 ; $20,00 ; $1 868,40 ;01.06.2014
+Midmarket;Canada; Amarilla ; Medium ;1630,5; $260,00 ; $15,00 ; $2 201,18 ;01.07.2014
+Channel Partners;France; Amarilla ; Medium ;306; $260,00 ; $12,00 ; $330,48 ;01.12.2013
+Channel Partners;United States of America; Carretera ; High ;386; $3,00 ; $12,00 ; $463,20 ;01.10.2013
+Government;United States of America; Montana ; High ;2328; $5,00 ; $7,00 ; $1 629,60 ;01.09.2014
+Channel Partners;United States of America; Paseo ; High ;386; $10,00 ; $12,00 ; $463,20 ;01.10.2013
+Enterprise;United States of America; Carretera ; High ;3445,5; $3,00 ; $125,00 ; $43 068,75 ;01.04.2014
+Enterprise;France; Carretera ; High ;1482; $3,00 ; $125,00 ; $18 525,00 ;01.12.2013
+Government;United States of America; Montana ; High ;2313; $5,00 ; $350,00 ; $80 955,00 ;01.05.2014
+Enterprise;United States of America; Montana ; High ;1804; $5,00 ; $125,00 ; $22 550,00 ;01.11.2013
+Midmarket;France; Montana ; High ;2072; $5,00 ; $15,00 ; $3 108,00 ;01.12.2014
+Government;France; Paseo ; High ;1954; $10,00 ; $20,00 ; $3 908,00 ;01.03.2014
+Small Business;Mexico; Paseo ; High ;591; $10,00 ; $300,00 ; $17 730,00 ;01.05.2014
+Midmarket;France; Paseo ; High ;2167; $10,00 ; $15,00 ; $3 250,50 ;01.10.2013
+Government;Germany; Paseo ; High ;241; $10,00 ; $20,00 ; $482,00 ;01.10.2014
+Midmarket;Germany; Velo ; High ;681; $120,00 ; $15,00 ; $1 021,50 ;01.01.2014
+Midmarket;Germany; Velo ; High ;510; $120,00 ; $15,00 ; $765,00 ;01.04.2014
+Midmarket;United States of America; Velo ; High ;790; $120,00 ; $15,00 ; $1 185,00 ;01.05.2014
+Government;France; Velo ; High ;639; $120,00 ; $350,00 ; $22 365,00 ;01.07.2014
+Enterprise;United States of America; Velo ; High ;1596; $120,00 ; $125,00 ; $19 950,00 ;01.09.2014
+Small Business;United States of America; Velo ; High ;2294; $120,00 ; $300,00 ; $68 820,00 ;01.10.2013
+Government;Germany; Velo ; High ;241; $120,00 ; $20,00 ; $482,00 ;01.10.2014
+Government;Germany; Velo ; High ;2665; $120,00 ; $7,00 ; $1 865,50 ;01.11.2014
+Enterprise;Canada; Velo ; High ;1916; $120,00 ; $125,00 ; $23 950,00 ;01.12.2013
+Small Business;France; Velo ; High ;853; $120,00 ; $300,00 ; $25 590,00 ;01.12.2014
+Enterprise;Mexico; VTT ; High ;341; $250,00 ; $125,00 ; $4 262,50 ;01.05.2014
+Midmarket;Mexico; VTT ; High ;641; $250,00 ; $15,00 ; $961,50 ;01.07.2014
+Government;United States of America; VTT ; High ;2807; $250,00 ; $350,00 ; $98 245,00 ;01.08.2014
+Small Business;Mexico; VTT ; High ;432; $250,00 ; $300,00 ; $12 960,00 ;01.09.2014
+Small Business;United States of America; VTT ; High ;2294; $250,00 ; $300,00 ; $68 820,00 ;01.10.2013
+Midmarket;France; VTT ; High ;2167; $250,00 ; $15,00 ; $3 250,50 ;01.10.2013
+Enterprise;Canada; VTT ; High ;2529; $250,00 ; $125,00 ; $31 612,50 ;01.11.2014
+Government;Germany; VTT ; High ;1870; $250,00 ; $350,00 ; $65 450,00 ;01.12.2013
+Enterprise;United States of America; Amarilla ; High ;579; $260,00 ; $125,00 ; $7 237,50 ;01.01.2014
+Government;Canada; Amarilla ; High ;2240; $260,00 ; $350,00 ; $78 400,00 ;01.02.2014
+Small Business;United States of America; Amarilla ; High ;2993; $260,00 ; $300,00 ; $89 790,00 ;01.03.2014
+Channel Partners;Canada; Amarilla ; High ;3520,5; $260,00 ; $12,00 ; $4 224,60 ;01.04.2014
+Government;Mexico; Amarilla ; High ;2039; $260,00 ; $20,00 ; $4 078,00 ;01.05.2014
+Channel Partners;Germany; Amarilla ; High ;2574; $260,00 ; $12,00 ; $3 088,80 ;01.08.2014
+Government;Canada; Amarilla ; High ;707; $260,00 ; $350,00 ; $24 745,00 ;01.09.2014
+Midmarket;France; Amarilla ; High ;2072; $260,00 ; $15,00 ; $3 108,00 ;01.12.2014
+Small Business;France; Amarilla ; High ;853; $260,00 ; $300,00 ; $25 590,00 ;01.12.2014
+Channel Partners;France; Carretera ; High ;1198; $3,00 ; $12,00 ; $1 581,36 ;01.10.2013
+Government;France; Paseo ; High ;2532; $10,00 ; $7,00 ; $1 949,64 ;01.04.2014
+Channel Partners;France; Paseo ; High ;1198; $10,00 ; $12,00 ; $1 581,36 ;01.10.2013
+Midmarket;Canada; Velo ; High ;384; $120,00 ; $15,00 ; $633,60 ;01.01.2014
+Channel Partners;Germany; Velo ; High ;472; $120,00 ; $12,00 ; $623,04 ;01.10.2014
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;

@@ -1,0 +1,152 @@
+/*
+Made with hexGrid by web-tiki
+https://github.com/web-tiki/responsive-grid-of-hexagons
+*/
+
+#hexGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 20px
+}
+
+.hex {
+    position: relative;
+    visibility: hidden;
+    outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    animation: hex-bounce 1s linear 0.5s 1;
+}
+
+.hex::after{
+    content:'';
+    display:block;
+    padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+
+.hexIn {
+    position: absolute;
+    width:96%;
+    padding-bottom: 110.851%; /* =  width / sin(60) */
+    margin:0 2%;
+    overflow: hidden;
+    visibility: hidden;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+    -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+    transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+.hexIn * {
+    position: absolute;
+    visibility: visible;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+    -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+    transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+/*** HEX CONTENT **********************************************************************/
+.hex img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-transform: rotate3d(0,0,0,0deg);
+    -ms-transform: rotate3d(0,0,0,0deg);
+    transform: rotate3d(0,0,0,0deg);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.hex h1 {
+    width: 100%;
+    padding-top: calc(50% - 2vw);
+    margin: 0;
+    opacity: 0;
+    z-index: 9;
+    font-size: 4vw;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/*** HOVER EFFECT  **********************************************************************/
+.hex:hover {
+    z-index: 8;
+    transform: scale(.95);
+    /*animation: none;*/
+}
+
+.hex:hover img {
+    opacity: 0.05;
+}
+
+.hex:hover h1 {
+    opacity: 1;
+}
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+@media (min-width:1201px) { /* <- 3-2  hexagons per row */
+    #hexGrid{
+        padding-bottom: 10%
+    }
+    .hex {
+        width: 33.333%; /* = 100 / 3 */
+    }
+    .hex:nth-child(5n + 4){ /* first hexagon of even rows */
+        margin-left: 16.666%;  /* = width of .hex / 2  to indent even rows */
+    }
+}
+
+@media (max-width: 1200px) and (min-width:901px) { /* <- 3-2  hexagons per row */
+    #hexGrid{
+        padding-bottom: 10%
+    }
+    .hex {
+        width: 33.333%; /* = 100 / 3 */
+    }
+    .hex:nth-child(5n + 4){ /* first hexagon of even rows */
+        margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+    }
+}
+
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+    #hexGrid{
+        padding-bottom: 10%
+    }
+    .hex {
+        width: 33.333%; /* = 100 / 3 */
+    }
+    .hex:nth-child(5n+4){ /* first hexagon of even rows */
+        margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+    }
+}
+
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+    #hexGrid{
+        padding-bottom: 11.2%
+    }
+    .hex {
+        width: 50%; /* = 100 / 3 */
+    }
+    .hex:nth-child(3n+3){ /* first hexagon of even rows */
+        margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+    }
+}
+
+@keyframes hex-bounce {
+    0% {transform: scale(1)}
+    20% {transform: scale(1.05)}
+    40% {transform: scale(.9)}
+    60% {transform: scale(1)}
+    80% {transform: scale(.95)}
+    100% {transform: scale(1)}
+}

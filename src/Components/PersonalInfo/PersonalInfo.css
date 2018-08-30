@@ -1,21 +1,30 @@
 #personal-info {
     background: #bdbdbd;
-    position: relative;
-}
-
-@media only screen and (min-width: 64em) {
-    #personal-info {
-        position: fixed;
-        min-height: 100vh;
-        margin-left: -32px;
-        top: 0;
-    }
+    margin: 0 -16px;
 }
 
 #personal-info img {
-    padding-top: 20px;
-    width: 80%;
+    padding-top: 10px;
+    width: 40%;
     margin: auto;
+}
+
+#personal-info h1 {
+    color: #212121;
+}
+
+@media only screen and (min-width: 992px) {
+    #personal-info {
+        min-height: 100vh;
+        margin: 0 0 0 -16px;
+        top: 0;
+    }
+
+    #personal-info img {
+        padding-top: 20px;
+        width: 80%;
+        margin: auto;
+    }
 }
 
 .card {
@@ -44,6 +53,6 @@
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
     vertical-align: middle;
 }

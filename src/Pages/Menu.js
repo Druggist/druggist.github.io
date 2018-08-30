@@ -8,10 +8,10 @@ class Menu extends React.Component {
 		return (
 			<Grid fluid>
 				<Row center="xs" middle="xs">
-					<Col xs={12} md={4}>
+					<Col xs={12} lg={4}>
 						<PersonalInfo/>
 					</Col>
-					<Col xs={12} md={8} style={{marginLeft: "-16px"}}>
+					<Col xs={12} lg={8}>
 						<h2>Yet another portfolio page</h2>
 						<HexGrid/>
 					</Col>

@@ -1,5 +1,49 @@
 #personal-info {
     background: #bdbdbd;
-    height: 100vh;
-    margin-left: -32px;
+    position: relative;
+}
+
+@media only screen and (min-width: 64em) {
+    #personal-info {
+        position: fixed;
+        min-height: 100vh;
+        margin-left: -32px;
+        top: 0;
+    }
+}
+
+#personal-info img {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    color: #616161;
+    background: #212121;
+    border: 2px solid #bdbdbd;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+    color: #bdbdbd;
+    box-shadow: 2px 2px 10px #212121, -2px -2px 10px #212121;
+}
+
+.card i {
+    display: inline-block;
+    float: left;
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+
+.card span {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    vertical-align: middle;
 }

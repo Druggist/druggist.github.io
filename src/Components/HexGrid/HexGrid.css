@@ -7,9 +7,11 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 90%;
+    padding: 0;
+    padding-top: 10px;
     overflow: hidden;
     list-style-type: none;
-    padding-top: 20px
 }
 
 .hex {
@@ -94,19 +96,7 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
 }
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
-@media (min-width:1201px) { /* <- 3-2  hexagons per row */
-    #hexGrid{
-        padding-bottom: 10%
-    }
-    .hex {
-        width: 33.333%; /* = 100 / 3 */
-    }
-    .hex:nth-child(5n + 4){ /* first hexagon of even rows */
-        margin-left: 16.666%;  /* = width of .hex / 2  to indent even rows */
-    }
-}
-
-@media (max-width: 1200px) and (min-width:901px) { /* <- 3-2  hexagons per row */
+@media (min-width: 64em) { /* <- 3-2  hexagons per row */
     #hexGrid{
         padding-bottom: 10%
     }
@@ -118,19 +108,7 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
     }
 }
 
-@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
-    #hexGrid{
-        padding-bottom: 10%
-    }
-    .hex {
-        width: 33.333%; /* = 100 / 3 */
-    }
-    .hex:nth-child(5n+4){ /* first hexagon of even rows */
-        margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
-    }
-}
-
-@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+@media (max-width: 64em) { /* <- 2-1  hexagons per row */
     #hexGrid{
         padding-bottom: 11.2%
     }

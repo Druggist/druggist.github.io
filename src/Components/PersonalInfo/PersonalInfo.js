@@ -11,11 +11,11 @@ class PersonalInfo extends React.Component {
 					<Col xs={12}>
 						<img src={DruggistImg} alt="druggist"/>
 						<h1>sir Druggist</h1>
-						<a className="card" href="#">
+						<a className="card" href="mailto:m.najdora@gmail.com">
 							<i className="far fa-envelope"></i>
-							<span id="email"></span>
+							<span id="email">m.najdora@gmail.com</span>
 						</a>
-						<a className="card" href="#">
+						<a className="card" href="https://twitter.com/sirDruggist">
 							<i className="fab fa-twitter"></i>
 							<span>@sirDruggist</span>
 						</a>

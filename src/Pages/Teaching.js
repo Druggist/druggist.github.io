@@ -1,36 +1,24 @@
 import React from "react";
 import {Redirect} from "react-router-dom";
+import * as Tabletop from "tabletop";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import Exercises from "../Components/Exercises/Exercises";
 import Tabs from "../Components/Tabs/Tabs";
 
-const API = "https://sheets.googleapis.com/v4/spreadsheets/1ljZhSy9TLKDnbcKOQ1voDp-Yxu5LqF-KEkhAvrs2h74/values:batchGet?ranges=Teaching&majorDimension=ROWS&key=AIzaSyAHc6sDE6-VlK2Ux9CC21L8j-McK9LEZUo";
-
 class Teaching extends React.Component {
 	constructor(props) {
 		super(props);
-		this.subject = props.match.params.subject;
+		this.subject = props.match.params.subject ? props.match.params.subject.replace("_", " ") : undefined;
 		this.state = {
 			items: []
 		};
 	}
 
 	componentDidMount() {
-		fetch(API).then(response => response.json()).then(data => {
-			let batchRowValues = data.valueRanges[0].values;
-
-			const rows = [];
-			for (let i = 1; i < batchRowValues.length; i++) {
-				let rowObject = {};
-				for (let j = 0; j < batchRowValues[i].length; j++) {
-					rowObject[batchRowValues[0][j]] = batchRowValues[i][j];
-				}
-				rows.push(rowObject);
-			}
-
-			this.setState({ items: rows });
-		});
-
+		const publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1ljZhSy9TLKDnbcKOQ1voDp-Yxu5LqF-KEkhAvrs2h74/edit?usp=sharing';
+		Tabletop.init({ key: publicSpreadsheetUrl, callback: (data, tabletop) => {
+				this.setState({ items: tabletop.sheets("Teaching").elements});
+		}});
 	}
 
 	render() {
@@ -56,7 +44,7 @@ class Teaching extends React.Component {
 
 				tabs[classes[cl]] = (
 					<Grid fluid>
-						<Row center="xs">
+						<Row top="xs" center="xs" around="xs">
 							{exercises}
 						</Row>
 					</Grid>

@@ -1,0 +1,25 @@
+.text-fit {
+    text-align: center;
+    width: 100%;
+    color: #616161;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .text-fit {
+        text-align: left;
+        margin: 5vh 0;
+        margin-left: -25%;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        height: 90vh;
+        line-height: 100%;
+    }
+
+    .text-fit div {
+        position: fixed;
+        left: 0;
+    }
+}

@@ -4,11 +4,12 @@ import * as Tabletop from "tabletop";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import Exercises from "../Components/Exercises/Exercises";
 import Tabs from "../Components/Tabs/Tabs";
+import Section from "../Components/Section/Section";
 
 class Teaching extends React.Component {
 	constructor(props) {
 		super(props);
-		this.subject = props.match.params.subject ? props.match.params.subject.replace("_", " ") : undefined;
+		this.subject = props.match.params.subject ? props.match.params.subject.replace("_", String.fromCharCode(160)) : undefined;
 		this.state = {
 			items: []
 		};
@@ -23,9 +24,9 @@ class Teaching extends React.Component {
 
 	render() {
 		let renderObject = "";
-		if(this.subject === "informatyka" || this.subject === "bazy danych") {
+		if(this.subject === "informatyka" || this.subject === "bazy" + String.fromCharCode(160) + "danych") {
 			const data = this.state.items.filter((obj) => {
-				return obj.subject === this.subject;
+				return obj.subject === this.subject.replace(String.fromCharCode(160), " ");
 			});
 			const classes = data.map(obj => obj.class).filter((obj, i, arr) => arr.indexOf(obj) === i);
 
@@ -55,9 +56,7 @@ class Teaching extends React.Component {
 		} else if(this.subject) renderObject = <Redirect to="/teaching"/>;
 		console.log(renderObject);
 		return (
-			<div>
-				{renderObject}
-			</div>
+			<Section title={this.subject}>{renderObject}</Section>
 		);
 	}
 }

@@ -1,12 +1,7 @@
 .tabs {
-    display: block;
-    display: -webkit-flex;
-    display: -moz-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0 -16px;
     overflow: hidden;
 }
 
@@ -15,48 +10,51 @@
 }
 
 .tabs .tab label {
-    color: #efedef;
-    cursor: pointer;
+    padding: .5em 0;
+    border-bottom: 2px solid #bdbdbd;
     display: block;
-    font-size: 1.1em;
-    line-height: 1em;
-    padding: 2rem 0;
+    cursor: pointer;
+    color: #bdbdbd;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
     text-align: center;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.tabs .tab [type="radio"]:checked + label {
+    color: #ffa000;
 }
 
 .tabs .tab [type="radio"] {
-    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    width: 100%;
+    display: block;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    display: block;
-    width: 100%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.tabs .tab [type="radio"]:hover,
-.tabs .tab [type="radio"]:focus {
-    border-bottom: 1px solid #fd264f;
+.tabs .tab [type="radio"]:hover ~ label,
+.tabs .tab [type="radio"]:focus ~ label {
+    border-bottom: 2px solid #ffa000;
 }
 
-.tabs .tab [type="radio"]:checked {
-    border-bottom: 2px solid #fd264f;
+.tabs .tab [type="radio"]:checked ~ label {
+    border-bottom: 4px solid #ffa000;
+    border-radius: 0 0 2px 2px;
 }
 
-.tabs .tab [type="radio"]:checked + div {
+.tabs .tab [type="radio"]:checked ~ div {
+    height: auto;
     opacity: 1;
 }
-.tabs .tab [type="radio"] + div{
+.tabs .tab [type="radio"] ~ div{
+    width: 90%;
+    height: 0;
+    padding: 2rem 0;
     display: block;
     opacity: 0;
-    padding: 2rem 0;
-    width: 90%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }

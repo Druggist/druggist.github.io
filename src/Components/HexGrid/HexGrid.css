@@ -81,17 +81,20 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
 }
 
 /*** HOVER EFFECT  **********************************************************************/
-.hex:hover {
+.hex:hover,
+.hex:focus {
     z-index: 8;
     transform: scale(.95);
     /*animation: none;*/
 }
 
-.hex:hover img {
+.hex:hover img,
+.hex:focus img {
     opacity: 0.05;
 }
 
-.hex:hover h1 {
+.hex:hover h1,
+.hex:focus h1 {
     opacity: 1;
 }
 

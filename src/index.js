@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./Pages/App";
 import Menu from "./Pages/Menu";
 import Teaching from "./Pages/Teaching";
+import TeachingMenu from "./Pages/TeachingMenu";
 import Projects from "./Pages/Projects";
 import registerServiceWorker from "./registerServiceWorker";
 
@@ -12,8 +13,9 @@ ReactDOM.render(
 	<Router basename={process.env.PUBLIC_URL}>
 		<App>
 			<Route exact path="/" component={Menu}/>
-			<Route path="/teaching/:class" component={Teaching}/>
-			<Route path="/projects/:type" component={Projects}/>
+			<Route exact path="/teaching" component={TeachingMenu}/>
+			<Route exact path="/teaching/:subject" component={Teaching}/>
+			<Route exact path="/projects/:type" component={Projects}/>
 		</App>
 	</Router>,
 	document.getElementById("root"));

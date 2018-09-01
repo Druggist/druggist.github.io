@@ -5,20 +5,22 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import Exercises from "../Components/Exercises/Exercises";
 import Tabs from "../Components/Tabs/Tabs";
 import Section from "../Components/Section/Section";
+import Loader from "../Loader/Loader";
 
 class Teaching extends React.Component {
 	constructor(props) {
 		super(props);
 		this.subject = props.match.params.subject ? props.match.params.subject.replace("_", String.fromCharCode(160)) : undefined;
 		this.state = {
-			items: []
+			items: [],
+			loader: <Loader/>
 		};
 	}
 
 	componentDidMount() {
 		const publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1ljZhSy9TLKDnbcKOQ1voDp-Yxu5LqF-KEkhAvrs2h74/edit?usp=sharing';
 		Tabletop.init({ key: publicSpreadsheetUrl, callback: (data, tabletop) => {
-				this.setState({ items: tabletop.sheets("Teaching").elements});
+				this.setState({ items: tabletop.sheets("Teaching").elements, loader: undefined});
 		}});
 	}
 
@@ -46,6 +48,7 @@ class Teaching extends React.Component {
 				tabs[classes[cl]] = (
 					<Grid fluid>
 						<Row top="xs" center="xs" around="xs">
+							{this.state.loader}
 							{exercises}
 						</Row>
 					</Grid>
@@ -56,7 +59,7 @@ class Teaching extends React.Component {
 		} else if(this.subject) renderObject = <Redirect to="/teaching"/>;
 		console.log(renderObject);
 		return (
-			<Section title={this.subject}>{renderObject}</Section>
+			<Section title={this.subject}>{this.state.loader ? this.state.loader : renderObject}</Section>
 		);
 	}
 }

@@ -1,11 +1,18 @@
 import React from "react";
+import Section from "../Components/Section/Section";
 
 class Projects extends React.Component {
+	constructor(props) {
+		super(props);
+		this.type = this.props.match.params.type ? this.props.match.params.type : "";
+	}
+
+
 	render() {
 		return (
-			<div className="App">
-				{this.props.children}
-			</div>
+			<Section title={this.type}>
+
+			</Section>
 		);
 	}
 }

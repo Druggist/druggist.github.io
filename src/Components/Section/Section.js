@@ -7,7 +7,7 @@ class Section extends React.Component {
 	render() {
 		return (
 			<Grid fluid>
-				<Row>
+				<Row middle="xs">
 					<Col xs={12} lg={1}>
 						<Textfit mode="multi" className="text-fit" max={2000}>
 							{this.props.title}

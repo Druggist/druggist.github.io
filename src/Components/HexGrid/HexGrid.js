@@ -18,7 +18,7 @@ class HexGrid extends React.Component {
 	}
 
 	triggerHexAnimation() {
-		let hexes = document.getElementsByClassName("hex");
+		let hexes = document.querySelectorAll(".hex:not(.disabled)");
 		let hex = hexes[Math.floor(Math.random() * hexes.length)];
 		setTimeout(() => {
 			if(hex && !hex.matches(":hover")) {
@@ -33,7 +33,7 @@ class HexGrid extends React.Component {
 	render() {
 		return (
 			<ul id="hexGrid">
-				<li className="hex">
+				<li className={"hex disabled"}>
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/websites" style={{color: "#4a0072", background: "#7b1fa2"}}>
 							<h1>Websites</h1>
@@ -41,7 +41,7 @@ class HexGrid extends React.Component {
 						</Link>
 					</div>
 				</li>
-				<li className="hex">
+				<li className={"hex disabled"}>
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/games" style={{color: "#9a0007", background: "#d32f2f"}}>
 							<h1>Games</h1>
@@ -49,7 +49,7 @@ class HexGrid extends React.Component {
 						</Link>
 					</div>
 				</li>
-				<li className="hex">
+				<li className={"hex disabled"}>
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/apps" style={{color: "#387002", background: "#689f38"}}>
 							<h1>Apps</h1>

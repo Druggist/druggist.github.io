@@ -27,33 +27,40 @@
     }
 }
 
-.card {
+.list-link {
     display: block;
     padding: 20px;
     margin: 10px;
     color: #616161;
-    background: #212121;
+    background: #bdbdbd;
+    text-align: center;
     border: 2px solid #616161;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.card:hover {
+.list-link:hover {
     color: #bdbdbd;
+    background: #212121;
     border-color: #bdbdbd;
     box-shadow: 2px 2px 10px #212121, -2px -2px 10px #212121;
 }
 
-.card i {
-    display: inline-block;
+.list-link i {
     float: left;
     font-size: 2.5em;
+}
+
+.list-link:before,
+.list-link:after {
+    display: inline-block;
+    font-size: 0;
     vertical-align: middle;
 }
 
-.card span {
+.list-link span {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    font-size: 1.25em;
+    line-height: 2.5em;
     vertical-align: middle;
 }

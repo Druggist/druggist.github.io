@@ -126,6 +126,11 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
     }
 }
 
+.disabled * {
+    pointer-events: none;
+    filter: grayscale(100);
+}
+
 @keyframes hex-bounce {
     0% {transform: scale(1)}
     20% {transform: scale(1.05)}

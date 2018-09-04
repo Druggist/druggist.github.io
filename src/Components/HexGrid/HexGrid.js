@@ -33,7 +33,7 @@ class HexGrid extends React.Component {
 	render() {
 		return (
 			<ul id="hexGrid">
-				<li className={"hex disabled"}>
+				<li className="hex">
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/websites" style={{color: "#4a0072", background: "#7b1fa2"}}>
 							<h1>Websites</h1>
@@ -41,7 +41,7 @@ class HexGrid extends React.Component {
 						</Link>
 					</div>
 				</li>
-				<li className={"hex disabled"}>
+				<li className="hex">
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/games" style={{color: "#9a0007", background: "#d32f2f"}}>
 							<h1>Games</h1>
@@ -49,7 +49,7 @@ class HexGrid extends React.Component {
 						</Link>
 					</div>
 				</li>
-				<li className={"hex disabled"}>
+				<li className="hex">
 					<div className="hexIn">
 						<Link className="hexLink" to="/projects/apps" style={{color: "#387002", background: "#689f38"}}>
 							<h1>Apps</h1>

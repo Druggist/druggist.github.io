@@ -35,8 +35,6 @@
 .hex-loader__r,
 .hex-loader__bl,
 .hex-loader__br {
-    fill: #ffa000;
-
     transform: scale3d(0, 0, 0);
     transform-origin: 50% 50%;
 

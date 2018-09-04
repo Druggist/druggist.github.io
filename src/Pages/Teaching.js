@@ -25,6 +25,7 @@ class Teaching extends React.Component {
 	}
 
 	render() {
+		const color = "#ffa000";
 		let renderObject = "";
 		if(this.subject === "informatyka" || this.subject === "bazy" + String.fromCharCode(160) + "danych") {
 			const data = this.state.items.filter((obj) => {
@@ -59,7 +60,7 @@ class Teaching extends React.Component {
 		} else if(this.subject) renderObject = <Redirect to="/teaching"/>;
 		console.log(renderObject);
 		return (
-			<Section title={this.subject}>{this.state.loader ? this.state.loader : renderObject}</Section>
+			<Section title={this.subject} color={color}>{this.state.loader ? this.state.loader : renderObject}</Section>
 		);
 	}
 }

@@ -1,14 +1,42 @@
 .card {
-    margin: 10px;
-    background: repeating-linear-gradient(
-            45deg,
-            #ffa000,
-            #ffa000 2px,
-            transparent 2px,
-            transparent 10px
-    );
+    margin: 10px auto;
+    border: 2px solid #bdbdbd;
+    max-width: 1000px;
+    color: #bdbdbd;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
+.card h4 {
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.card .image-container  {
+    border-bottom: 2px solid #bdbdbd;
+    background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 18px,
+            #bdbdbd 2px,
+            #bdbdbd 20px
+    );
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 .card .image-container img {
-    width: 100%
+    margin: -4px;
+    margin-bottom: -6px;
+    border: 2px solid #bdbdbd;
+    padding: 0;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover .image-container img {
+    filter: none;
+    transform: scale(.9);
 }

@@ -10,6 +10,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-textfit": "^1.1.0",
+    "style-it": "^2.0.0",
     "tabletop": "^1.5.2"
   },
   "scripts": {

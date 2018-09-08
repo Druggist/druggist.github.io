@@ -1,7 +1,7 @@
 {
   "name": "druggist.github.io",
   "version": "0.1.0",
-  "homepage": "https://druggist.github.io/",
+  "homepage": "https://druggist.github.io",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
@@ -20,7 +20,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "eslint": "^5.2.0",

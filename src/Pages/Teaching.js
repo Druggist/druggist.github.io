@@ -5,7 +5,7 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import Exercises from "../Components/Exercises/Exercises";
 import Tabs from "../Components/Tabs/Tabs";
 import Section from "../Components/Section/Section";
-import Loader from "../Loader/Loader";
+import Loader from "../Components/Loader/Loader";
 
 class Teaching extends React.Component {
 	constructor(props) {

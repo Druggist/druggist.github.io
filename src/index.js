@@ -16,6 +16,7 @@ ReactDOM.render(
 			<Route exact path="/teaching" component={TeachingMenu}/>
 			<Route exact path="/teaching/:subject" component={Teaching}/>
 			<Route exact path="/projects/:type" component={Projects}/>
+			<Route exact path="/projects/:type/:project" component={Projects}/>
 		</App>
 	</Router>,
 	document.getElementById("root"));

@@ -1,0 +1,118 @@
+.project {
+    min-height: 100vh;
+    color: #bdbdbd;
+    font-family: 'Oswald', sans-serif;
+}
+
+.project .img-container {
+    order: 1;
+    padding: 0 20px 20px;
+    border: 2px solid #616161;
+    box-sizing: border-box;
+    background: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 18px,
+            #616161 2px,
+            #616161 20px
+    );
+}
+
+.project .cocreators-container {
+    order: 3;
+}
+
+.project .links-container {
+    order: 2;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.project .links-container a {
+    padding: 5px 10px;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: 2px solid #bdbdbd;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.project img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #616161;
+    border-top: none;
+}
+
+.project h3 {
+    margin: 0;
+    padding: 20px 0 10px 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.project p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.project .technologies {
+    margin: 0;
+    padding: 0 0 50px;
+}
+
+.project .cocreators {
+    padding: 0;
+    margin: 0;
+}
+
+.project .technologies li,
+.project .cocreators li {
+    padding: 5px 0 0 0;
+    list-style-type: none;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.project .cocreators li {
+    display: block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.project .cocreators li a {
+    display: block;
+    padding: 10px;
+    color: #bdbdbd;
+    background: #212121;
+    border: 2px solid #616161;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.15em;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.project .cocreators li:hover a {
+    margin: -5px 0 5px 0;
+    box-shadow: 2px 2px 5px #000;
+}
+
+@media only screen and (min-width: 768px) {
+    .project .img-container,
+    .project .cocreators-container,
+    .project .links-container {
+        order: initial;
+    }
+
+    .project .img-container {
+        border-top: none;
+    }
+
+    .project .technologies {
+        padding: 0;
+    }
+}
+

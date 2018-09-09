@@ -6,6 +6,7 @@ import Loader from "../Components/Loader/Loader";
 import * as Tabletop from "tabletop";
 import {Redirect, Link} from "react-router-dom";
 import OnImagesLoaded from "react-on-images-loaded";
+import Project from "../Components/Project/Project";
 
 class Projects extends React.Component {
 	constructor(props) {
@@ -14,6 +15,7 @@ class Projects extends React.Component {
 		this.renderProjectsList = this.renderProjectsList.bind(this);
 		this.type = this.props.match.params.type ? this.props.match.params.type : "";
 		this.color = this.type === "websites" ? "#7b1fa2" : this.type === "games" ? "#d32f2f" : this.type === "apps" ? "#689f38" : "#616161";
+		this.colorDarker = this.type === "websites" ? "#4a0072" : this.type === "games" ? "#9a0007" : this.type === "apps" ? "#387002" : "#212121";
 		this.state = {
 			renderObject: "",
 			showImages: false,
@@ -22,42 +24,11 @@ class Projects extends React.Component {
 	}
 
 	renderProject(obj) {
-		let colSize = Math.floor(12/obj.links.length);
 		this.setState({
-			title: obj.title,
+			title: obj.title.replace(/\s+/g, String.fromCharCode(160)),
 			renderObject: (
 				<OnImagesLoaded onLoaded={() => this.setState({showImages: true})}>
-					<Grid fluid className="project">
-						<Row center="xs" top="xs" around="xs">
-							<Col xs={12} md={10}>
-								<img src={obj.image} alt={obj.title}/>
-							</Col>
-						</Row>
-						<Row center="xs" top="xs" around="xs">
-							{
-								obj.links.map(link => (
-									<Col xs={12} md={Math.min(colSize, 3)} lg={Math.min(colSize, 2)}>
-										<a href={link.src} className="btn" style={{background: this.color}}>{link.name}</a>
-									</Col>
-								))
-							}
-						</Row>
-						<Row center="xs" top="xs" around="xs">
-							<Col xs={12} md={3}>
-								<ul>
-									{obj.cocreators.map(c => <li><a href={c.src}>{c.name}</a></li>)}
-								</ul>
-							</Col>
-							<Col xs={12} md={6}>
-								<p>{obj.description}</p>
-							</Col>
-							<Col xs={12} md={3}>
-								<ul>
-									{obj.technologies.map(t => <li>{t}</li>)}
-								</ul>
-							</Col>
-						</Row>
-					</Grid>
+					<Project obj={obj} color={this.color} colorDarker={this.colorDarker}/>
 				</OnImagesLoaded>
 			)
 		});
@@ -93,10 +64,12 @@ class Projects extends React.Component {
 					let obj = tabletop.sheets("Projects").elements.find(obj => {
 						return obj.type === this.type && obj.title.replace(/\s+/g, '+').toLowerCase() === this.props.match.params.project;
 					});
-					obj.cocreators = JSON.parse(obj.cocreators);
-					obj.links = JSON.parse(obj.links);
-					obj.technologies = JSON.parse(obj.technologies);
-					this.renderProject(obj);
+					if(obj) {
+						obj.cocreators = JSON.parse(obj.cocreators);
+						obj.links = JSON.parse(obj.links);
+						obj.technologies = JSON.parse(obj.technologies);
+						this.renderProject(obj);
+					} else this.setState({renderObject: <Redirect to={`/projects/${this.type}/`}/>});
 				} else {
 					let data = tabletop.sheets("Projects").elements.filter(obj => obj.type === this.type);
 					this.renderProjectsList(data);

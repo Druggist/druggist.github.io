@@ -2,15 +2,14 @@
     text-align: center;
     width: 100%;
     font-family: 'Permanent Marker', cursive;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 
 @media only screen and (min-width: 992px) {
     .text-fit {
         text-align: left;
-        margin: 5vh 0;
-        margin-left: -25%;
+        margin: 5vh 0 5vh -25%;
         writing-mode: vertical-rl;
         text-orientation: mixed;
         height: 90vh;

@@ -19,7 +19,7 @@ class Projects extends React.Component {
 		this.state = {
 			renderObject: "",
 			showImages: false,
-			title: this.props.match.params.project ? this.props.match.params.project.replace(/\++/g, String.fromCharCode(160)) : this.type
+			title: this.props.match.params.project ? "" : this.type
 		};
 	}
 
@@ -43,7 +43,7 @@ class Projects extends React.Component {
 							{
 								data.map(obj => (
 									<Col xs={12} sm={6} md={4}>
-										<Link to={`/projects/${this.type}/${obj.title.replace(/\s+/g, '+').toLowerCase()}`}>
+										<Link to={`/projects/${this.type}/${obj.title.replace(/\s+/g, '+').replace(/[^a-zA-Z\d_\-+]+/g, '').toLowerCase()}`}>
 											<Card title={obj.title} imageSrc={obj.image} color={this.color}/>
 										</Link>
 									</Col>
@@ -62,7 +62,7 @@ class Projects extends React.Component {
 			if(this.type === "websites" || this.type === "games" || this.type === "apps") {
 				if(this.props.match.params.project) {
 					let obj = tabletop.sheets("Projects").elements.find(obj => {
-						return obj.type === this.type && obj.title.replace(/\s+/g, '+').toLowerCase() === this.props.match.params.project;
+						return obj.type === this.type && obj.title.replace(/\s+/g, '+').replace(/[^a-zA-Z\d_\-+]+/g, '').toLowerCase() === this.props.match.params.project;
 					});
 					if(obj) {
 						obj.cocreators = JSON.parse(obj.cocreators);

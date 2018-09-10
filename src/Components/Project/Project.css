@@ -97,7 +97,6 @@
 
 .project .cocreators li:hover a {
     margin: -5px 0 5px 0;
-    box-shadow: 2px 2px 5px #000;
 }
 
 @media only screen and (min-width: 768px) {

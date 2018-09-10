@@ -17,7 +17,7 @@ class Project extends React.Component {
 				<Row center="xs" bottom="xs" around="xs">
 					<Col xs={12} md={3} className="links-container">
 						<Grid fluid>
-							<Row center="xs" around="xs">
+							<Row start="xs" around="xs">
 								<Style>
 									{`
 										.project .links-container a {

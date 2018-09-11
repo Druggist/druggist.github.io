@@ -33,9 +33,12 @@ class Card extends React.Component {
 					}
 				`}
 				<div className={this.props.inverse ? "card-inverse" : "card"}>
-					<div className="image-container">
-						<img src={this.props.imageSrc} alt={this.props.title}/>
-					</div>
+					{
+						this.props.imageSrc ?
+						<div className="image-container">
+							<img src={this.props.imageSrc} alt={this.props.title}/>
+						</div> : ""
+					}
 					<h4>{this.props.title}</h4>
 				</div>
 			</Style>

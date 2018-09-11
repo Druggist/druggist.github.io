@@ -1,11 +1,12 @@
 #personal-info {
     background: #bdbdbd;
     margin: 0 -16px;
+    padding-bottom: 50px;
 }
 
 #personal-info img {
     padding-top: 10px;
-    width: 40%;
+    width: 50vh;
     margin: auto;
 }
 
@@ -18,12 +19,11 @@
         min-height: 100vh;
         margin: 0 0 0 -16px;
         top: 0;
+        padding-bottom: 0;
     }
 
     #personal-info img {
         padding-top: 20px;
-        width: 80%;
-        margin: auto;
     }
 }
 

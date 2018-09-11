@@ -100,7 +100,7 @@ https://github.com/web-tiki/responsive-grid-of-hexagons
 
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 #hexGrid{
-    padding-bottom: 11.2%
+    padding-bottom: calc(11.2% + 50px);
 }
 .hex {
     width: 50%; /* = 100 / 3 */

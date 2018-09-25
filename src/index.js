@@ -7,7 +7,6 @@ import Menu from "./Pages/Menu";
 import Teaching from "./Pages/Teaching";
 import TeachingMenu from "./Pages/TeachingMenu";
 import Projects from "./Pages/Projects";
-import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
 	<Router basename={process.env.PUBLIC_URL}>
@@ -20,4 +19,3 @@ ReactDOM.render(
 		</App>
 	</Router>,
 	document.getElementById("root"));
-registerServiceWorker();

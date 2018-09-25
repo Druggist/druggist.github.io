@@ -19,5 +19,6 @@
     .text-fit div {
         position: fixed;
         left: 0;
+        top: 5vh;
     }
 }

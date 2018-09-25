@@ -5,7 +5,7 @@ class Tabs extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			checked: 0
+			checked: "0"
 		};
 	}
 
@@ -25,13 +25,13 @@ class Tabs extends React.Component {
 					tabs.push(
 						<div className="tab" key={header} style={{
 							width: `${100 / this.props.headers.length}%`,
-							zIndex: `${this.state.checked == header ? 2 : 1}`
+							zIndex: `${this.state.checked === header ? 2 : 1}`
 						}}>
-							<input id={"tab" + header} name="tabs" type="radio" data-key={header} checked={this.state.checked == header ? "checked" : ""} onChange={(e) => {this.setState({checked: e.target.getAttribute("data-key")});}}/>
+							<input id={"tab" + header} name="tabs" type="radio" data-key={header} checked={this.state.checked === header ? "checked" : ""} onChange={(e) => {this.setState({checked: e.target.getAttribute("data-key")});}}/>
 							<label htmlFor={"tab" + header}>{this.props.headers[header]}</label>
 							<div style={{
 								width: `${100 * this.props.headers.length}%`,
-								marginLeft: `${this.state.checked == header ? -100 * header : 100}%`
+								marginLeft: `${this.state.checked === header ? -100 * header : 100}%`
 							}}>
 								{this.props.data[this.props.headers[header]]}
 							</div>

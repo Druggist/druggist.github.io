@@ -43,12 +43,12 @@ class Projects extends React.Component {
 							this.type === "apps" ?
 								<Row center="xs" around="xs">
 									<Col xs={12} sm={6} md={4}>
-										<a href="https://github.com/Druggist/minor-uni-projects" target="_blank">
+										<a href="https://github.com/Druggist/minor-uni-projects" target="_blank" rel="noopener noreferrer">
 											<Card title="Minor Uni Projects" color={this.color}/>
 										</a>
 									</Col>
 									<Col xs={12} sm={6} md={4}>
-										<a href="https://github.com/Druggist/dotfiles" target="_blank">
+										<a href="https://github.com/Druggist/dotfiles" target="_blank" rel="noopener noreferrer">
 											<Card title="Dotfiles" color={this.color}/>
 										</a>
 									</Col>

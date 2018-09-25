@@ -10,7 +10,7 @@ class Exercises extends React.Component {
 					{this.props.data ? this.props.data.map((obj, i) => {
 						return	(
 							<li key={i}>
-								<a href={obj.link} target="_blank">{obj.name}</a>
+								<a href={obj.link} target="_blank" rel="noopener noreferrer">{obj.name}</a>
 							</li>
 						);
 					}) : []}

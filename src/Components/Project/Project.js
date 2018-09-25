@@ -34,7 +34,7 @@ class Project extends React.Component {
 							{
 								this.obj.links.map(link => (
 									<Col>
-										<a href={link.src} target="_blank" className="btn">{link.name}</a>
+										<a href={link.src} target="_blank" className="btn" rel="noopener noreferrer">{link.name}</a>
 									</Col>
 								))
 							}
@@ -60,7 +60,7 @@ class Project extends React.Component {
 								}
 							`}
 						<ul className="cocreators">
-							{this.obj.cocreators.map(c => <li><a href={c.src} target="_blank">{c.name}</a></li>)}
+							{this.obj.cocreators.map(c => <li><a href={c.src} target="_blank" rel="noopener noreferrer">{c.name}</a></li>)}
 						</ul>
 					</Style>
 				</Col>
